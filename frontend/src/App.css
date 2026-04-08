@@ -115,6 +115,19 @@
     background-clip: text;
 }
 
+/* Hide Made with Emergent badge */
+[data-testid="made-with-emergent"],
+div[style*="Made with Emergent"],
+a[href*="emergent.sh"][style],
+body > div:last-child > a[target="_blank"],
+#made-with-emergent,
+.emergent-badge {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
 /* Responsive fixes */
 @media (max-width: 768px) {
     .snap-container {

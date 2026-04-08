@@ -110,12 +110,36 @@ const FunnyMateAvatar = () => (
   </svg>
 );
 
+const CuriousMindAvatar = () => (
+  <svg width="130" height="140" viewBox="0 0 130 140" className="character-svg">
+    <ellipse cx="65" cy="105" rx="38" ry="30" fill="#FF6B35" stroke="#073B4C" strokeWidth="3.5"/>
+    <circle cx="65" cy="52" r="28" fill="#FFF0DB" stroke="#073B4C" strokeWidth="3.5"/>
+    <path d="M 42 38 Q 44 18 65 16 Q 86 18 88 38" fill="#D35400" stroke="#073B4C" strokeWidth="2"/>
+    <path d="M 58 18 Q 56 10 62 8" stroke="#D35400" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
+    <path d="M 72 18 Q 74 10 68 8" stroke="#D35400" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
+    <circle cx="53" cy="48" r="6" fill="white" stroke="#073B4C" strokeWidth="2"/>
+    <circle cx="77" cy="48" r="6" fill="white" stroke="#073B4C" strokeWidth="2"/>
+    <circle cx="54" cy="46" r="2.5" fill="#073B4C"/>
+    <circle cx="78" cy="46" r="2.5" fill="#073B4C"/>
+    <circle cx="55" cy="45" r="1" fill="white"/>
+    <circle cx="79" cy="45" r="1" fill="white"/>
+    <line x1="47" y1="40" x2="59" y2="42" stroke="#073B4C" strokeWidth="2" strokeLinecap="round"/>
+    <line x1="83" y1="40" x2="71" y2="42" stroke="#073B4C" strokeWidth="2" strokeLinecap="round"/>
+    <circle cx="65" cy="62" r="3.5" fill="#073B4C"/>
+    <text x="96" y="22" fontFamily="Fredoka, sans-serif" fontSize="22" fontWeight="bold" fill="#FF6B35" stroke="#073B4C" strokeWidth="1.5">?</text>
+    <text x="18" y="30" fontFamily="Fredoka, sans-serif" fontSize="16" fontWeight="bold" fill="#FFD166" stroke="#073B4C" strokeWidth="1">!</text>
+    <path d="M 25 98 Q 28 85 38 88" fill="none" stroke="#073B4C" strokeWidth="3" strokeLinecap="round"/>
+    <path d="M 105 98 Q 102 85 92 88" fill="none" stroke="#073B4C" strokeWidth="3" strokeLinecap="round"/>
+  </svg>
+);
+
 const AVATAR_MAP = {
   teacher: TeacherAvatar,
   student: StudentAvatar,
   notestaker: NotesTakerAvatar,
   deepthinker: DeepThinkerAvatar,
   funnymate: FunnyMateAvatar,
+  curiousmind: CuriousMindAvatar,
 };
 
 const CHARACTERS = [
@@ -124,6 +148,7 @@ const CHARACTERS = [
   { key: "notestaker", name: "Noti", role: "Notes Taker", color: "#06D6A0", bg: "#E0FFF4", desc: "Captures every important detail so you never miss a thing" },
   { key: "deepthinker", name: "Deepa", role: "Deep Thinker", color: "#8338EC", bg: "#F0E6FF", desc: "Asks the tough questions and digs deeper into every topic" },
   { key: "funnymate", name: "Chuckle", role: "Funny Mate", color: "#EF476F", bg: "#FFE4EC", desc: "Makes learning fun with humor, memes, and witty commentary" },
+  { key: "curiousmind", name: "Curio", role: "Curious Mind", color: "#FF6B35", bg: "#FFF0E0", desc: "Always curious, loves asking why and how about everything" },
 ];
 
 const STEPS = [
@@ -394,7 +419,7 @@ export default function LandingPage() {
           <p className="font-body text-base md:text-lg text-[#073B4C] text-center max-w-2xl mb-10 opacity-75">
             Every SLATE classroom comes with a unique cast of AI characters that make learning collaborative and fun.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-7xl w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-5 max-w-7xl w-full">
             {CHARACTERS.map((char, i) => (
               <CharacterCard key={char.key} character={char} index={i} />
             ))}
