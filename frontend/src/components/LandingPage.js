@@ -202,9 +202,6 @@ const WaitlistForm = ({ variant = "light" }) => {
     try {
       await axios.post(`${API}/waitlist`, { email });
       setSubmitted(true);
-      setTimeout(() => {
-        window.location.href = "https://slate-app.thechalklabs.com";
-      }, 2500);
     } catch (err) {
       setError(err.response?.data?.detail || "Something went wrong. Please try again.");
     } finally {
@@ -220,19 +217,21 @@ const WaitlistForm = ({ variant = "light" }) => {
 
   if (submitted) {
     return (
-      <motion.div
-        initial={{ scale: 0.9, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        className="text-center"
-        data-testid="waitlist-success"
-      >
+      <div className="text-center py-4" data-testid="waitlist-success">
         <p className={`font-heading text-2xl font-bold ${isDark ? "text-white" : "text-[#06D6A0]"}`}>
           Welcome aboard!
         </p>
-        <p className={`mt-1 ${isDark ? "text-white/80" : "text-[#495057]"}`}>
-          Check your email. Redirecting to SLATE...
+        <p className={`mt-2 ${isDark ? "text-white/80" : "text-[#495057]"}`}>
+          Check your email for a welcome message.
         </p>
-      </motion.div>
+        <a
+          href="https://slate-app.thechalklabs.com"
+          className={`inline-block mt-4 font-bold underline ${isDark ? "text-[#FFD166]" : "text-[#118AB2]"}`}
+          data-testid="redirect-link"
+        >
+          Continue to SLATE →
+        </a>
+      </div>
     );
   }
 
@@ -485,70 +484,72 @@ export default function LandingPage() {
           </div>
         </AnimSection>
 
-        {/* ═══ WAITLIST CTA ═══ */}
-        <AnimSection id="waitlist" className="snap-section flex flex-col items-center justify-center bg-[#EF476F] px-6 py-20" data-testid="waitlist-section">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="text-center max-w-2xl"
-          >
-            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Join the Beta
-            </h2>
-            <p className="font-body text-lg text-white/85 mb-8 leading-relaxed">
-              Be among the first to experience the future of AI-powered learning.
-              Drop your email and we'll send you a welcome aboard message.
-            </p>
-            <WaitlistForm variant="dark" />
-            <div className="mt-8">
-              <a
-                href="https://slate-app.thechalklabs.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-press inline-flex items-center gap-2 bg-white text-[#073B4C] rounded-full px-8 py-4 font-bold text-lg border-2 border-[#073B4C] shadow-[4px_4px_0px_#073B4C] hover:scale-105 transition-transform"
-                data-testid="enter-slate-button"
-              >
-                Enter SLATE <ArrowRight size={20} />
-              </a>
-            </div>
-          </motion.div>
-        </AnimSection>
-
-        {/* ═══ FOOTER ═══ */}
-        <footer className="bg-[#073B4C] px-6 py-16" data-testid="footer">
-          <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
-              <div>
-                <span className="font-heading text-3xl font-bold text-white tracking-tight">SLATE</span>
-                <p className="font-body text-white/60 text-sm mt-1">by Chalk Labs</p>
-                <p className="font-body text-white/40 text-sm mt-3 max-w-xs">
-                  AI-powered interactive classroom. Learn anything, with anyone, anytime.
-                </p>
+        {/* ═══ WAITLIST CTA + FOOTER ═══ */}
+        <section id="waitlist" className="snap-section flex flex-col" data-testid="waitlist-section">
+          <div className="flex-1 flex flex-col items-center justify-center bg-[#EF476F] px-6 py-20">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="text-center max-w-2xl"
+            >
+              <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                Join the Beta
+              </h2>
+              <p className="font-body text-lg text-white/85 mb-8 leading-relaxed">
+                Be among the first to experience the future of AI-powered learning.
+                Drop your email and we'll send you a welcome aboard message.
+              </p>
+              <WaitlistForm variant="dark" />
+              <div className="mt-8">
+                <a
+                  href="https://slate-app.thechalklabs.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-press inline-flex items-center gap-2 bg-white text-[#073B4C] rounded-full px-8 py-4 font-bold text-lg border-2 border-[#073B4C] shadow-[4px_4px_0px_#073B4C] hover:scale-105 transition-transform"
+                  data-testid="enter-slate-button"
+                >
+                  Enter SLATE <ArrowRight size={20} />
+                </a>
               </div>
-              <div className="flex flex-col sm:flex-row gap-8 text-center sm:text-left">
-                <div>
-                  <h4 className="font-heading text-sm font-bold text-[#FFD166] uppercase tracking-wider mb-3">Product</h4>
-                  <div className="flex flex-col gap-2">
-                    <button onClick={() => scrollTo("features")} className="font-body text-white/60 hover:text-white text-sm transition-colors">Features</button>
-                    <button onClick={() => scrollTo("how-it-works")} className="font-body text-white/60 hover:text-white text-sm transition-colors">How It Works</button>
-                    <button onClick={() => scrollTo("characters")} className="font-body text-white/60 hover:text-white text-sm transition-colors">AI Classmates</button>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="font-heading text-sm font-bold text-[#FFD166] uppercase tracking-wider mb-3">Company</h4>
-                  <div className="flex flex-col gap-2">
-                    <a href="https://slate-app.thechalklabs.com" target="_blank" rel="noopener noreferrer" className="font-body text-white/60 hover:text-white text-sm transition-colors">SLATE App</a>
-                    <span className="font-body text-white/60 text-sm">hello@thechalklabs.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="border-t border-white/10 mt-10 pt-6 text-center">
-              <p className="font-body text-white/40 text-sm">&copy; {new Date().getFullYear()} Chalk Labs. All rights reserved.</p>
-            </div>
+            </motion.div>
           </div>
-        </footer>
+
+          {/* Footer */}
+          <footer className="bg-[#073B4C] px-6 py-12" data-testid="footer">
+            <div className="max-w-6xl mx-auto">
+              <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+                <div>
+                  <span className="font-heading text-3xl font-bold text-white tracking-tight">SLATE</span>
+                  <p className="font-body text-white/60 text-sm mt-1">by Chalk Labs</p>
+                  <p className="font-body text-white/40 text-sm mt-3 max-w-xs">
+                    AI-powered interactive classroom. Learn anything, with anyone, anytime.
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-8 text-center sm:text-left">
+                  <div>
+                    <h4 className="font-heading text-sm font-bold text-[#FFD166] uppercase tracking-wider mb-3">Product</h4>
+                    <div className="flex flex-col gap-2">
+                      <button onClick={() => scrollTo("features")} className="font-body text-white/60 hover:text-white text-sm transition-colors">Features</button>
+                      <button onClick={() => scrollTo("how-it-works")} className="font-body text-white/60 hover:text-white text-sm transition-colors">How It Works</button>
+                      <button onClick={() => scrollTo("characters")} className="font-body text-white/60 hover:text-white text-sm transition-colors">AI Classmates</button>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-heading text-sm font-bold text-[#FFD166] uppercase tracking-wider mb-3">Company</h4>
+                    <div className="flex flex-col gap-2">
+                      <a href="https://slate-app.thechalklabs.com" target="_blank" rel="noopener noreferrer" className="font-body text-white/60 hover:text-white text-sm transition-colors">SLATE App</a>
+                      <span className="font-body text-white/60 text-sm">hello@thechalklabs.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="border-t border-white/10 mt-8 pt-6 text-center">
+                <p className="font-body text-white/40 text-sm">&copy; {new Date().getFullYear()} Chalk Labs. All rights reserved.</p>
+              </div>
+            </div>
+          </footer>
+        </section>
       </div>
     </div>
   );
