@@ -9,7 +9,6 @@ body {
     font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow: hidden;
 }
 
 .font-heading {
