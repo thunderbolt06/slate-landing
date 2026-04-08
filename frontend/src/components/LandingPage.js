@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import {
   GraduationCap, BookOpen, PenLine, Brain, Laugh,
   ChevronDown, Sparkles, Presentation, MessageSquare,
@@ -216,8 +217,8 @@ const CharacterCard = ({ character, index }) => {
 const WaitlistForm = ({ variant = "light" }) => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -226,7 +227,7 @@ const WaitlistForm = ({ variant = "light" }) => {
     setError("");
     try {
       await axios.post(`${API}/waitlist`, { email });
-      setSubmitted(true);
+      navigate("/thank-you");
     } catch (err) {
       setError(err.response?.data?.detail || "Something went wrong. Please try again.");
     } finally {
@@ -239,26 +240,6 @@ const WaitlistForm = ({ variant = "light" }) => {
   const btnClass = isDark
     ? "bg-[#FFD166] text-[#073B4C] hover:bg-[#ffe08a] border-[#073B4C]"
     : "bg-[#EF476F] text-white hover:bg-[#d63c5f] border-[#073B4C]";
-
-  if (submitted) {
-    return (
-      <div className="text-center py-4" data-testid="waitlist-success">
-        <p className={`font-heading text-2xl font-bold ${isDark ? "text-white" : "text-[#06D6A0]"}`}>
-          Welcome aboard!
-        </p>
-        <p className={`mt-2 ${isDark ? "text-white/80" : "text-[#495057]"}`}>
-          Check your email for a welcome message.
-        </p>
-        <a
-          href="https://slate-app.thechalklabs.com"
-          className={`inline-block mt-4 font-bold underline ${isDark ? "text-[#FFD166]" : "text-[#118AB2]"}`}
-          data-testid="redirect-link"
-        >
-          Continue to SLATE →
-        </a>
-      </div>
-    );
-  }
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 w-full max-w-lg mx-auto">
