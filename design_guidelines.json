@@ -1,0 +1,95 @@
+{
+  "theme": "light",
+  "archetype": "6 (Vibrant Play)",
+  "color_palette": {
+    "background_base": "#FDFDFD",
+    "primary": "#FFD166",
+    "secondary": "#EF476F",
+    "accent_blue": "#118AB2",
+    "accent_green": "#06D6A0",
+    "accent_purple": "#8338EC",
+    "text_primary": "#073B4C",
+    "text_secondary": "#495057",
+    "surface": "#FFFFFF"
+  },
+  "typography": {
+    "heading_font": "Fredoka",
+    "body_font": "Nunito",
+    "h1": "text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none text-[#073B4C]",
+    "h2": "text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#073B4C]",
+    "h3": "text-2xl md:text-3xl font-bold text-[#073B4C]",
+    "body": "text-lg md:text-xl font-medium leading-relaxed text-[#495057]"
+  },
+  "layout_and_spacing": {
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "section_spacing": "py-24 md:py-32",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8",
+    "border_radius": "rounded-3xl",
+    "navigation_style": "full_screen_carousel",
+    "carousel_config": "Use CSS scroll-snap (snap-y snap-mandatory on a 100vh container, snap-start on full height sections) combined with framer-motion reveals for smooth slide-like transitions mimicking a classroom slide deck."
+  },
+  "components": {
+    "hero": {
+      "style": "Full-screen (h-screen), centered content, chunky typography, playful floating SVG shapes. Waitlist form embedded prominently.",
+      "motion": "Staggered fade-up for text, floating/bobbing animations for background abstract shapes."
+    },
+    "characters": {
+      "style": "Neo-brutalist SVG composed characters. Teacher (Blue), Student (Yellow), Notes Taker (Green), Deep Thinker (Red), Funny Mate (Orange).",
+      "instruction": "Since it requested custom illustrated SVG characters, please compose them by using Shadcn/Lucide icons (e.g., GraduationCap for Teacher, PenTool for Notes Taker, Brain for Deep Thinker, Smile for Funny Mate, User for Student) placed inside colorful SVG blobs or circles with thick 4px dark borders (#073B4C) for a comic/illustrative feel."
+    },
+    "buttons": {
+      "primary": "bg-[#EF476F] text-white rounded-full px-8 py-4 font-bold text-xl hover:scale-105 transition-transform shadow-[4px_4px_0px_#073B4C] border-2 border-[#073B4C]",
+      "secondary": "bg-[#FFD166] text-[#073B4C] rounded-full px-8 py-4 font-bold text-xl hover:scale-105 transition-transform shadow-[4px_4px_0px_#073B4C] border-2 border-[#073B4C]"
+    },
+    "cards": {
+      "style": "bg-white border-4 border-[#073B4C] rounded-3xl p-8 shadow-[8px_8px_0px_#073B4C] transition-transform hover:-translate-y-2"
+    }
+  },
+  "motion_and_interactions": {
+    "hover": "Playful pop (scale up 1.05) with bouncy spring physics.",
+    "scroll": "Full-screen snapping per section, mimicking a presentation slide deck.",
+    "entry": "Framer Motion layout animations, using spring transitions with damping 20, stiffness 200."
+  },
+  "accessibility": {
+    "contrast": "Ensure white text on vibrant backgrounds like yellow or teal meets APCA. If not, use #073B4C text. Add text-shadow to text overlaying images.",
+    "reduced_motion": "Respect prefers-reduced-motion for scroll snapping."
+  },
+  "image_urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1763929558889-46e751957efb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxwbGF5ZnVsJTIwYWJzdHJhY3QlMjBjb2xvcmZ1bCUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzc1NjE4MTQzfDA&ixlib=rb-4.1.0&q=85",
+      "category": "hero_background",
+      "description": "Colorful abstract smiley background to use as a layered texture (with low opacity or mix-blend-mode)."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1767719243883-5d6e8d61c403?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwzfHxwbGF5ZnVsJTIwYWJzdHJhY3QlMjBjb2xvcmZ1bCUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzc1NjE4MTQzfDA&ixlib=rb-4.1.0&q=85",
+      "category": "section_background",
+      "description": "Playful abstract silver balls background for the How it Works section."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1638803040283-7a5ffd48dad5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHw0fHxjdXRlJTIwM2QlMjByb2JvdCUyMGNoYXJhY3RlciUyMGNvbG9yZnVsfGVufDB8fHx8MTc3NTYxODE0M3ww&ixlib=rb-4.1.0&q=85",
+      "category": "character_fallback_teacher",
+      "description": "Cute 3D robot fallback for the Teacher character."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1657641898365-48ae7d64e676?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHxjdXRlJTIwM2QlMjByb2JvdCUyMGNoYXJhY3RlciUyMGNvbG9yZnVsfGVufDB8fHx8MTc3NTYxODE0M3ww&ixlib=rb-4.1.0&q=85",
+      "category": "character_fallback_notestaker",
+      "description": "Cute 3D robot fallback for the Notes Taker character."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1655582590501-3da761e09ae9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxjdXRlJTIwM2QlMjByb2JvdCUyMGNoYXJhY3RlciUyMGNvbG9yZnVsfGVufDB8fHx8MTc3NTYxODE0M3ww&ixlib=rb-4.1.0&q=85",
+      "category": "character_fallback_deepthinker",
+      "description": "Cute 3D robot fallback for the Deep Thinker character."
+    }
+  ],
+  "instructions_to_main_agent": [
+    "Use Fredoka for headings (import from Google Fonts: @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700;800&family=Nunito:wght@400;500;700;800&display=swap');) and Nunito for body.",
+    "Implement full-screen scroll-snapping. The main container should have 'h-screen overflow-y-scroll snap-y snap-mandatory'. Each main section should have 'h-screen snap-start shrink-0 flex flex-col justify-center relative'.",
+    "For the SVG characters, do not rely solely on the fallback raster images. BUILD inline SVG blobs/shapes and use lucide-react icons (e.g., `<Brain />`) colored with the palette, given a thick 4px border (#073B4C) to look like Neo-brutalist custom illustrations.",
+    "Waitlist Form: Must capture email and trigger SendGrid API (or mock it elegantly if backend is absent), then route to 'slate-app.thechalklabs.com' via window.location.href.",
+    "Neo-brutalism elements: Use strong drop shadows like `shadow-[8px_8px_0px_#073B4C]` on buttons and cards to create the 'playful, bold illustrative' feel referenced.",
+    "Add Beta Badge next to the Logo/App Name.",
+    "Animations: Apply Framer Motion to animate the SVG characters hovering up and down, and to smoothly slide text into the sections on scroll.",
+    "Color Usage: Background sections should alternate between #FFD166 (Yellow), #EF476F (Red), #118AB2 (Blue), and #FDFDFD (Cream). Text color should adapt (dark #073B4C on light bgs, white on dark bgs with text-shadow for readability).",
+    "Add data-testid attributes to all interactive and key elements, such as data-testid='waitlist-email-input', data-testid='waitlist-submit-button', data-testid='character-card'."
+  ]
+}
