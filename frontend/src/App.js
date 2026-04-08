@@ -8,6 +8,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/characters" element={<LandingPage />} />
+        <Route path="/how-it-works" element={<LandingPage />} />
+        <Route path="/features" element={<LandingPage />} />
+        <Route path="/waitlist" element={<LandingPage />} />
         <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
     </BrowserRouter>

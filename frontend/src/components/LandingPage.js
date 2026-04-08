@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import {
   GraduationCap, BookOpen, PenLine, Brain, Laugh,
   ChevronDown, Sparkles, Presentation, MessageSquare,
@@ -265,6 +265,13 @@ const WaitlistForm = ({ variant = "light" }) => {
   );
 };
 
+const PATH_TO_SECTION = {
+  "/characters": "characters",
+  "/how-it-works": "how-it-works",
+  "/features": "features",
+  "/waitlist": "waitlist",
+};
+
 /* ═══════════════════════════════════════════════════
    MAIN LANDING PAGE
    ═══════════════════════════════════════════════════ */
@@ -273,6 +280,8 @@ export default function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [waitlistCount, setWaitlistCount] = useState(0);
   const containerRef = useRef(null);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const container = containerRef.current;
@@ -282,11 +291,23 @@ export default function LandingPage() {
     return () => container.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Auto-scroll to section based on URL path
+  useEffect(() => {
+    const sectionId = PATH_TO_SECTION[location.pathname];
+    if (sectionId) {
+      setTimeout(() => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+  }, [location.pathname]);
+
   useEffect(() => {
     axios.get(`${API}/waitlist/count`).then(r => setWaitlistCount(r.data.count)).catch(() => {});
   }, []);
 
   const scrollTo = (id) => {
+    const path = `/${id}`;
+    navigate(path);
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setMenuOpen(false);
   };
@@ -299,7 +320,7 @@ export default function LandingPage() {
         data-testid="navbar"
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 cursor-pointer" onClick={() => { navigate("/"); containerRef.current?.scrollTo({ top: 0, behavior: "smooth" }); }}>
             <span className="font-heading text-2xl font-bold text-[#073B4C] tracking-tight">SLATE</span>
             <span className="bg-[#EF476F] text-white text-[10px] font-bold px-2 py-0.5 rounded-full border border-[#073B4C]">BETA</span>
           </div>
