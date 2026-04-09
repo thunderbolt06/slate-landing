@@ -14,123 +14,123 @@ const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 /* ─── Character Avatars (SVG) ─── */
 const TeacherAvatar = () => (
   <svg width="130" height="140" viewBox="0 0 130 140" className="character-svg">
-    <ellipse cx="65" cy="105" rx="38" ry="30" fill="#118AB2" stroke="#073B4C" strokeWidth="3.5"/>
-    <circle cx="65" cy="52" r="28" fill="#FFF0DB" stroke="#073B4C" strokeWidth="3.5"/>
-    <ellipse cx="65" cy="27" rx="30" ry="5" fill="#073B4C"/>
-    <rect x="48" y="16" width="34" height="13" rx="1" fill="#073B4C"/>
-    <line x1="82" y1="27" x2="88" y2="36" stroke="#FFD166" strokeWidth="2"/>
-    <circle cx="88" cy="38" r="3" fill="#FFD166"/>
-    <circle cx="55" cy="50" r="8" fill="none" stroke="#073B4C" strokeWidth="2.5"/>
-    <circle cx="75" cy="50" r="8" fill="none" stroke="#073B4C" strokeWidth="2.5"/>
-    <line x1="63" y1="50" x2="67" y2="50" stroke="#073B4C" strokeWidth="2"/>
-    <circle cx="55" cy="50" r="3" fill="#073B4C"/>
-    <circle cx="75" cy="50" r="3" fill="#073B4C"/>
-    <circle cx="56" cy="48" r="1" fill="white"/>
-    <circle cx="76" cy="48" r="1" fill="white"/>
-    <path d="M 56 64 Q 65 72 74 64" fill="none" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round"/>
-    <path d="M 27 100 Q 32 88 42 92" fill="none" stroke="#073B4C" strokeWidth="3" strokeLinecap="round"/>
-    <path d="M 103 100 Q 98 88 88 92" fill="none" stroke="#073B4C" strokeWidth="3" strokeLinecap="round"/>
+    <ellipse cx="65" cy="105" rx="38" ry="30" fill="#118AB2" stroke="#073B4C" strokeWidth="3.5" />
+    <circle cx="65" cy="52" r="28" fill="#FFF0DB" stroke="#073B4C" strokeWidth="3.5" />
+    <ellipse cx="65" cy="27" rx="30" ry="5" fill="#073B4C" />
+    <rect x="48" y="16" width="34" height="13" rx="1" fill="#073B4C" />
+    <line x1="82" y1="27" x2="88" y2="36" stroke="#FFD166" strokeWidth="2" />
+    <circle cx="88" cy="38" r="3" fill="#FFD166" />
+    <circle cx="55" cy="50" r="8" fill="none" stroke="#073B4C" strokeWidth="2.5" />
+    <circle cx="75" cy="50" r="8" fill="none" stroke="#073B4C" strokeWidth="2.5" />
+    <line x1="63" y1="50" x2="67" y2="50" stroke="#073B4C" strokeWidth="2" />
+    <circle cx="55" cy="50" r="3" fill="#073B4C" />
+    <circle cx="75" cy="50" r="3" fill="#073B4C" />
+    <circle cx="56" cy="48" r="1" fill="white" />
+    <circle cx="76" cy="48" r="1" fill="white" />
+    <path d="M 56 64 Q 65 72 74 64" fill="none" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round" />
+    <path d="M 27 100 Q 32 88 42 92" fill="none" stroke="#073B4C" strokeWidth="3" strokeLinecap="round" />
+    <path d="M 103 100 Q 98 88 88 92" fill="none" stroke="#073B4C" strokeWidth="3" strokeLinecap="round" />
   </svg>
 );
 
 const StudentAvatar = () => (
   <svg width="130" height="140" viewBox="0 0 130 140" className="character-svg">
-    <ellipse cx="65" cy="105" rx="38" ry="30" fill="#FFD166" stroke="#073B4C" strokeWidth="3.5"/>
-    <circle cx="65" cy="52" r="28" fill="#FFF0DB" stroke="#073B4C" strokeWidth="3.5"/>
-    <path d="M 40 42 Q 42 20 65 22 Q 88 20 90 42" fill="#073B4C" stroke="#073B4C" strokeWidth="2"/>
-    <path d="M 48 32 L 52 20" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round"/>
-    <path d="M 82 32 L 78 20" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round"/>
-    <path d="M 65 28 L 65 16" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round"/>
-    <circle cx="55" cy="50" r="5" fill="white" stroke="#073B4C" strokeWidth="2"/>
-    <circle cx="75" cy="50" r="5" fill="white" stroke="#073B4C" strokeWidth="2"/>
-    <circle cx="56" cy="49" r="2.5" fill="#073B4C"/>
-    <circle cx="76" cy="49" r="2.5" fill="#073B4C"/>
-    <ellipse cx="65" cy="65" rx="5" ry="4" fill="#073B4C"/>
-    <circle cx="44" cy="58" r="5" fill="#EF476F" opacity="0.25"/>
-    <circle cx="86" cy="58" r="5" fill="#EF476F" opacity="0.25"/>
-    <rect x="85" y="88" width="16" height="22" rx="2" fill="#118AB2" stroke="#073B4C" strokeWidth="2"/>
-    <line x1="88" y1="94" x2="98" y2="94" stroke="white" strokeWidth="1.5" opacity="0.6"/>
-    <line x1="88" y1="98" x2="96" y2="98" stroke="white" strokeWidth="1.5" opacity="0.6"/>
+    <ellipse cx="65" cy="105" rx="38" ry="30" fill="#FFD166" stroke="#073B4C" strokeWidth="3.5" />
+    <circle cx="65" cy="52" r="28" fill="#FFF0DB" stroke="#073B4C" strokeWidth="3.5" />
+    <path d="M 40 42 Q 42 20 65 22 Q 88 20 90 42" fill="#073B4C" stroke="#073B4C" strokeWidth="2" />
+    <path d="M 48 32 L 52 20" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round" />
+    <path d="M 82 32 L 78 20" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round" />
+    <path d="M 65 28 L 65 16" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round" />
+    <circle cx="55" cy="50" r="5" fill="white" stroke="#073B4C" strokeWidth="2" />
+    <circle cx="75" cy="50" r="5" fill="white" stroke="#073B4C" strokeWidth="2" />
+    <circle cx="56" cy="49" r="2.5" fill="#073B4C" />
+    <circle cx="76" cy="49" r="2.5" fill="#073B4C" />
+    <ellipse cx="65" cy="65" rx="5" ry="4" fill="#073B4C" />
+    <circle cx="44" cy="58" r="5" fill="#EF476F" opacity="0.25" />
+    <circle cx="86" cy="58" r="5" fill="#EF476F" opacity="0.25" />
+    <rect x="85" y="88" width="16" height="22" rx="2" fill="#118AB2" stroke="#073B4C" strokeWidth="2" />
+    <line x1="88" y1="94" x2="98" y2="94" stroke="white" strokeWidth="1.5" opacity="0.6" />
+    <line x1="88" y1="98" x2="96" y2="98" stroke="white" strokeWidth="1.5" opacity="0.6" />
   </svg>
 );
 
 const NotesTakerAvatar = () => (
   <svg width="130" height="140" viewBox="0 0 130 140" className="character-svg">
-    <ellipse cx="65" cy="105" rx="38" ry="30" fill="#06D6A0" stroke="#073B4C" strokeWidth="3.5"/>
-    <circle cx="65" cy="52" r="28" fill="#FFF0DB" stroke="#073B4C" strokeWidth="3.5"/>
-    <path d="M 39 44 Q 40 22 65 25 Q 90 22 91 44" fill="#5D4037" stroke="#073B4C" strokeWidth="2"/>
-    <line x1="88" y1="32" x2="100" y2="20" stroke="#FFD166" strokeWidth="3.5" strokeLinecap="round"/>
-    <polygon points="100,20 104,15 97,17" fill="#EF476F"/>
-    <ellipse cx="55" cy="50" rx="4" ry="3.5" fill="#073B4C"/>
-    <ellipse cx="75" cy="50" rx="4" ry="3.5" fill="#073B4C"/>
-    <circle cx="56" cy="49" r="1" fill="white"/>
-    <circle cx="76" cy="49" r="1" fill="white"/>
-    <line x1="49" y1="42" x2="61" y2="43.5" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="81" y1="43.5" x2="69" y2="42" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round"/>
-    <path d="M 57 63 L 73 63" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round"/>
-    <rect x="18" y="85" width="20" height="26" rx="2" fill="white" stroke="#073B4C" strokeWidth="2.5"/>
-    <line x1="22" y1="91" x2="34" y2="91" stroke="#06D6A0" strokeWidth="1.5"/>
-    <line x1="22" y1="96" x2="34" y2="96" stroke="#06D6A0" strokeWidth="1.5"/>
-    <line x1="22" y1="101" x2="30" y2="101" stroke="#06D6A0" strokeWidth="1.5"/>
+    <ellipse cx="65" cy="105" rx="38" ry="30" fill="#06D6A0" stroke="#073B4C" strokeWidth="3.5" />
+    <circle cx="65" cy="52" r="28" fill="#FFF0DB" stroke="#073B4C" strokeWidth="3.5" />
+    <path d="M 39 44 Q 40 22 65 25 Q 90 22 91 44" fill="#5D4037" stroke="#073B4C" strokeWidth="2" />
+    <line x1="88" y1="32" x2="100" y2="20" stroke="#FFD166" strokeWidth="3.5" strokeLinecap="round" />
+    <polygon points="100,20 104,15 97,17" fill="#EF476F" />
+    <ellipse cx="55" cy="50" rx="4" ry="3.5" fill="#073B4C" />
+    <ellipse cx="75" cy="50" rx="4" ry="3.5" fill="#073B4C" />
+    <circle cx="56" cy="49" r="1" fill="white" />
+    <circle cx="76" cy="49" r="1" fill="white" />
+    <line x1="49" y1="42" x2="61" y2="43.5" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round" />
+    <line x1="81" y1="43.5" x2="69" y2="42" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round" />
+    <path d="M 57 63 L 73 63" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round" />
+    <rect x="18" y="85" width="20" height="26" rx="2" fill="white" stroke="#073B4C" strokeWidth="2.5" />
+    <line x1="22" y1="91" x2="34" y2="91" stroke="#06D6A0" strokeWidth="1.5" />
+    <line x1="22" y1="96" x2="34" y2="96" stroke="#06D6A0" strokeWidth="1.5" />
+    <line x1="22" y1="101" x2="30" y2="101" stroke="#06D6A0" strokeWidth="1.5" />
   </svg>
 );
 
 const DeepThinkerAvatar = () => (
   <svg width="130" height="140" viewBox="0 0 130 140" className="character-svg">
-    <ellipse cx="65" cy="105" rx="38" ry="30" fill="#8338EC" stroke="#073B4C" strokeWidth="3.5"/>
-    <circle cx="65" cy="52" r="28" fill="#FFF0DB" stroke="#073B4C" strokeWidth="3.5"/>
-    <path d="M 39 48 Q 37 22 58 18 Q 78 15 86 24 Q 92 32 91 48" fill="#2D1B69" stroke="#073B4C" strokeWidth="2"/>
-    <circle cx="96" cy="28" r="4" fill="white" stroke="#073B4C" strokeWidth="1.5"/>
-    <circle cx="105" cy="18" r="6" fill="white" stroke="#073B4C" strokeWidth="1.5"/>
-    <circle cx="115" cy="8" r="8" fill="white" stroke="#073B4C" strokeWidth="1.5"/>
-    <path d="M 112 5 Q 115 2 118 5 Q 120 8 117 10" fill="none" stroke="#8338EC" strokeWidth="1.5"/>
-    <circle cx="55" cy="50" r="4.5" fill="white" stroke="#073B4C" strokeWidth="2"/>
-    <circle cx="75" cy="50" r="4.5" fill="white" stroke="#073B4C" strokeWidth="2"/>
-    <circle cx="56" cy="48" r="2" fill="#073B4C"/>
-    <circle cx="76" cy="48" r="2" fill="#073B4C"/>
-    <path d="M 58 64 Q 65 67 72 64" fill="none" stroke="#073B4C" strokeWidth="2" strokeLinecap="round"/>
-    <path d="M 80 68 Q 82 72 80 82" fill="none" stroke="#FFF0DB" strokeWidth="6"/>
-    <path d="M 80 68 Q 82 72 80 82" fill="none" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round"/>
+    <ellipse cx="65" cy="105" rx="38" ry="30" fill="#8338EC" stroke="#073B4C" strokeWidth="3.5" />
+    <circle cx="65" cy="52" r="28" fill="#FFF0DB" stroke="#073B4C" strokeWidth="3.5" />
+    <path d="M 39 48 Q 37 22 58 18 Q 78 15 86 24 Q 92 32 91 48" fill="#2D1B69" stroke="#073B4C" strokeWidth="2" />
+    <circle cx="96" cy="28" r="4" fill="white" stroke="#073B4C" strokeWidth="1.5" />
+    <circle cx="105" cy="18" r="6" fill="white" stroke="#073B4C" strokeWidth="1.5" />
+    <circle cx="115" cy="8" r="8" fill="white" stroke="#073B4C" strokeWidth="1.5" />
+    <path d="M 112 5 Q 115 2 118 5 Q 120 8 117 10" fill="none" stroke="#8338EC" strokeWidth="1.5" />
+    <circle cx="55" cy="50" r="4.5" fill="white" stroke="#073B4C" strokeWidth="2" />
+    <circle cx="75" cy="50" r="4.5" fill="white" stroke="#073B4C" strokeWidth="2" />
+    <circle cx="56" cy="48" r="2" fill="#073B4C" />
+    <circle cx="76" cy="48" r="2" fill="#073B4C" />
+    <path d="M 58 64 Q 65 67 72 64" fill="none" stroke="#073B4C" strokeWidth="2" strokeLinecap="round" />
+    <path d="M 80 68 Q 82 72 80 82" fill="none" stroke="#FFF0DB" strokeWidth="6" />
+    <path d="M 80 68 Q 82 72 80 82" fill="none" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round" />
   </svg>
 );
 
 const FunnyMateAvatar = () => (
   <svg width="130" height="140" viewBox="0 0 130 140" className="character-svg">
-    <ellipse cx="65" cy="105" rx="38" ry="30" fill="#EF476F" stroke="#073B4C" strokeWidth="3.5"/>
-    <circle cx="65" cy="52" r="28" fill="#FFF0DB" stroke="#073B4C" strokeWidth="3.5"/>
-    <path d="M 44 38 L 47 18 L 54 32 L 60 14 L 65 30 L 70 12 L 76 32 L 83 18 L 86 38" fill="#FF6B35" stroke="#073B4C" strokeWidth="2"/>
-    <polygon points="100,34 102,28 104,34 99,31 105,31" fill="#FFD166" stroke="#073B4C" strokeWidth="1"/>
-    <polygon points="28,30 30,24 32,30 27,27 33,27" fill="#FFD166" stroke="#073B4C" strokeWidth="1"/>
-    <path d="M 49 48 Q 54 43 59 48" fill="none" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round"/>
-    <path d="M 71 48 Q 76 43 81 48" fill="none" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round"/>
-    <path d="M 52 62 Q 65 76 78 62" fill="white" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round"/>
-    <line x1="58" y1="66" x2="72" y2="66" stroke="#073B4C" strokeWidth="1"/>
-    <circle cx="44" cy="56" r="5" fill="#EF476F" opacity="0.35"/>
-    <circle cx="86" cy="56" r="5" fill="#EF476F" opacity="0.35"/>
-    <path d="M 103 96 Q 100 84 92 82 Q 96 74 102 68" fill="none" stroke="#073B4C" strokeWidth="3" strokeLinecap="round"/>
+    <ellipse cx="65" cy="105" rx="38" ry="30" fill="#EF476F" stroke="#073B4C" strokeWidth="3.5" />
+    <circle cx="65" cy="52" r="28" fill="#FFF0DB" stroke="#073B4C" strokeWidth="3.5" />
+    <path d="M 44 38 L 47 18 L 54 32 L 60 14 L 65 30 L 70 12 L 76 32 L 83 18 L 86 38" fill="#FF6B35" stroke="#073B4C" strokeWidth="2" />
+    <polygon points="100,34 102,28 104,34 99,31 105,31" fill="#FFD166" stroke="#073B4C" strokeWidth="1" />
+    <polygon points="28,30 30,24 32,30 27,27 33,27" fill="#FFD166" stroke="#073B4C" strokeWidth="1" />
+    <path d="M 49 48 Q 54 43 59 48" fill="none" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round" />
+    <path d="M 71 48 Q 76 43 81 48" fill="none" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round" />
+    <path d="M 52 62 Q 65 76 78 62" fill="white" stroke="#073B4C" strokeWidth="2.5" strokeLinecap="round" />
+    <line x1="58" y1="66" x2="72" y2="66" stroke="#073B4C" strokeWidth="1" />
+    <circle cx="44" cy="56" r="5" fill="#EF476F" opacity="0.35" />
+    <circle cx="86" cy="56" r="5" fill="#EF476F" opacity="0.35" />
+    <path d="M 103 96 Q 100 84 92 82 Q 96 74 102 68" fill="none" stroke="#073B4C" strokeWidth="3" strokeLinecap="round" />
   </svg>
 );
 
 const CuriousMindAvatar = () => (
   <svg width="130" height="140" viewBox="0 0 130 140" className="character-svg">
-    <ellipse cx="65" cy="105" rx="38" ry="30" fill="#FF6B35" stroke="#073B4C" strokeWidth="3.5"/>
-    <circle cx="65" cy="52" r="28" fill="#FFF0DB" stroke="#073B4C" strokeWidth="3.5"/>
-    <path d="M 42 38 Q 44 18 65 16 Q 86 18 88 38" fill="#D35400" stroke="#073B4C" strokeWidth="2"/>
-    <path d="M 58 18 Q 56 10 62 8" stroke="#D35400" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
-    <path d="M 72 18 Q 74 10 68 8" stroke="#D35400" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
-    <circle cx="53" cy="48" r="6" fill="white" stroke="#073B4C" strokeWidth="2"/>
-    <circle cx="77" cy="48" r="6" fill="white" stroke="#073B4C" strokeWidth="2"/>
-    <circle cx="54" cy="46" r="2.5" fill="#073B4C"/>
-    <circle cx="78" cy="46" r="2.5" fill="#073B4C"/>
-    <circle cx="55" cy="45" r="1" fill="white"/>
-    <circle cx="79" cy="45" r="1" fill="white"/>
-    <line x1="47" y1="40" x2="59" y2="42" stroke="#073B4C" strokeWidth="2" strokeLinecap="round"/>
-    <line x1="83" y1="40" x2="71" y2="42" stroke="#073B4C" strokeWidth="2" strokeLinecap="round"/>
-    <circle cx="65" cy="62" r="3.5" fill="#073B4C"/>
+    <ellipse cx="65" cy="105" rx="38" ry="30" fill="#FF6B35" stroke="#073B4C" strokeWidth="3.5" />
+    <circle cx="65" cy="52" r="28" fill="#FFF0DB" stroke="#073B4C" strokeWidth="3.5" />
+    <path d="M 42 38 Q 44 18 65 16 Q 86 18 88 38" fill="#D35400" stroke="#073B4C" strokeWidth="2" />
+    <path d="M 58 18 Q 56 10 62 8" stroke="#D35400" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+    <path d="M 72 18 Q 74 10 68 8" stroke="#D35400" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+    <circle cx="53" cy="48" r="6" fill="white" stroke="#073B4C" strokeWidth="2" />
+    <circle cx="77" cy="48" r="6" fill="white" stroke="#073B4C" strokeWidth="2" />
+    <circle cx="54" cy="46" r="2.5" fill="#073B4C" />
+    <circle cx="78" cy="46" r="2.5" fill="#073B4C" />
+    <circle cx="55" cy="45" r="1" fill="white" />
+    <circle cx="79" cy="45" r="1" fill="white" />
+    <line x1="47" y1="40" x2="59" y2="42" stroke="#073B4C" strokeWidth="2" strokeLinecap="round" />
+    <line x1="83" y1="40" x2="71" y2="42" stroke="#073B4C" strokeWidth="2" strokeLinecap="round" />
+    <circle cx="65" cy="62" r="3.5" fill="#073B4C" />
     <text x="96" y="22" fontFamily="Fredoka, sans-serif" fontSize="22" fontWeight="bold" fill="#FF6B35" stroke="#073B4C" strokeWidth="1.5">?</text>
     <text x="18" y="30" fontFamily="Fredoka, sans-serif" fontSize="16" fontWeight="bold" fill="#FFD166" stroke="#073B4C" strokeWidth="1">!</text>
-    <path d="M 25 98 Q 28 85 38 88" fill="none" stroke="#073B4C" strokeWidth="3" strokeLinecap="round"/>
-    <path d="M 105 98 Q 102 85 92 88" fill="none" stroke="#073B4C" strokeWidth="3" strokeLinecap="round"/>
+    <path d="M 25 98 Q 28 85 38 88" fill="none" stroke="#073B4C" strokeWidth="3" strokeLinecap="round" />
+    <path d="M 105 98 Q 102 85 92 88" fill="none" stroke="#073B4C" strokeWidth="3" strokeLinecap="round" />
   </svg>
 );
 
@@ -302,7 +302,7 @@ export default function LandingPage() {
   }, [location.pathname]);
 
   useEffect(() => {
-    axios.get(`${API}/waitlist/count`).then(r => setWaitlistCount(r.data.count)).catch(() => {});
+    axios.get(`${API}/waitlist/count`).then(r => setWaitlistCount(r.data.count)).catch(() => { });
   }, []);
 
   const scrollTo = (id) => {
@@ -391,7 +391,7 @@ export default function LandingPage() {
             <p className="font-heading text-lg md:text-xl font-semibold text-[#118AB2] mb-2">by Chalk Labs</p>
             <p className="font-body text-base md:text-lg text-[#495057] max-w-2xl mx-auto mb-8 leading-relaxed">
               Your AI-powered interactive classroom. Ask for any topic and get a personalized course
-              with slides, narration, and AI classmates — in seconds.
+              with slides, narration, and AI classmates in seconds.
             </p>
 
             <WaitlistForm variant="light" />
