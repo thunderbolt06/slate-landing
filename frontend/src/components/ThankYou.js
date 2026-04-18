@@ -25,8 +25,7 @@ export default function ThankYou() {
       {/* Header */}
       <header className="px-6 py-4 flex items-center justify-between max-w-6xl mx-auto w-full">
         <Link to="/" className="flex items-center gap-2" data-testid="thank-you-home-link">
-          <span className="font-heading text-2xl font-bold text-[#073B4C] tracking-tight">SLATE</span>
-          <span className="bg-[#EF476F] text-white text-[10px] font-bold px-2 py-0.5 rounded-full border border-[#073B4C]">BETA</span>
+          <span className="font-heading text-2xl font-bold text-[#073B4C] tracking-[-0.025em]">SLATE UP</span>
         </Link>
         <Link
           to="/"
@@ -63,15 +62,15 @@ export default function ThankYou() {
             </p>
           )}
 
-          {/* CTA to SLATE App */}
+          {/* CTA to SLATE UP App */}
           <a
-            href="https://slate-app.thechalklabs.com"
+            href="https://app.slateup.ai"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-press inline-flex items-center gap-2 bg-[#EF476F] text-white rounded-full px-8 py-4 font-bold text-lg border-2 border-[#073B4C] shadow-[4px_4px_0px_#073B4C] hover:scale-105 transition-transform"
             data-testid="enter-slate-button"
           >
-            Enter SLATE <ArrowRight size={20} />
+            Enter SLATE UP <ArrowRight size={20} />
           </a>
         </motion.div>
 
@@ -118,13 +117,13 @@ export default function ThankYou() {
           className="mt-10 text-center"
         >
           <a
-            href="https://slate-app.thechalklabs.com"
+            href="https://app.slateup.ai"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-press inline-flex items-center gap-2 bg-[#FFD166] text-[#073B4C] rounded-full px-8 py-3 font-bold border-2 border-[#073B4C] shadow-[4px_4px_0px_#073B4C] hover:scale-105 transition-transform"
             data-testid="try-slate-button"
           >
-            Try SLATE Now <ArrowRight size={18} />
+            Try SLATE UP Now <ArrowRight size={18} />
           </a>
           <p className="font-body text-sm text-[#495057] mt-4">
             Or <Link to="/" className="font-bold text-[#118AB2] hover:underline">go back to the homepage</Link>

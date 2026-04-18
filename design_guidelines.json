@@ -85,7 +85,7 @@
     "Use Fredoka for headings (import from Google Fonts: @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700;800&family=Nunito:wght@400;500;700;800&display=swap');) and Nunito for body.",
     "Implement full-screen scroll-snapping. The main container should have 'h-screen overflow-y-scroll snap-y snap-mandatory'. Each main section should have 'h-screen snap-start shrink-0 flex flex-col justify-center relative'.",
     "For the SVG characters, do not rely solely on the fallback raster images. BUILD inline SVG blobs/shapes and use lucide-react icons (e.g., `<Brain />`) colored with the palette, given a thick 4px border (#073B4C) to look like Neo-brutalist custom illustrations.",
-    "Waitlist Form: Must capture email and trigger SendGrid API (or mock it elegantly if backend is absent), then route to 'slate-app.thechalklabs.com' via window.location.href.",
+    "Waitlist Form: Must capture email and trigger SendGrid API (or mock it elegantly if backend is absent), then route to 'app.slateup.ai' via window.location.href.",
     "Neo-brutalism elements: Use strong drop shadows like `shadow-[8px_8px_0px_#073B4C]` on buttons and cards to create the 'playful, bold illustrative' feel referenced.",
     "Add Beta Badge next to the Logo/App Name.",
     "Animations: Apply Framer Motion to animate the SVG characters hovering up and down, and to smoothly slide text into the sections on scroll.",

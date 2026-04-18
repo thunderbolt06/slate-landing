@@ -321,8 +321,7 @@ export default function LandingPage() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => { navigate("/"); containerRef.current?.scrollTo({ top: 0, behavior: "smooth" }); }}>
-            <span className="font-heading text-2xl font-bold text-[#073B4C] tracking-tight">SLATE</span>
-            <span className="bg-[#EF476F] text-white text-[10px] font-bold px-2 py-0.5 rounded-full border border-[#073B4C]">BETA</span>
+            <span className="font-heading text-2xl font-bold text-[#073B4C] tracking-[-0.025em]">SLATE UP</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
             {[["characters", "Characters"], ["how-it-works", "How It Works"], ["features", "Features"]].map(([id, label]) => (
@@ -382,11 +381,8 @@ export default function LandingPage() {
           >
             <div className="flex items-center justify-center gap-3 mb-3">
               <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-[#073B4C]" data-testid="hero-title">
-                SLATE
+                SLATE UP
               </h1>
-              <span className="bg-[#EF476F] text-white text-sm font-bold px-3 py-1 rounded-full border-2 border-[#073B4C] shadow-[3px_3px_0px_#073B4C] self-start mt-4">
-                BETA
-              </span>
             </div>
             <p className="font-heading text-lg md:text-xl font-semibold text-[#118AB2] mb-2">by Chalk Labs</p>
             <p className="font-body text-base md:text-lg text-[#495057] max-w-2xl mx-auto mb-8 leading-relaxed">
@@ -419,7 +415,7 @@ export default function LandingPage() {
             Meet Your AI Classmates
           </motion.h2>
           <p className="font-body text-base md:text-lg text-[#073B4C] text-center max-w-2xl mb-10 opacity-75">
-            Every SLATE classroom comes with a unique cast of AI characters that make learning collaborative and fun.
+            Every SLATE UP classroom comes with a unique cast of AI characters that make learning collaborative and fun.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-5 max-w-7xl w-full">
             {CHARACTERS.map((char, i) => (
@@ -481,7 +477,7 @@ export default function LandingPage() {
             viewport={{ once: true }}
             className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-[#073B4C] text-center mb-4"
           >
-            What Makes SLATE Special
+            What Makes SLATE UP Special
           </motion.h2>
           <p className="font-body text-base md:text-lg text-[#495057] text-center max-w-2xl mb-12">
             A new way to learn — powered by AI, designed for you.
@@ -530,13 +526,13 @@ export default function LandingPage() {
               <WaitlistForm variant="dark" />
               <div className="mt-8">
                 <a
-                  href="https://slate-app.thechalklabs.com"
+                  href="https://app.slateup.ai"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-press inline-flex items-center gap-2 bg-white text-[#073B4C] rounded-full px-8 py-4 font-bold text-lg border-2 border-[#073B4C] shadow-[4px_4px_0px_#073B4C] hover:scale-105 transition-transform"
                   data-testid="enter-slate-button"
                 >
-                  Enter SLATE <ArrowRight size={20} />
+                  Enter SLATE UP <ArrowRight size={20} />
                 </a>
               </div>
             </motion.div>
@@ -547,7 +543,7 @@ export default function LandingPage() {
             <div className="max-w-6xl mx-auto">
               <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
                 <div>
-                  <span className="font-heading text-3xl font-bold text-white tracking-tight">SLATE</span>
+                  <span className="font-heading text-3xl font-bold text-white tracking-[-0.025em]">SLATE UP</span>
                   <p className="font-body text-white/60 text-sm mt-1">by Chalk Labs</p>
                   <p className="font-body text-white/40 text-sm mt-3 max-w-xs">
                     AI-powered interactive classroom. Learn anything, with anyone, anytime.
@@ -565,14 +561,14 @@ export default function LandingPage() {
                   <div>
                     <h4 className="font-heading text-sm font-bold text-[#FFD166] uppercase tracking-wider mb-3">Company</h4>
                     <div className="flex flex-col gap-2">
-                      <a href="https://slate-app.thechalklabs.com" target="_blank" rel="noopener noreferrer" className="font-body text-white/60 hover:text-white text-sm transition-colors">SLATE App</a>
-                      <span className="font-body text-white/60 text-sm">hello@thechalklabs.com</span>
+                      <a href="https://app.slateup.ai" target="_blank" rel="noopener noreferrer" className="font-body text-white/60 hover:text-white text-sm transition-colors">SLATE UP App</a>
+                      <span className="font-body text-white/60 text-sm">hello@slateup.ai</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="border-t border-white/10 mt-8 pt-6 text-center">
-                <p className="font-body text-white/40 text-sm">&copy; {new Date().getFullYear()} Chalk Labs. All rights reserved.</p>
+                <p className="font-body text-white/40 text-sm">&copy; {new Date().getFullYear()} Slate Up. All rights reserved.</p>
               </div>
             </div>
           </footer>

@@ -66,12 +66,11 @@ def send_welcome_email(to_email: str):
             <div style="text-align: center; margin-bottom: 30px;">
                 <h1 style="font-size: 48px; color: #073B4C; margin: 0; font-weight: 900; letter-spacing: -2px;">SLATE</h1>
                 <p style="color: #118AB2; font-weight: bold; font-size: 14px; margin: 5px 0;">by Chalk Labs</p>
-                <span style="background-color: #EF476F; color: white; padding: 4px 16px; border-radius: 20px; font-size: 12px; font-weight: bold; display: inline-block; margin-top: 8px;">BETA</span>
             </div>
             <div style="background: white; border: 3px solid #073B4C; border-radius: 20px; padding: 30px; box-shadow: 6px 6px 0px #073B4C;">
                 <h2 style="color: #073B4C; font-size: 24px; margin-top: 0;">Welcome to the future of learning!</h2>
                 <p style="color: #495057; font-size: 16px; line-height: 1.6;">
-                    You're now on the SLATE waitlist! We're building an AI-powered interactive classroom
+                    You're now on the SLATE UP waitlist! We're building an AI-powered interactive classroom
                     where you can learn anything with personalized courses, smart AI classmates, and engaging narration.
                 </p>
                 <p style="color: #495057; font-size: 16px; line-height: 1.6; font-weight: bold;">Here's what awaits you:</p>
@@ -82,7 +81,7 @@ def send_welcome_email(to_email: str):
                     <li>Learn at your own pace</li>
                 </ul>
                 <div style="text-align: center; margin: 30px 0;">
-                    <a href="https://slate-app.thechalklabs.com" style="background-color: #EF476F; color: white; padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; border: 2px solid #073B4C; display: inline-block;">Enter SLATE</a>
+                    <a href="https://app.slateup.ai" style="background-color: #EF476F; color: white; padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; border: 2px solid #073B4C; display: inline-block;">Enter SLATE UP</a>
                 </div>
             </div>
             <p style="color: #495057; font-size: 14px; text-align: center; margin-top: 20px;">
@@ -94,7 +93,7 @@ def send_welcome_email(to_email: str):
         message = Mail(
             from_email=sender_email,
             to_emails=to_email,
-            subject="Welcome to SLATE Beta!",
+            subject="Welcome to SLATE UP!",
             html_content=html_content
         )
 
@@ -130,7 +129,7 @@ async def join_waitlist(entry: WaitlistEntry, background_tasks: BackgroundTasks)
 
     background_tasks.add_task(send_welcome_email, entry.email)
 
-    return WaitlistResponse(status="success", message="Welcome to the SLATE waitlist! Check your email.")
+    return WaitlistResponse(status="success", message="Welcome to the SLATE UP waitlist! Check your email.")
 
 
 @api_router.get("/waitlist/count")

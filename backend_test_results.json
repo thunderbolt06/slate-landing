@@ -38,7 +38,7 @@
       "success": true,
       "response_data": {
         "status": "success",
-        "message": "Welcome to the SLATE waitlist! Check your email."
+        "message": "Welcome to the SLATE UP waitlist! Check your email."
       },
       "data_sent": {
         "email": "test_20260408_033558@example.com"
