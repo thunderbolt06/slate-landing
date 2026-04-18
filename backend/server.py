@@ -65,7 +65,6 @@ def send_welcome_email(to_email: str):
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px; background-color: #FDFDFD;">
             <div style="text-align: center; margin-bottom: 30px;">
                 <h1 style="font-size: 48px; color: #073B4C; margin: 0; font-weight: 900; letter-spacing: -2px;">SLATE</h1>
-                <p style="color: #118AB2; font-weight: bold; font-size: 14px; margin: 5px 0;">by Chalk Labs</p>
             </div>
             <div style="background: white; border: 3px solid #073B4C; border-radius: 20px; padding: 30px; box-shadow: 6px 6px 0px #073B4C;">
                 <h2 style="color: #073B4C; font-size: 24px; margin-top: 0;">Welcome to the future of learning!</h2>
@@ -85,7 +84,7 @@ def send_welcome_email(to_email: str):
                 </div>
             </div>
             <p style="color: #495057; font-size: 14px; text-align: center; margin-top: 20px;">
-                Stay curious,<br/><strong>The Chalk Labs Team</strong>
+                Stay curious,<br/><strong>The Slate Up Team</strong>
             </p>
         </div>
         """

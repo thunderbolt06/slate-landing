@@ -384,7 +384,6 @@ export default function LandingPage() {
                 SLATE UP
               </h1>
             </div>
-            <p className="font-heading text-lg md:text-xl font-semibold text-[#118AB2] mb-2">by Chalk Labs</p>
             <p className="font-body text-base md:text-lg text-[#495057] max-w-2xl mx-auto mb-8 leading-relaxed">
               Your AI-powered interactive classroom. Ask for any topic and get a personalized course
               with slides, narration, and AI classmates in seconds.
@@ -544,7 +543,6 @@ export default function LandingPage() {
               <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
                 <div>
                   <span className="font-heading text-3xl font-bold text-white tracking-[-0.025em]">SLATE UP</span>
-                  <p className="font-body text-white/60 text-sm mt-1">by Chalk Labs</p>
                   <p className="font-body text-white/40 text-sm mt-3 max-w-xs">
                     AI-powered interactive classroom. Learn anything, with anyone, anytime.
                   </p>

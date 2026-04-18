@@ -133,7 +133,7 @@ export default function ThankYou() {
 
       {/* Footer */}
       <footer className="bg-[#073B4C] px-6 py-6 text-center">
-        <p className="font-body text-white/40 text-sm">&copy; {new Date().getFullYear()} Chalk Labs. All rights reserved.</p>
+        <p className="font-body text-white/40 text-sm">&copy; {new Date().getFullYear()} Slate Up. All rights reserved.</p>
       </footer>
     </div>
   );
