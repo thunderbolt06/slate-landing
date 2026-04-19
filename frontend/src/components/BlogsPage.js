@@ -59,8 +59,8 @@ export default function BlogsPage() {
                       {post.title}
                     </h2>
                     <p className="font-body text-sm md:text-base text-[#495057] leading-relaxed">{post.blurb}</p>
-                    <span className="mt-4 inline-flex items-center gap-1.5 font-body text-sm font-bold text-[#118AB2]">
-                      Read article <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
+                    <span className="mt-5 inline-flex items-center gap-2 btn-press rounded-full bg-[#FFD166] text-[#073B4C] px-5 py-2.5 font-body text-sm font-bold border-2 border-[#073B4C] shadow-[3px_3px_0px_#073B4C] transition-transform group-hover:scale-105">
+                      Read article <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" strokeWidth={2.5} />
                     </span>
                   </Link>
                 </motion.article>

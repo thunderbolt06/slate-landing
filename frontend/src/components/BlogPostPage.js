@@ -2,52 +2,107 @@ import { motion } from "framer-motion";
 import { Link, Navigate, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { ArrowLeft, Home } from "lucide-react";
+import { ArrowLeft, ExternalLink, Home } from "lucide-react";
 import { BLOG_POSTS, getBlogMarkdown } from "@/generated/blogRegistry";
 
-const markdownComponents = {
-  h3: ({ children }) => (
-    <h3 className="font-heading text-xl font-bold text-[#073B4C] mt-10 mb-3 first:mt-0">{children}</h3>
-  ),
-  h2: ({ children }) => (
-    <h2 className="font-heading text-2xl font-bold text-[#073B4C] mt-12 mb-4 first:mt-0">{children}</h2>
-  ),
-  p: ({ children }) => (
-    <p className="font-body text-[#495057] leading-relaxed mb-4 last:mb-0">{children}</p>
-  ),
-  a: ({ href, children }) => (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="font-semibold text-[#118AB2] underline underline-offset-[3px] hover:text-[#073B4C] transition-colors"
-    >
-      {children}
-    </a>
-  ),
-  ul: ({ children }) => <ul className="font-body text-[#495057] list-disc pl-6 mb-4 space-y-2">{children}</ul>,
-  ol: ({ children }) => <ol className="font-body text-[#495057] list-decimal pl-6 mb-4 space-y-2">{children}</ol>,
-  li: ({ children }) => <li className="leading-relaxed">{children}</li>,
-  strong: ({ children }) => <strong className="font-bold text-[#073B4C]">{children}</strong>,
-  hr: () => <hr className="my-10 border-[#073B4C]/15" />,
-  blockquote: ({ children }) => (
-    <blockquote className="border-l-4 border-[#118AB2] pl-4 my-6 italic text-[#495057]/90">{children}</blockquote>
-  ),
-  code: ({ children, className }) => {
-    const inline = !className;
-    if (inline) {
+/** Split intro, numbered ### 1. … ### 11. … tool blocks, and trailing content after horizontal rule */
+function partitionNumberedToolSections(md) {
+  const trimmed = md.replace(/^\uFEFF/, "").trim();
+  const parts = trimmed.split(/\n---\s*\n/);
+  const body = parts[0] ?? "";
+  const afterRule = parts.length > 1 ? parts.slice(1).join("\n---\n").trim() : null;
+
+  const hasTools = /^###\s+\d+\.\s/m.test(body);
+  if (!hasTools) {
+    return { kind: "single", full: trimmed };
+  }
+
+  const chunks = body.split(/\n(?=###\s+\d+\.\s)/);
+  const [intro, ...tools] = chunks;
+  return {
+    kind: "tools",
+    intro: (intro ?? "").trim(),
+    tools: tools.map((t) => t.trim()).filter(Boolean),
+    seo: afterRule,
+  };
+}
+
+function createMarkdownComponents({ inToolCard = false } = {}) {
+  return {
+    h3: ({ children }) => (
+      <h3
+        className={`font-heading text-xl font-bold text-[#073B4C] ${
+          inToolCard ? "mt-0 mb-2" : "mt-10 mb-3 first:mt-0"
+        }`}
+      >
+        {children}
+      </h3>
+    ),
+    h2: ({ children }) => (
+      <h2 className="font-heading text-2xl font-bold text-[#073B4C] mt-12 mb-4 first:mt-0">{children}</h2>
+    ),
+    p: ({ children }) => (
+      <p
+        className={`font-body text-[#495057] leading-relaxed ${
+          inToolCard
+            ? "mb-0 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between sm:gap-4"
+            : "mb-4 last:mb-0"
+        }`}
+      >
+        {children}
+      </p>
+    ),
+    a: ({ href, children }) => {
+      const external = typeof href === "string" && (href.startsWith("http") || href.startsWith("//"));
+      if (external) {
+        return (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-press inline-flex items-center justify-center gap-1.5 rounded-full border-2 border-[#073B4C] bg-[#06D6A0]/15 px-4 py-2 font-body text-sm font-bold text-[#073B4C] shadow-[3px_3px_0px_#073B4C] transition-transform hover:scale-105 no-underline align-middle my-0.5 sm:shrink-0"
+          >
+            {children}
+            <ExternalLink size={14} strokeWidth={2.5} className="shrink-0 opacity-90" aria-hidden />
+          </a>
+        );
+      }
       return (
-        <code className="rounded-md bg-[#073B4C]/[0.06] px-1.5 py-0.5 font-mono text-[0.9em] text-[#073B4C]">{children}</code>
+        <a
+          href={href}
+          className="font-semibold text-[#118AB2] underline underline-offset-[3px] hover:text-[#073B4C] transition-colors"
+        >
+          {children}
+        </a>
       );
-    }
-    return <code className={className}>{children}</code>;
-  },
-  pre: ({ children }) => (
-    <pre className="neo-card bg-white border-4 border-[#073B4C] rounded-2xl p-4 overflow-x-auto mb-6 text-sm shadow-[4px_4px_0px_#073B4C]">
-      {children}
-    </pre>
-  ),
-};
+    },
+    ul: ({ children }) => <ul className="font-body text-[#495057] list-disc pl-6 mb-4 space-y-2">{children}</ul>,
+    ol: ({ children }) => <ol className="font-body text-[#495057] list-decimal pl-6 mb-4 space-y-2">{children}</ol>,
+    li: ({ children }) => <li className="leading-relaxed">{children}</li>,
+    strong: ({ children }) => <strong className="font-bold text-[#073B4C]">{children}</strong>,
+    hr: () => <hr className="my-10 border-[#073B4C]/15" />,
+    blockquote: ({ children }) => (
+      <blockquote className="border-l-4 border-[#118AB2] pl-4 my-6 italic text-[#495057]/90">{children}</blockquote>
+    ),
+    code: ({ children, className }) => {
+      const inline = !className;
+      if (inline) {
+        return (
+          <code className="rounded-md bg-[#073B4C]/[0.06] px-1.5 py-0.5 font-mono text-[0.9em] text-[#073B4C]">{children}</code>
+        );
+      }
+      return <code className={className}>{children}</code>;
+    },
+    pre: ({ children }) => (
+      <pre className="neo-card bg-white border-4 border-[#073B4C] rounded-2xl p-4 overflow-x-auto mb-6 text-sm shadow-[4px_4px_0px_#073B4C]">
+        {children}
+      </pre>
+    ),
+  };
+}
+
+const markdownComponentsDefault = createMarkdownComponents({ inToolCard: false });
+const markdownComponentsToolCard = createMarkdownComponents({ inToolCard: true });
 
 export default function BlogPostPage() {
   const { slug } = useParams();
@@ -57,6 +112,42 @@ export default function BlogPostPage() {
   if (!meta || !markdown) {
     return <Navigate to="/blogs" replace />;
   }
+
+  const sections = partitionNumberedToolSections(markdown);
+
+  const articleBody =
+    sections.kind === "single" ? (
+      <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponentsDefault}>
+        {sections.full}
+      </ReactMarkdown>
+    ) : (
+      <>
+        {sections.intro ? (
+          <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponentsDefault}>
+            {sections.intro}
+          </ReactMarkdown>
+        ) : null}
+        <div className="flex flex-col gap-4 mt-2">
+          {sections.tools.map((block, i) => (
+            <div
+              key={`tool-${i}`}
+              className="neo-card bg-white border-4 border-[#073B4C] rounded-2xl p-5 md:p-6 shadow-[4px_4px_0px_#073B4C] transition-[transform,box-shadow] hover:-translate-y-0.5"
+            >
+              <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponentsToolCard}>
+                {block}
+              </ReactMarkdown>
+            </div>
+          ))}
+        </div>
+        {sections.seo ? (
+          <div className="mt-14 pt-10 border-t-2 border-[#073B4C]/15 [&_h2:first-child]:mt-0">
+            <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponentsDefault}>
+              {sections.seo}
+            </ReactMarkdown>
+          </div>
+        ) : null}
+      </>
+    );
 
   return (
     <div className="min-h-screen bg-[#FDFDFD] flex flex-col overflow-y-auto pb-[4.75rem] md:pb-0">
@@ -105,11 +196,7 @@ export default function BlogPostPage() {
             </h1>
           </header>
 
-          <div className="blog-markdown">
-            <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
-              {markdown}
-            </ReactMarkdown>
-          </div>
+          <div className="blog-markdown">{articleBody}</div>
         </motion.div>
       </article>
 
