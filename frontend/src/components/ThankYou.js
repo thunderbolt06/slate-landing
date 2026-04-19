@@ -21,7 +21,7 @@ export default function ThankYou() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FDFDFD] flex flex-col overflow-y-auto">
+    <div className="min-h-screen bg-[#FDFDFD] flex flex-col overflow-y-auto pb-[4.75rem] md:pb-0">
       {/* Header */}
       <header className="px-6 py-4 flex items-center justify-between max-w-6xl mx-auto w-full">
         <Link to="/" className="flex items-center gap-2" data-testid="thank-you-home-link">

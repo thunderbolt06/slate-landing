@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import {
   GraduationCap, BookOpen, PenLine, Brain, Laugh,
   ChevronDown, Sparkles, Presentation, MessageSquare,
@@ -349,6 +349,16 @@ export default function LandingPage() {
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden bg-white border-t-2 border-[#073B4C] px-6 py-4 flex flex-col gap-3"
           >
+            <button
+              type="button"
+              onClick={() => {
+                navigate("/blogs");
+                setMenuOpen(false);
+              }}
+              className="font-body font-semibold text-[#073B4C] text-left py-2 hover:text-[#118AB2]"
+            >
+              Blogs
+            </button>
             {[["characters", "Characters"], ["how-it-works", "How It Works"], ["features", "Features"], ["waitlist", "Join Waitlist"]].map(([id, label]) => (
               <button key={id} onClick={() => scrollTo(id)} className="font-body font-semibold text-[#073B4C] text-left py-2 hover:text-[#118AB2]">
                 {label}
@@ -359,7 +369,7 @@ export default function LandingPage() {
       </header>
 
       {/* ── Main Scroll Container ── */}
-      <div ref={containerRef} className="snap-container" data-testid="scroll-container">
+      <div ref={containerRef} className="snap-container pb-[4.75rem] md:pb-0" data-testid="scroll-container">
 
         {/* ═══ HERO ═══ */}
         <section className="snap-section flex flex-col items-center justify-center bg-[#FDFDFD] overflow-hidden px-6 pt-16" id="hero" data-testid="hero-section">
@@ -551,6 +561,9 @@ export default function LandingPage() {
                   <div>
                     <h4 className="font-heading text-sm font-bold text-[#FFD166] uppercase tracking-wider mb-3">Product</h4>
                     <div className="flex flex-col gap-2">
+                      <Link to="/blogs" className="font-body text-white/60 hover:text-white text-sm transition-colors text-left">
+                        Blogs
+                      </Link>
                       <button onClick={() => scrollTo("features")} className="font-body text-white/60 hover:text-white text-sm transition-colors">Features</button>
                       <button onClick={() => scrollTo("how-it-works")} className="font-body text-white/60 hover:text-white text-sm transition-colors">How It Works</button>
                       <button onClick={() => scrollTo("characters")} className="font-body text-white/60 hover:text-white text-sm transition-colors">AI Classmates</button>
