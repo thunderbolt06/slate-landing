@@ -5,6 +5,7 @@ import ThankYou from "@/components/ThankYou";
 import BlogsPage from "@/components/BlogsPage";
 import BlogPostPage from "@/components/BlogPostPage";
 import SiteBottomNav from "@/components/SiteBottomNav";
+import NcertClass10MathPage from "@/components/NcertClass10MathPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/blogs/:slug" element={<BlogPostPage />} />
+        <Route path="/learn/ncert-class-10-mathematics" element={<NcertClass10MathPage />} />
       </Routes>
       <SiteBottomNav />
     </BrowserRouter>

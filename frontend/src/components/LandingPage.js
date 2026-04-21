@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import {
   GraduationCap, BookOpen, PenLine, Brain, Laugh,
   ChevronDown, Sparkles, Presentation, MessageSquare,
-  Zap, Users, BookMarked, Menu, X, ArrowRight
+  Zap, Users, BookMarked, Menu, X, ArrowRight, ChevronRight
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import axios from "axios";
@@ -272,6 +272,95 @@ const PATH_TO_SECTION = {
   "/waitlist": "waitlist",
 };
 
+/* ─── NCERT Mega-Dropdown ─── */
+const NCERT_MENU = [
+  {
+    board: "CBSE / NCERT",
+    classes: [
+      {
+        label: "Class 10",
+        subjects: [
+          { label: "Mathematics", href: "/learn/ncert-class-10-mathematics", color: "#FFD166" },
+        ],
+      },
+    ],
+  },
+];
+
+function NcertDropdown() {
+  const [open, setOpen] = useState(false);
+  const [activeClass, setActiveClass] = useState(NCERT_MENU[0].classes[0].label);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) setOpen(false);
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  const currentClass = NCERT_MENU[0].classes.find(c => c.label === activeClass);
+
+  return (
+    <div ref={ref} className="relative" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+      <button
+        className="flex items-center gap-1 font-body font-semibold text-[#073B4C] hover:text-[#118AB2] transition-colors py-1"
+        onClick={() => setOpen(v => !v)}
+        aria-haspopup="true"
+        aria-expanded={open}
+      >
+        CBSE / NCERT <ChevronDown size={15} className={`transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
+      </button>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 8 }}
+            transition={{ duration: 0.18 }}
+            className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-64 bg-white border-3 border-[#073B4C] rounded-2xl shadow-[5px_5px_0px_#073B4C] overflow-hidden z-50"
+          >
+            {/* Class tabs */}
+            <div className="bg-[#F0F4F8] border-b-2 border-[#073B4C] px-3 py-2 flex gap-2">
+              {NCERT_MENU[0].classes.map(cls => (
+                <button
+                  key={cls.label}
+                  onMouseEnter={() => setActiveClass(cls.label)}
+                  onClick={() => setActiveClass(cls.label)}
+                  className={`flex-1 flex items-center justify-between px-3 py-1.5 rounded-xl text-sm font-bold border-2 transition-all ${
+                    activeClass === cls.label
+                      ? "bg-[#FFD166] border-[#073B4C] text-[#073B4C] shadow-[2px_2px_0px_#073B4C]"
+                      : "bg-white border-transparent text-[#073B4C]/60 hover:border-[#073B4C]/30"
+                  }`}
+                >
+                  {cls.label} <ChevronRight size={12} />
+                </button>
+              ))}
+            </div>
+            {/* Subjects */}
+            <div className="p-3 flex flex-col gap-1.5">
+              {currentClass?.subjects.map(sub => (
+                <Link
+                  key={sub.label}
+                  to={sub.href}
+                  onClick={() => setOpen(false)}
+                  className="flex items-center justify-between px-4 py-3 rounded-xl border-2 border-[#073B4C] font-semibold text-sm text-[#073B4C] hover:shadow-[3px_3px_0px_#073B4C] hover:translate-y-[-1px] transition-all no-underline"
+                  style={{ backgroundColor: sub.color }}
+                >
+                  {sub.label}
+                  <ArrowRight size={14} />
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 /* ═══════════════════════════════════════════════════
    MAIN LANDING PAGE
    ═══════════════════════════════════════════════════ */
@@ -329,6 +418,7 @@ export default function LandingPage() {
                 {label}
               </button>
             ))}
+            <NcertDropdown />
           </nav>
           <div className="flex items-center gap-3">
             <button
@@ -364,6 +454,18 @@ export default function LandingPage() {
                 {label}
               </button>
             ))}
+            {/* CBSE / NCERT mobile section */}
+            <div className="border-t border-[#073B4C]/10 pt-3">
+              <p className="font-body text-xs font-bold uppercase tracking-wider text-[#073B4C]/40 mb-2">CBSE / NCERT</p>
+              <Link
+                to="/learn/ncert-class-10-mathematics"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center justify-between py-2.5 px-4 rounded-xl border-2 border-[#073B4C] bg-[#FFD166] font-semibold text-sm text-[#073B4C] shadow-[2px_2px_0px_#073B4C] no-underline"
+              >
+                <span>Class 10 · Mathematics</span>
+                <ArrowRight size={14} />
+              </Link>
+            </div>
           </motion.div>
         )}
       </header>
