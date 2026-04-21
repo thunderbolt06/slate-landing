@@ -61,7 +61,8 @@
   },
   "scripts": {
     "blog:build": "node scripts/build-blog-data.mjs",
-    "prebuild": "yarn blog:build",
+    "sitemap:build": "node scripts/generate-sitemap.mjs",
+    "prebuild": "yarn blog:build && yarn sitemap:build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test"
