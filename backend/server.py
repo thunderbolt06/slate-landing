@@ -105,6 +105,34 @@ def send_welcome_email(to_email: str):
         return False
 
 
+def add_to_sendgrid_contacts(email: str):
+    sendgrid_key = os.environ.get('SENDGRID_API_KEY')
+    if not sendgrid_key:
+        logger.warning("SendGrid not configured, skipping contact add")
+        return False
+
+    try:
+        import urllib.request
+        import json as _json
+
+        payload = _json.dumps({"contacts": [{"email": email}]}).encode()
+        req = urllib.request.Request(
+            "https://api.sendgrid.com/v3/marketing/contacts",
+            data=payload,
+            method="PUT",
+            headers={
+                "Authorization": f"Bearer {sendgrid_key}",
+                "Content-Type": "application/json",
+            },
+        )
+        with urllib.request.urlopen(req) as resp:
+            logger.info(f"Added {email} to SendGrid marketing contacts, status: {resp.status}")
+        return True
+    except Exception as e:
+        logger.error(f"Failed to add {email} to SendGrid contacts: {str(e)}")
+        return False
+
+
 @api_router.get("/")
 async def root():
     return {"message": "SLATE API"}
@@ -127,6 +155,7 @@ async def join_waitlist(entry: WaitlistEntry, background_tasks: BackgroundTasks)
     await db.waitlist.insert_one(doc)
 
     background_tasks.add_task(send_welcome_email, entry.email)
+    background_tasks.add_task(add_to_sendgrid_contacts, entry.email)
 
     return WaitlistResponse(status="success", message="Welcome to the SLATE UP waitlist! Check your email.")
 
