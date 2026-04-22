@@ -1,26 +1,30 @@
 import "@/App.css";
+import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "@/components/LandingPage";
-import ThankYou from "@/components/ThankYou";
-import BlogsPage from "@/components/BlogsPage";
-import BlogPostPage from "@/components/BlogPostPage";
 import SiteBottomNav from "@/components/SiteBottomNav";
-import NcertClass10MathPage from "@/components/NcertClass10MathPage";
+
+const ThankYou = lazy(() => import("@/components/ThankYou"));
+const BlogsPage = lazy(() => import("@/components/BlogsPage"));
+const BlogPostPage = lazy(() => import("@/components/BlogPostPage"));
+const NcertClass10MathPage = lazy(() => import("@/components/NcertClass10MathPage"));
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/characters" element={<LandingPage />} />
-        <Route path="/how-it-works" element={<LandingPage />} />
-        <Route path="/features" element={<LandingPage />} />
-        <Route path="/waitlist" element={<LandingPage />} />
-        <Route path="/thank-you" element={<ThankYou />} />
-        <Route path="/blogs" element={<BlogsPage />} />
-        <Route path="/blogs/:slug" element={<BlogPostPage />} />
-        <Route path="/learn/ncert-class-10-mathematics" element={<NcertClass10MathPage />} />
-      </Routes>
+      <Suspense fallback={null}>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/characters" element={<LandingPage />} />
+          <Route path="/how-it-works" element={<LandingPage />} />
+          <Route path="/features" element={<LandingPage />} />
+          <Route path="/waitlist" element={<LandingPage />} />
+          <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/blogs" element={<BlogsPage />} />
+          <Route path="/blogs/:slug" element={<BlogPostPage />} />
+          <Route path="/learn/ncert-class-10-mathematics" element={<NcertClass10MathPage />} />
+        </Routes>
+      </Suspense>
       <SiteBottomNav />
     </BrowserRouter>
   );
