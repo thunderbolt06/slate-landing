@@ -281,6 +281,7 @@ const NCERT_MENU = [
         label: "Class 10",
         subjects: [
           { label: "Mathematics", href: "/learn/ncert-class-10-mathematics", color: "#FFD166" },
+          { label: "Science",     href: "/learn/ncert-class-10-science",     color: "#06D6A0" },
         ],
       },
     ],
@@ -463,6 +464,14 @@ export default function LandingPage() {
                 className="flex items-center justify-between py-2.5 px-4 rounded-xl border-2 border-[#073B4C] bg-[#FFD166] font-semibold text-sm text-[#073B4C] shadow-[2px_2px_0px_#073B4C] no-underline"
               >
                 <span>Class 10 · Mathematics</span>
+                <ArrowRight size={14} />
+              </Link>
+              <Link
+                to="/learn/ncert-class-10-science"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center justify-between py-2.5 px-4 rounded-xl border-2 border-[#073B4C] bg-[#06D6A0] font-semibold text-sm text-[#073B4C] shadow-[2px_2px_0px_#073B4C] no-underline mt-1.5"
+              >
+                <span>Class 10 · Science</span>
                 <ArrowRight size={14} />
               </Link>
             </div>
