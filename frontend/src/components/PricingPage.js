@@ -18,7 +18,7 @@ const FREE_FEATURES = [
 
 const PRO_FEATURES = [
   "30 classroom credits / month",
-  "All AI Mates (Sage, Zap, Luna, Finn)",
+  "All AI Mates",
   "Full-length lessons (up to 45 min)",
   "Instant Classroom, no wait",
   "Import from PDF, YouTube, URL",
