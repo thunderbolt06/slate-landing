@@ -9,6 +9,10 @@ const BlogsPage = lazy(() => import("@/components/BlogsPage"));
 const BlogPostPage = lazy(() => import("@/components/BlogPostPage"));
 const NcertClass10MathPage = lazy(() => import("@/components/NcertClass10MathPage"));
 const NcertClass10SciencePage = lazy(() => import("@/components/NcertClass10SciencePage"));
+const PricingPage = lazy(() => import("@/components/PricingPage"));
+const TermsPage = lazy(() => import("@/components/TermsPage"));
+const PrivacyPage = lazy(() => import("@/components/PrivacyPage"));
+const ContactPage = lazy(() => import("@/components/ContactPage"));
 
 function App() {
   return (
@@ -26,6 +30,10 @@ function App() {
           <Route path="/blogs/:slug" element={<BlogPostPage />} />
           <Route path="/learn/ncert-class-10-mathematics" element={<NcertClass10MathPage />} />
           <Route path="/learn/ncert-class-10-science" element={<NcertClass10SciencePage />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Suspense>
       <SiteBottomNav />

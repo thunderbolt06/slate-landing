@@ -1,15 +1,10 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Home, Newspaper, Sparkles } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
+import { Home, Newspaper, DollarSign } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function SiteBottomNav() {
   const location = useLocation();
-  const navigate = useNavigate();
   const path = location.pathname;
-
-  const goWaitlist = () => {
-    navigate("/waitlist");
-  };
 
   return (
     <nav
@@ -37,17 +32,16 @@ export default function SiteBottomNav() {
           <Newspaper size={20} strokeWidth={2.25} />
           Blogs
         </Link>
-        <button
-          type="button"
-          onClick={goWaitlist}
+        <Link
+          to="/pricing"
           className={cn(
             "flex flex-1 flex-col items-center justify-center gap-0.5 text-[10px] font-semibold tracking-tight transition-colors",
-            path === "/waitlist" ? "text-[#EF476F]" : "text-[#073B4C]/60"
+            path === "/pricing" ? "text-[#118AB2]" : "text-[#073B4C]/60"
           )}
         >
-          <Sparkles size={20} strokeWidth={2.25} />
-          Join
-        </button>
+          <DollarSign size={20} strokeWidth={2.25} />
+          Pricing
+        </Link>
       </div>
     </nav>
   );

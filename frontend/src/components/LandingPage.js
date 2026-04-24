@@ -5,12 +5,8 @@ import {
   GraduationCap, BookOpen, PenLine, Brain, Laugh,
   ChevronDown, Sparkles, Presentation, MessageSquare,
   Zap, Users, BookMarked, Menu, X, ArrowRight, ChevronRight,
-  Pause, Play, Volume2, VolumeX
+  Pause, Play, Volume2, VolumeX, Calendar
 } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import axios from "axios";
-
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 /* ─── Character Avatars (SVG) ─── */
 const TeacherAvatar = () => (
@@ -197,7 +193,6 @@ const CharacterCard = ({ character, index }) => {
       transition={{ delay: index * 0.1, duration: 0.5 }}
       whileHover={{ y: -8, transition: { type: "spring", stiffness: 300, damping: 20 } }}
       className="neo-card bg-white border-4 border-[#073B4C] rounded-3xl p-5 shadow-[6px_6px_0px_#073B4C] flex flex-col items-center text-center"
-      data-testid={`character-card-${character.key}`}
     >
       <div className="bobble mb-3" style={{ animationDelay: `${index * 0.4}s` }}>
         <Avatar />
@@ -212,66 +207,6 @@ const CharacterCard = ({ character, index }) => {
       <p className="text-sm text-[#495057] leading-snug">{character.desc}</p>
     </motion.div>
   );
-};
-
-/* ─── Waitlist Form ─── */
-const WaitlistForm = ({ variant = "light" }) => {
-  const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState("");
-  const navigate = useNavigate();
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!email) return;
-    setIsSubmitting(true);
-    setError("");
-    try {
-      await axios.post(`${API}/waitlist`, { email });
-      navigate("/thank-you");
-    } catch (err) {
-      setError(err.response?.data?.detail || "Something went wrong. Please try again.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const isDark = variant === "dark";
-  const inputBg = isDark ? "bg-white text-[#073B4C] placeholder:text-[#495057] border-[#073B4C]" : "bg-white border-[#073B4C]";
-  const btnClass = isDark
-    ? "bg-[#FFD166] text-[#073B4C] hover:bg-[#ffe08a] border-[#073B4C]"
-    : "bg-[#EF476F] text-white hover:bg-[#d63c5f] border-[#073B4C]";
-
-  return (
-    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 w-full max-w-lg mx-auto">
-      <Input
-        type="email"
-        placeholder="Enter your email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        className={`h-14 rounded-full px-6 text-lg border-3 shadow-[3px_3px_0px_#073B4C] ${inputBg}`}
-        data-testid="waitlist-email-input"
-        required
-      />
-      <button
-        type="submit"
-        disabled={isSubmitting}
-        className={`btn-press h-14 rounded-full px-8 font-bold text-lg border-2 shadow-[4px_4px_0px_#073B4C] transition-transform hover:scale-105 disabled:opacity-60 whitespace-nowrap ${btnClass}`}
-        data-testid="waitlist-submit-button"
-      >
-        {isSubmitting ? "Joining..." : "Join Waitlist"}
-      </button>
-      {error && <p className="text-red-500 text-sm mt-1 col-span-full" data-testid="waitlist-error">{error}</p>}
-    </form>
-  );
-};
-
-const PATH_TO_SECTION = {
-  "/demo": "demo",
-  "/characters": "characters",
-  "/how-it-works": "how-it-works",
-  "/features": "features",
-  "/waitlist": "waitlist",
 };
 
 /* ─── NCERT Mega-Dropdown ─── */
@@ -325,7 +260,6 @@ function NcertDropdown() {
             transition={{ duration: 0.18 }}
             className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-64 bg-white border-3 border-[#073B4C] rounded-2xl shadow-[5px_5px_0px_#073B4C] overflow-hidden z-50"
           >
-            {/* Class tabs */}
             <div className="bg-[#F0F4F8] border-b-2 border-[#073B4C] px-3 py-2 flex gap-2">
               {NCERT_MENU[0].classes.map(cls => (
                 <button
@@ -342,7 +276,6 @@ function NcertDropdown() {
                 </button>
               ))}
             </div>
-            {/* Subjects */}
             <div className="p-3 flex flex-col gap-1.5">
               {currentClass?.subjects.map(sub => (
                 <Link
@@ -372,7 +305,6 @@ const SlateDemoVideo = () => {
   const [isMuted, setIsMuted] = useState(true);
   const [loaded, setLoaded] = useState(false);
 
-  // Autoplay (muted) when the video scrolls into view; pause when it leaves.
   useEffect(() => {
     const el = wrapRef.current;
     const video = videoRef.current;
@@ -452,14 +384,12 @@ const SlateDemoVideo = () => {
           data-testid="demo-video"
         />
 
-        {/* Controls overlay (bottom-right, unobtrusive) */}
         <div className="absolute bottom-4 right-4 flex items-center gap-2">
           <button
             type="button"
             onClick={togglePlay}
             aria-label={isPlaying ? "Pause video" : "Play video"}
             className="w-11 h-11 rounded-full bg-white text-[#073B4C] border-2 border-[#073B4C] shadow-[3px_3px_0px_#073B4C] flex items-center justify-center hover:scale-110 active:translate-y-[1px] active:shadow-[1px_1px_0px_#073B4C] transition-all"
-            data-testid="demo-play-toggle"
           >
             {isPlaying ? <Pause size={18} strokeWidth={2.5} /> : <Play size={18} strokeWidth={2.5} className="ml-0.5" />}
           </button>
@@ -468,7 +398,6 @@ const SlateDemoVideo = () => {
             onClick={toggleMute}
             aria-label={isMuted ? "Unmute video" : "Mute video"}
             className="h-11 rounded-full bg-[#FFD166] text-[#073B4C] border-2 border-[#073B4C] shadow-[3px_3px_0px_#073B4C] px-4 flex items-center gap-2 font-bold text-sm hover:scale-105 active:translate-y-[1px] active:shadow-[1px_1px_0px_#073B4C] transition-all"
-            data-testid="demo-mute-toggle"
           >
             {isMuted ? <VolumeX size={18} strokeWidth={2.5} /> : <Volume2 size={18} strokeWidth={2.5} />}
             <span className="hidden sm:inline">{isMuted ? "Unmute" : "Mute"}</span>
@@ -485,7 +414,6 @@ const SlateDemoVideo = () => {
 export default function LandingPage() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [waitlistCount, setWaitlistCount] = useState(0);
   const containerRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
@@ -498,8 +426,13 @@ export default function LandingPage() {
     return () => container.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Auto-scroll to section based on URL path
   useEffect(() => {
+    const PATH_TO_SECTION = {
+      "/demo": "demo",
+      "/characters": "characters",
+      "/how-it-works": "how-it-works",
+      "/features": "features",
+    };
     const sectionId = PATH_TO_SECTION[location.pathname];
     if (sectionId) {
       setTimeout(() => {
@@ -508,15 +441,13 @@ export default function LandingPage() {
     }
   }, [location.pathname]);
 
-  useEffect(() => {
-    axios.get(`${API}/waitlist/count`).then(r => setWaitlistCount(r.data.count)).catch(() => { });
-  }, []);
-
   const scrollTo = (id) => {
-    const path = `/${id}`;
-    navigate(path);
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setMenuOpen(false);
+  };
+
+  const openCalendly = () => {
+    window.open("https://calendly.com/hello-slateup/30min", "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -530,27 +461,45 @@ export default function LandingPage() {
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => { navigate("/"); containerRef.current?.scrollTo({ top: 0, behavior: "smooth" }); }}>
             <span className="font-heading text-2xl font-bold text-[#073B4C] tracking-[-0.025em]">SLATE UP</span>
           </div>
+
           <nav className="hidden md:flex items-center gap-8">
-            {[["demo", "Demo"], ["characters", "Characters"], ["how-it-works", "How It Works"], ["features", "Features"]].map(([id, label]) => (
-              <button key={id} onClick={() => scrollTo(id)} className="font-body font-semibold text-[#073B4C] hover:text-[#118AB2] transition-colors">
-                {label}
-              </button>
-            ))}
             <NcertDropdown />
-          </nav>
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => scrollTo("waitlist")}
-              className="hidden md:inline-flex btn-press bg-[#EF476F] text-white rounded-full px-5 py-2 font-bold text-sm border-2 border-[#073B4C] shadow-[3px_3px_0px_#073B4C] hover:scale-105 transition-transform"
-              data-testid="nav-join-waitlist"
+            <Link
+              to="/pricing"
+              className="font-body font-semibold text-[#073B4C] hover:text-[#118AB2] transition-colors no-underline"
             >
-              Join Waitlist
+              Pricing
+            </Link>
+            <button
+              onClick={() => scrollTo("demo")}
+              className="font-body font-semibold text-[#073B4C] hover:text-[#118AB2] transition-colors"
+            >
+              Demo
             </button>
+            <Link
+              to="/contact"
+              className="font-body font-semibold text-[#073B4C] hover:text-[#118AB2] transition-colors no-underline"
+            >
+              Contact
+            </Link>
+          </nav>
+
+          <div className="flex items-center gap-3">
+            <a
+              href="https://app.slateup.ai/auth/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:inline-flex btn-press bg-[#073B4C] text-white rounded-full px-5 py-2 font-bold text-sm border-2 border-[#073B4C] shadow-[3px_3px_0px_#073B4C] hover:scale-105 transition-transform no-underline"
+              data-testid="nav-try-now"
+            >
+              Try Now
+            </a>
             <button className="md:hidden text-[#073B4C]" onClick={() => setMenuOpen(!menuOpen)} data-testid="mobile-menu-toggle">
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
+
         {menuOpen && (
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -559,19 +508,40 @@ export default function LandingPage() {
           >
             <button
               type="button"
-              onClick={() => {
-                navigate("/blogs");
-                setMenuOpen(false);
-              }}
+              onClick={() => { navigate("/blogs"); setMenuOpen(false); }}
               className="font-body font-semibold text-[#073B4C] text-left py-2 hover:text-[#118AB2]"
             >
               Blogs
             </button>
-            {[["demo", "Demo"], ["characters", "Characters"], ["how-it-works", "How It Works"], ["features", "Features"], ["waitlist", "Join Waitlist"]].map(([id, label]) => (
-              <button key={id} onClick={() => scrollTo(id)} className="font-body font-semibold text-[#073B4C] text-left py-2 hover:text-[#118AB2]">
-                {label}
-              </button>
-            ))}
+            <button
+              type="button"
+              onClick={() => { navigate("/pricing"); setMenuOpen(false); }}
+              className="font-body font-semibold text-[#073B4C] text-left py-2 hover:text-[#118AB2]"
+            >
+              Pricing
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollTo("demo")}
+              className="font-body font-semibold text-[#073B4C] text-left py-2 hover:text-[#118AB2]"
+            >
+              Demo
+            </button>
+            <button
+              type="button"
+              onClick={() => { navigate("/contact"); setMenuOpen(false); }}
+              className="font-body font-semibold text-[#073B4C] text-left py-2 hover:text-[#118AB2]"
+            >
+              Contact
+            </button>
+            <a
+              href="https://app.slateup.ai/auth/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-body font-semibold text-[#EF476F] text-left py-2 no-underline"
+            >
+              Try Now →
+            </a>
             {/* CBSE / NCERT mobile section */}
             <div className="border-t border-[#073B4C]/10 pt-3">
               <p className="font-body text-xs font-bold uppercase tracking-wider text-[#073B4C]/40 mb-2">CBSE / NCERT</p>
@@ -627,15 +597,25 @@ export default function LandingPage() {
               with slides, narration, and AI classmates in seconds.
             </p>
 
-            <WaitlistForm variant="light" />
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="https://app.slateup.ai/auth/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-press inline-flex items-center gap-2 bg-[#073B4C] text-white rounded-full px-8 py-4 font-bold text-lg border-2 border-[#073B4C] shadow-[4px_4px_0px_#073B4C] hover:scale-105 transition-transform no-underline"
+                data-testid="hero-try-now"
+              >
+                Try Now <ArrowRight size={20} />
+              </a>
+              <button
+                onClick={openCalendly}
+                className="btn-press inline-flex items-center gap-2 bg-white text-[#073B4C] rounded-full px-8 py-4 font-bold text-lg border-2 border-[#073B4C] shadow-[4px_4px_0px_#073B4C] hover:scale-105 transition-transform"
+              >
+                <Calendar size={20} /> Schedule a Demo
+              </button>
+            </div>
 
-            {waitlistCount > 0 && (
-              <p className="mt-4 text-sm text-[#495057] font-medium">
-                <span className="font-bold text-[#073B4C]">{waitlistCount}</span> learners on the waitlist
-              </p>
-            )}
-
-            <button onClick={() => scrollTo("characters")} className="mt-10 inline-block" data-testid="scroll-down">
+            <button onClick={() => scrollTo("demo")} className="mt-10 inline-block" data-testid="scroll-down">
               <ChevronDown className="mx-auto animate-bounce text-[#073B4C]" size={32} />
             </button>
           </motion.div>
@@ -643,7 +623,6 @@ export default function LandingPage() {
 
         {/* ═══ PRODUCT DEMO ═══ */}
         <AnimSection id="demo" className="snap-section flex flex-col items-center justify-center bg-white px-6 py-20 relative overflow-hidden" data-testid="demo-section">
-          {/* funky floating accents */}
           <div className="absolute inset-0 pointer-events-none overflow-hidden">
             <div className="floating-shape absolute top-[10%] left-[6%] w-16 h-16 bg-[#FFD166] rounded-2xl border-4 border-[#073B4C] opacity-40" />
             <div className="floating-shape-reverse absolute bottom-[14%] right-[6%] w-20 h-20 bg-[#06D6A0] rounded-full border-4 border-[#073B4C] opacity-40" />
@@ -666,7 +645,6 @@ export default function LandingPage() {
 
             <SlateDemoVideo />
 
-            {/* quick stat pills */}
             <div className="flex flex-wrap justify-center gap-3 mt-8">
               {[
                 { c: "#EF476F", v: "< 30s", l: "to generate" },
@@ -722,7 +700,6 @@ export default function LandingPage() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15, duration: 0.5 }}
                 className="neo-card bg-white border-4 border-[#073B4C] rounded-3xl p-8 shadow-[6px_6px_0px_#073B4C] text-center"
-                data-testid={`step-card-${step.num}`}
               >
                 <span className="font-heading text-5xl font-bold" style={{ color: step.color }}>{step.num}</span>
                 <div className="flex justify-center my-4">
@@ -735,17 +712,6 @@ export default function LandingPage() {
               </motion.div>
             ))}
           </div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
-            className="mt-12 flex items-center gap-3"
-          >
-            <span className="hidden md:flex items-center gap-2 text-white/60 text-sm font-body">
-              <ArrowRight size={16} /> Scroll down for features
-            </span>
-          </motion.div>
         </AnimSection>
 
         {/* ═══ FEATURES ═══ */}
@@ -771,7 +737,6 @@ export default function LandingPage() {
                 transition={{ delay: i * 0.08, duration: 0.4 }}
                 whileHover={{ y: -6, transition: { type: "spring", stiffness: 300, damping: 20 } }}
                 className="neo-card bg-white border-4 border-[#073B4C] rounded-3xl p-6 shadow-[6px_6px_0px_#073B4C]"
-                data-testid={`feature-card-${i}`}
               >
                 <div
                   className="w-14 h-14 rounded-2xl border-3 border-[#073B4C] flex items-center justify-center mb-4"
@@ -786,8 +751,8 @@ export default function LandingPage() {
           </div>
         </AnimSection>
 
-        {/* ═══ WAITLIST CTA + FOOTER ═══ */}
-        <section id="waitlist" className="snap-section flex flex-col" data-testid="waitlist-section">
+        {/* ═══ SCHEDULE A DEMO CTA + FOOTER ═══ */}
+        <section id="cta" className="snap-section flex flex-col" data-testid="cta-section">
           <div className="flex-1 flex flex-col items-center justify-center bg-[#EF476F] px-6 py-20">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -796,22 +761,28 @@ export default function LandingPage() {
               className="text-center max-w-2xl"
             >
               <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-                Join the Beta
+                Schedule a Demo
               </h2>
               <p className="font-body text-lg text-white/85 mb-8 leading-relaxed">
-                Be among the first to experience the future of AI-powered learning.
-                Drop your email and we'll send you a welcome aboard message.
+                See SLATE UP in action with a personalised walkthrough. Our team will show you
+                how AI-powered learning can transform education for your students.
               </p>
-              <WaitlistForm variant="dark" />
-              <div className="mt-8">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button
+                  onClick={openCalendly}
+                  className="btn-press inline-flex items-center gap-2 bg-[#FFD166] text-[#073B4C] rounded-full px-8 py-4 font-bold text-lg border-2 border-[#073B4C] shadow-[4px_4px_0px_#073B4C] hover:scale-105 transition-transform"
+                  data-testid="schedule-demo-button"
+                >
+                  <Calendar size={22} /> Schedule a Demo
+                </button>
                 <a
-                  href="https://app.slateup.ai"
+                  href="https://app.slateup.ai/auth/login"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-press inline-flex items-center gap-2 bg-white text-[#073B4C] rounded-full px-8 py-4 font-bold text-lg border-2 border-[#073B4C] shadow-[4px_4px_0px_#073B4C] hover:scale-105 transition-transform"
+                  className="btn-press inline-flex items-center gap-2 bg-white text-[#073B4C] rounded-full px-8 py-4 font-bold text-lg border-2 border-[#073B4C] shadow-[4px_4px_0px_#073B4C] hover:scale-105 transition-transform no-underline"
                   data-testid="enter-slate-button"
                 >
-                  Enter SLATE UP <ArrowRight size={20} />
+                  Try SLATE UP <ArrowRight size={20} />
                 </a>
               </div>
             </motion.div>
@@ -831,19 +802,29 @@ export default function LandingPage() {
                   <div>
                     <h4 className="font-heading text-sm font-bold text-[#FFD166] uppercase tracking-wider mb-3">Product</h4>
                     <div className="flex flex-col gap-2">
-                      <Link to="/blogs" className="font-body text-white/60 hover:text-white text-sm transition-colors text-left">
+                      <Link to="/blogs" className="font-body text-white/60 hover:text-white text-sm transition-colors text-left no-underline">
                         Blogs
                       </Link>
-                      <button onClick={() => scrollTo("features")} className="font-body text-white/60 hover:text-white text-sm transition-colors">Features</button>
-                      <button onClick={() => scrollTo("how-it-works")} className="font-body text-white/60 hover:text-white text-sm transition-colors">How It Works</button>
-                      <button onClick={() => scrollTo("characters")} className="font-body text-white/60 hover:text-white text-sm transition-colors">AI Classmates</button>
+                      <Link to="/pricing" className="font-body text-white/60 hover:text-white text-sm transition-colors text-left no-underline">
+                        Pricing
+                      </Link>
+                      <button onClick={() => scrollTo("features")} className="font-body text-white/60 hover:text-white text-sm transition-colors text-left">Features</button>
+                      <button onClick={() => scrollTo("how-it-works")} className="font-body text-white/60 hover:text-white text-sm transition-colors text-left">How It Works</button>
                     </div>
                   </div>
                   <div>
                     <h4 className="font-heading text-sm font-bold text-[#FFD166] uppercase tracking-wider mb-3">Company</h4>
                     <div className="flex flex-col gap-2">
-                      <a href="https://app.slateup.ai" target="_blank" rel="noopener noreferrer" className="font-body text-white/60 hover:text-white text-sm transition-colors">SLATE UP App</a>
+                      <a href="https://app.slateup.ai" target="_blank" rel="noopener noreferrer" className="font-body text-white/60 hover:text-white text-sm transition-colors no-underline">SLATE UP App</a>
+                      <Link to="/contact" className="font-body text-white/60 hover:text-white text-sm transition-colors no-underline">Contact</Link>
                       <span className="font-body text-white/60 text-sm">hello@slateup.ai</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-heading text-sm font-bold text-[#FFD166] uppercase tracking-wider mb-3">Legal</h4>
+                    <div className="flex flex-col gap-2">
+                      <Link to="/terms" className="font-body text-white/60 hover:text-white text-sm transition-colors no-underline">Terms &amp; Conditions</Link>
+                      <Link to="/privacy" className="font-body text-white/60 hover:text-white text-sm transition-colors no-underline">Privacy Policy</Link>
                     </div>
                   </div>
                 </div>
