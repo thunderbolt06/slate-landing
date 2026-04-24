@@ -16,6 +16,7 @@ function App() {
       <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/demo" element={<LandingPage />} />
           <Route path="/characters" element={<LandingPage />} />
           <Route path="/how-it-works" element={<LandingPage />} />
           <Route path="/features" element={<LandingPage />} />

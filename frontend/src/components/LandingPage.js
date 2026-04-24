@@ -4,7 +4,8 @@ import { useNavigate, useLocation, Link } from "react-router-dom";
 import {
   GraduationCap, BookOpen, PenLine, Brain, Laugh,
   ChevronDown, Sparkles, Presentation, MessageSquare,
-  Zap, Users, BookMarked, Menu, X, ArrowRight, ChevronRight
+  Zap, Users, BookMarked, Menu, X, ArrowRight, ChevronRight,
+  Pause, Play, Volume2, VolumeX
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import axios from "axios";
@@ -266,6 +267,7 @@ const WaitlistForm = ({ variant = "light" }) => {
 };
 
 const PATH_TO_SECTION = {
+  "/demo": "demo",
   "/characters": "characters",
   "/how-it-works": "how-it-works",
   "/features": "features",
@@ -362,6 +364,121 @@ function NcertDropdown() {
   );
 }
 
+/* ─── Product Demo Video ─── */
+const SlateDemoVideo = () => {
+  const videoRef = useRef(null);
+  const wrapRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
+  const [loaded, setLoaded] = useState(false);
+
+  // Autoplay (muted) when the video scrolls into view; pause when it leaves.
+  useEffect(() => {
+    const el = wrapRef.current;
+    const video = videoRef.current;
+    if (!el || !video) return;
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+            video.play().then(() => setIsPlaying(true)).catch(() => {});
+          } else {
+            video.pause();
+            setIsPlaying(false);
+          }
+        });
+      },
+      { threshold: [0, 0.5, 1] }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  const togglePlay = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    if (v.paused) {
+      v.play().then(() => setIsPlaying(true)).catch(() => {});
+    } else {
+      v.pause();
+      setIsPlaying(false);
+    }
+  };
+
+  const toggleMute = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    v.muted = !v.muted;
+    setIsMuted(v.muted);
+  };
+
+  return (
+    <div
+      ref={wrapRef}
+      className="relative w-full max-w-[960px] mx-auto bg-white border-4 border-[#073B4C] rounded-[22px] shadow-[8px_8px_0px_#073B4C] overflow-hidden"
+    >
+      {/* Browser chrome */}
+      <div className="flex items-center gap-3 px-4 py-2.5 bg-[#F0F4F8] border-b-[3px] border-[#073B4C]">
+        <div className="flex gap-1.5">
+          <span className="w-3 h-3 rounded-full border-2 border-[#073B4C] bg-[#EF476F]" />
+          <span className="w-3 h-3 rounded-full border-2 border-[#073B4C] bg-[#FFD166]" />
+          <span className="w-3 h-3 rounded-full border-2 border-[#073B4C] bg-[#06D6A0]" />
+        </div>
+        <div className="flex-1 text-center text-xs font-bold text-[#495057] bg-white border-2 border-[#073B4C] rounded-full px-3 py-0.5">
+          app.slateup.ai · live classroom
+        </div>
+      </div>
+
+      {/* Video */}
+      <div className="relative bg-black aspect-video">
+        {!loaded && (
+          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#118AB2] via-[#8338EC] to-[#EF476F]">
+            <div className="flex flex-col items-center gap-3 text-white/90">
+              <Sparkles size={36} className="animate-pulse" />
+              <span className="font-heading text-lg font-semibold tracking-wide">Loading demo…</span>
+            </div>
+          </div>
+        )}
+        <video
+          ref={videoRef}
+          src="/slate-demo.mp4"
+          muted
+          playsInline
+          loop
+          preload="metadata"
+          onLoadedData={() => setLoaded(true)}
+          className="w-full h-full object-cover"
+          data-testid="demo-video"
+        />
+
+        {/* Controls overlay (bottom-right, unobtrusive) */}
+        <div className="absolute bottom-4 right-4 flex items-center gap-2">
+          <button
+            type="button"
+            onClick={togglePlay}
+            aria-label={isPlaying ? "Pause video" : "Play video"}
+            className="w-11 h-11 rounded-full bg-white text-[#073B4C] border-2 border-[#073B4C] shadow-[3px_3px_0px_#073B4C] flex items-center justify-center hover:scale-110 active:translate-y-[1px] active:shadow-[1px_1px_0px_#073B4C] transition-all"
+            data-testid="demo-play-toggle"
+          >
+            {isPlaying ? <Pause size={18} strokeWidth={2.5} /> : <Play size={18} strokeWidth={2.5} className="ml-0.5" />}
+          </button>
+          <button
+            type="button"
+            onClick={toggleMute}
+            aria-label={isMuted ? "Unmute video" : "Mute video"}
+            className="h-11 rounded-full bg-[#FFD166] text-[#073B4C] border-2 border-[#073B4C] shadow-[3px_3px_0px_#073B4C] px-4 flex items-center gap-2 font-bold text-sm hover:scale-105 active:translate-y-[1px] active:shadow-[1px_1px_0px_#073B4C] transition-all"
+            data-testid="demo-mute-toggle"
+          >
+            {isMuted ? <VolumeX size={18} strokeWidth={2.5} /> : <Volume2 size={18} strokeWidth={2.5} />}
+            <span className="hidden sm:inline">{isMuted ? "Unmute" : "Mute"}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 /* ═══════════════════════════════════════════════════
    MAIN LANDING PAGE
    ═══════════════════════════════════════════════════ */
@@ -414,7 +531,7 @@ export default function LandingPage() {
             <span className="font-heading text-2xl font-bold text-[#073B4C] tracking-[-0.025em]">SLATE UP</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
-            {[["characters", "Characters"], ["how-it-works", "How It Works"], ["features", "Features"]].map(([id, label]) => (
+            {[["demo", "Demo"], ["characters", "Characters"], ["how-it-works", "How It Works"], ["features", "Features"]].map(([id, label]) => (
               <button key={id} onClick={() => scrollTo(id)} className="font-body font-semibold text-[#073B4C] hover:text-[#118AB2] transition-colors">
                 {label}
               </button>
@@ -450,7 +567,7 @@ export default function LandingPage() {
             >
               Blogs
             </button>
-            {[["characters", "Characters"], ["how-it-works", "How It Works"], ["features", "Features"], ["waitlist", "Join Waitlist"]].map(([id, label]) => (
+            {[["demo", "Demo"], ["characters", "Characters"], ["how-it-works", "How It Works"], ["features", "Features"], ["waitlist", "Join Waitlist"]].map(([id, label]) => (
               <button key={id} onClick={() => scrollTo(id)} className="font-body font-semibold text-[#073B4C] text-left py-2 hover:text-[#118AB2]">
                 {label}
               </button>
@@ -523,6 +640,48 @@ export default function LandingPage() {
             </button>
           </motion.div>
         </section>
+
+        {/* ═══ PRODUCT DEMO ═══ */}
+        <AnimSection id="demo" className="snap-section flex flex-col items-center justify-center bg-white px-6 py-20 relative overflow-hidden" data-testid="demo-section">
+          {/* funky floating accents */}
+          <div className="absolute inset-0 pointer-events-none overflow-hidden">
+            <div className="floating-shape absolute top-[10%] left-[6%] w-16 h-16 bg-[#FFD166] rounded-2xl border-4 border-[#073B4C] opacity-40" />
+            <div className="floating-shape-reverse absolute bottom-[14%] right-[6%] w-20 h-20 bg-[#06D6A0] rounded-full border-4 border-[#073B4C] opacity-40" />
+            <div className="floating-shape absolute top-[20%] right-[12%] w-10 h-10 bg-[#8338EC] rounded-lg border-4 border-[#073B4C] opacity-30" />
+          </div>
+
+          <div className="relative z-10 flex flex-col items-center w-full">
+            <span className="text-[11.5px] font-extrabold tracking-[0.12em] uppercase text-[#118AB2] mb-2">See it in action</span>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-[#073B4C] text-center leading-[1.05] mb-3"
+            >
+              Your classroom, <em className="not-italic text-[#EF476F]">on demand</em>.
+            </motion.h2>
+            <p className="font-body text-base md:text-lg text-[#495057] text-center max-w-xl mb-10 leading-relaxed">
+              Ask for any topic, and SLATE UP builds a live, interactive lesson — slides, narration and AI classmates included.
+            </p>
+
+            <SlateDemoVideo />
+
+            {/* quick stat pills */}
+            <div className="flex flex-wrap justify-center gap-3 mt-8">
+              {[
+                { c: "#EF476F", v: "< 30s", l: "to generate" },
+                { c: "#FFD166", v: "6", l: "AI classmates" },
+                { c: "#06D6A0", v: "∞", l: "topics covered" },
+              ].map((s) => (
+                <div key={s.l} className="flex items-center gap-2.5 bg-white border-2 border-[#073B4C] rounded-full px-4 py-2 shadow-[3px_3px_0px_#073B4C]">
+                  <span className="w-2.5 h-2.5 rounded-full border-2 border-[#073B4C]" style={{ backgroundColor: s.c }} />
+                  <span className="font-heading text-xl font-bold text-[#073B4C] leading-none">{s.v}</span>
+                  <span className="text-[11.5px] font-bold text-[#495057] leading-none">{s.l}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </AnimSection>
 
         {/* ═══ CHARACTERS ═══ */}
         <AnimSection id="characters" className="snap-section flex flex-col items-center justify-center bg-[#FFD166] px-6 py-20" data-testid="characters-section">
