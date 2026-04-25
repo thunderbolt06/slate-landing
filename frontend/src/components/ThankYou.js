@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Mail, BookOpen, Users, Presentation, Sparkles, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
@@ -14,6 +15,13 @@ const HIGHLIGHTS = [
 ];
 
 export default function ThankYou() {
+  useSeoMeta({
+    title: "You're on the list! | Slate",
+    description: "You've joined the Slate waitlist. Get ready to learn with AI classmates.",
+    noindex: true,
+    canonical: "https://slateup.ai/thank-you",
+  });
+
   const [count, setCount] = useState(0);
 
   useEffect(() => {

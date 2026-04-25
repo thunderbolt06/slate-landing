@@ -5,6 +5,7 @@ import {
   ArrowRight, BookOpen, Home, Sparkles, GraduationCap,
   Star, ChevronRight, Zap
 } from "lucide-react";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const CHAPTERS = [
   { num: 1, name: "Chemical Reactions and Equations", url: "https://app.slateup.ai/classroom/jHUWCCGQG3", color: "#D4F0FF", accent: "#118AB2" },
@@ -30,6 +31,12 @@ const FEATURES = [
 ];
 
 export default function NcertClass10SciencePage() {
+  useSeoMeta({
+    title: "NCERT Class 10 Science — AI-powered Lessons | Slate",
+    description: "Study NCERT Class 10 Science with Slate's AI classroom. Interactive lessons covering Chemistry, Biology and Physics — Chemical Reactions, Life Processes, Electricity and more.",
+    canonical: "https://slateup.ai/learn/ncert-class-10-science",
+  });
+
   const [activeChapter, setActiveChapter] = useState(null);
 
   useEffect(() => {

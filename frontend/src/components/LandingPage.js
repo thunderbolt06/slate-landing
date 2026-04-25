@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import {
@@ -412,6 +413,12 @@ const SlateDemoVideo = () => {
    MAIN LANDING PAGE
    ═══════════════════════════════════════════════════ */
 export default function LandingPage() {
+  useSeoMeta({
+    title: "Slate — AI-powered Interactive Classroom",
+    description: "Slate is an AI-powered interactive classroom where you learn with AI classmates — not just a chatbot. Personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond.",
+    canonical: "https://slateup.ai/",
+  });
+
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const containerRef = useRef(null);
@@ -829,8 +836,11 @@ export default function LandingPage() {
                   </div>
                 </div>
               </div>
-              <div className="border-t border-white/10 mt-8 pt-6 text-center">
+              <div className="border-t border-white/10 mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <p className="font-body text-white/40 text-sm">&copy; {new Date().getFullYear()} Slate Up. All rights reserved.</p>
+                <a href="https://www.toolpilot.ai" target="_blank" rel="noopener noreferrer">
+                  <img src="https://www.toolpilot.ai/cdn/shop/files/f-w_300x66_crop_center.png?v=1695883028" alt="Featured on ToolPilot" width="150" height="33" style={{opacity: 0.7}} />
+                </a>
               </div>
             </div>
           </footer>

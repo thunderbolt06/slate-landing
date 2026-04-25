@@ -5,6 +5,7 @@ import {
   ArrowRight, BookOpen, Home, Sparkles, GraduationCap,
   Star, ChevronRight, Zap
 } from "lucide-react";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const CHAPTERS = [
   { num: 1,  name: "Real Numbers",                              url: "https://app.slateup.ai/classroom/D2HsNZ0lMN", color: "#D4F0FF", accent: "#118AB2" },
@@ -31,6 +32,12 @@ const FEATURES = [
 ];
 
 export default function NcertClass10MathPage() {
+  useSeoMeta({
+    title: "NCERT Class 10 Maths — AI-powered Lessons | Slate",
+    description: "Study NCERT Class 10 Mathematics with Slate's AI classroom. Interactive lessons for all 15 chapters — Real Numbers, Polynomials, Trigonometry, Statistics and more.",
+    canonical: "https://slateup.ai/learn/ncert-class-10-mathematics",
+  });
+
   const [activeChapter, setActiveChapter] = useState(null);
 
   useEffect(() => {

@@ -2,8 +2,15 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, BookOpen, Home } from "lucide-react";
 import { BLOG_POSTS } from "@/generated/blogRegistry";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 export default function BlogsPage() {
+  useSeoMeta({
+    title: "Blog — AI Learning, NCERT Guides & EdTech Insights | Slate",
+    description: "Tips, guides and deep dives on AI-powered learning, NCERT preparation, JEE, NEET and how to study smarter with Slate.",
+    canonical: "https://slateup.ai/blogs",
+  });
+
   return (
     <div className="min-h-screen bg-[#FDFDFD] flex flex-col overflow-y-auto pb-[4.75rem] md:pb-0">
       <header className="px-6 py-4 flex items-center justify-between max-w-6xl mx-auto w-full">

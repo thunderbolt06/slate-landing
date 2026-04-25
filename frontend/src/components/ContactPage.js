@@ -3,10 +3,17 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Send, CheckCircle, Mail, Building, User, MessageSquare } from "lucide-react";
 import axios from "axios";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 export default function ContactPage() {
+  useSeoMeta({
+    title: "Contact Us | Slate",
+    description: "Get in touch with the Slate team — questions about the product, partnerships, schools or press.",
+    canonical: "https://slateup.ai/contact",
+  });
+
   const [form, setForm] = useState({
     name: "",
     email: "",

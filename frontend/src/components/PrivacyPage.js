@@ -1,6 +1,14 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 export default function PrivacyPage() {
+  useSeoMeta({
+    title: "Privacy Policy | Slate",
+    description: "Read how Slate collects, stores and protects your personal data.",
+    canonical: "https://slateup.ai/privacy",
+  });
+
   return (
     <div className="min-h-screen bg-[#FDFDFD]">
       {/* Navbar */}

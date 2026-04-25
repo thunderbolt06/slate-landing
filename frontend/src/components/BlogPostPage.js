@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { ArrowLeft, ExternalLink, Home } from "lucide-react";
 import { BLOG_POSTS, getBlogMarkdown } from "@/generated/blogRegistry";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 /** Split intro, numbered ### 1. … ### 11. … tool blocks, and trailing content after horizontal rule */
 function partitionNumberedToolSections(md) {
@@ -108,6 +109,12 @@ export default function BlogPostPage() {
   const { slug } = useParams();
   const meta = BLOG_POSTS.find((p) => p.slug === slug);
   const markdown = slug ? getBlogMarkdown(slug) : null;
+
+  useSeoMeta({
+    title: meta ? `${meta.title} | Slate Blog` : "Blog | Slate",
+    description: meta?.blurb ?? "Read the latest from the Slate blog — AI learning, NCERT guides and EdTech insights.",
+    canonical: meta ? `https://slateup.ai/blogs/${meta.slug}` : undefined,
+  });
 
   if (!meta || !markdown) {
     return <Navigate to="/blogs" replace />;

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Check, ChevronDown } from "lucide-react";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const INK = "#073B4C";
 const RED = "#EF476F";
@@ -101,6 +102,12 @@ function FAQItem({ q, a }) {
 }
 
 export default function PricingPage() {
+  useSeoMeta({
+    title: "Pricing — Start Free, Upgrade Anytime | Slate",
+    description: "Slate is free to start — 2 classrooms forever. Upgrade to Pro for 30 credits/month. Transparent, no hidden fees.",
+    canonical: "https://slateup.ai/pricing",
+  });
+
   const [billing, setBilling] = useState("monthly");
 
   const monthlyPrice = "$19";

@@ -1,6 +1,14 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 export default function TermsPage() {
+  useSeoMeta({
+    title: "Terms of Service | Slate",
+    description: "Slate's terms of service — your rights, our responsibilities, and the rules of the platform.",
+    canonical: "https://slateup.ai/terms",
+  });
+
   return (
     <div className="min-h-screen bg-[#FDFDFD]">
       {/* Navbar */}
