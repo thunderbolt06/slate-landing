@@ -5,12 +5,12 @@ const DEFAULT_DESCRIPTION =
   "Slate is an AI-powered interactive classroom where you learn with AI classmates — not just a chatbot. Personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond.";
 
 /**
- * Sets per-page <title>, <meta name="description">, <link rel="canonical">
- * and optionally <meta name="robots"> for noindex pages.
+ * Sets per-page <title>, <meta name="description">, <link rel="canonical">,
+ * Open Graph tags, Twitter Card tags, and optionally <meta name="robots">.
  *
- * @param {{ title: string, description: string, noindex?: boolean, canonical?: string }} opts
+ * @param {{ title: string, description: string, noindex?: boolean, canonical?: string, ogImage?: string }} opts
  */
-export function useSeoMeta({ title, description, noindex = false, canonical } = {}) {
+export function useSeoMeta({ title, description, noindex = false, canonical, ogImage } = {}) {
   useEffect(() => {
     // ── title ──────────────────────────────────────────────────────────────
     const prevTitle = document.title;
@@ -50,6 +50,36 @@ export function useSeoMeta({ title, description, noindex = false, canonical } = 
       canonEl.setAttribute("href", canonical);
     }
 
+    // ── Open Graph ─────────────────────────────────────────────────────────
+    const ogTitleEl = document.querySelector('meta[property="og:title"]');
+    const prevOgTitle = ogTitleEl ? ogTitleEl.getAttribute("content") : null;
+    if (ogTitleEl && title) ogTitleEl.setAttribute("content", title);
+
+    const ogDescEl = document.querySelector('meta[property="og:description"]');
+    const prevOgDesc = ogDescEl ? ogDescEl.getAttribute("content") : null;
+    if (ogDescEl && description) ogDescEl.setAttribute("content", description);
+
+    const ogUrlEl = document.querySelector('meta[property="og:url"]');
+    const prevOgUrl = ogUrlEl ? ogUrlEl.getAttribute("content") : null;
+    if (ogUrlEl && canonical) ogUrlEl.setAttribute("content", canonical);
+
+    const ogImageEl = document.querySelector('meta[property="og:image"]');
+    const prevOgImage = ogImageEl ? ogImageEl.getAttribute("content") : null;
+    if (ogImageEl && ogImage) ogImageEl.setAttribute("content", ogImage);
+
+    // ── Twitter Card ───────────────────────────────────────────────────────
+    const twTitleEl = document.querySelector('meta[name="twitter:title"]');
+    const prevTwTitle = twTitleEl ? twTitleEl.getAttribute("content") : null;
+    if (twTitleEl && title) twTitleEl.setAttribute("content", title);
+
+    const twDescEl = document.querySelector('meta[name="twitter:description"]');
+    const prevTwDesc = twDescEl ? twDescEl.getAttribute("content") : null;
+    if (twDescEl && description) twDescEl.setAttribute("content", description);
+
+    const twImageEl = document.querySelector('meta[name="twitter:image"]');
+    const prevTwImage = twImageEl ? twImageEl.getAttribute("content") : null;
+    if (twImageEl && ogImage) twImageEl.setAttribute("content", ogImage);
+
     // ── cleanup: restore previous values on unmount ────────────────────────
     return () => {
       document.title = prevTitle;
@@ -68,7 +98,14 @@ export function useSeoMeta({ title, description, noindex = false, canonical } = 
           canonEl.remove();
         }
       }
+      if (ogTitleEl && prevOgTitle) ogTitleEl.setAttribute("content", prevOgTitle);
+      if (ogDescEl && prevOgDesc) ogDescEl.setAttribute("content", prevOgDesc);
+      if (ogUrlEl && prevOgUrl) ogUrlEl.setAttribute("content", prevOgUrl);
+      if (ogImageEl && prevOgImage) ogImageEl.setAttribute("content", prevOgImage);
+      if (twTitleEl && prevTwTitle) twTitleEl.setAttribute("content", prevTwTitle);
+      if (twDescEl && prevTwDesc) twDescEl.setAttribute("content", prevTwDesc);
+      if (twImageEl && prevTwImage) twImageEl.setAttribute("content", prevTwImage);
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [title, description, noindex, canonical]);
+  }, [title, description, noindex, canonical, ogImage]);
 }

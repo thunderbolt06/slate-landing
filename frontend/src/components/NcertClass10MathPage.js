@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -34,33 +34,33 @@ const FEATURES = [
 export default function NcertClass10MathPage() {
   useSeoMeta({
     title: "NCERT Class 10 Maths — AI-powered Lessons | Slate",
-    description: "Study NCERT Class 10 Mathematics with Slate's AI classroom. Interactive lessons for all 15 chapters — Real Numbers, Polynomials, Trigonometry, Statistics and more.",
+    description: "Study NCERT Class 10 Mathematics with Slate's AI classroom. Interactive lessons for all 14 chapters — Real Numbers, Polynomials, Trigonometry, Statistics and more.",
     canonical: "https://slateup.ai/learn/ncert-class-10-mathematics",
   });
 
   const [activeChapter, setActiveChapter] = useState(null);
 
-  useEffect(() => {
-    document.title = "NCERT Class 10 Mathematics – All Chapters | SlateUp AI";
-    const metas = [
-      { name: "description",        content: "Master NCERT Class 10 Mathematics with AI-powered interactive classrooms. Covers all 14 chapters — Real Numbers to Probability — with step-by-step explanations and practice." },
-      { name: "keywords",           content: "NCERT Class 10 Maths, CBSE Class 10 Mathematics, Class 10 Maths chapters, Real Numbers, Polynomials, Quadratic Equations, Trigonometry, Coordinate Geometry, NCERT solutions" },
-      { property: "og:title",       content: "NCERT Class 10 Mathematics – All Chapters | SlateUp AI" },
-      { property: "og:description", content: "Learn all 14 NCERT Class 10 Maths chapters interactively with AI on SlateUp. Ask questions, get explanations, and practise problems — free." },
-      { property: "og:type",        content: "website" },
-      { name: "robots",             content: "index, follow" },
-    ];
-    const added = metas.map(attrs => {
-      const el = document.createElement("meta");
-      Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, v));
-      document.head.appendChild(el);
-      return el;
-    });
-    return () => added.forEach(el => el.remove());
-  }, []);
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "NCERT Class 10 Mathematics — All Chapters",
+    "description": "Interactive AI-powered lessons for all 14 chapters of the NCERT Class 10 Mathematics syllabus.",
+    "url": "https://slateup.ai/learn/ncert-class-10-mathematics",
+    "numberOfItems": CHAPTERS.length,
+    "itemListElement": CHAPTERS.map((ch) => ({
+      "@type": "ListItem",
+      "position": ch.num,
+      "name": `Chapter ${ch.num}: ${ch.name}`,
+      "url": ch.url,
+    })),
+  };
 
   return (
     <div className="min-h-screen bg-[#FDFDFD] flex flex-col overflow-y-auto pb-[4.75rem] md:pb-0">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* ── Navbar ── */}
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-sm border-b-2 border-[#073B4C]/10 px-6 py-3">
         <div className="max-w-7xl mx-auto flex items-center justify-between">

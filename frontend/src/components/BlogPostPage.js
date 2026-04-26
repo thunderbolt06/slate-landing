@@ -120,6 +120,35 @@ export default function BlogPostPage() {
     return <Navigate to="/blogs" replace />;
   }
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": meta.title,
+    "description": meta.blurb,
+    "datePublished": meta.date,
+    "dateModified": meta.date,
+    "url": `https://slateup.ai/blogs/${meta.slug}`,
+    "image": "https://slateup.ai/og-image.png",
+    "author": {
+      "@type": "Organization",
+      "name": "Slate",
+      "url": "https://slateup.ai",
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Slate",
+      "url": "https://slateup.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://slateup.ai/favicon.svg",
+      },
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://slateup.ai/blogs/${meta.slug}`,
+    },
+  };
+
   const sections = partitionNumberedToolSections(markdown);
 
   const articleBody =
@@ -158,6 +187,10 @@ export default function BlogPostPage() {
 
   return (
     <div className="min-h-screen bg-[#FDFDFD] flex flex-col overflow-y-auto pb-[4.75rem] md:pb-0">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <header className="px-6 py-4 flex items-center justify-between max-w-3xl mx-auto w-full gap-4">
         <Link to="/" className="shrink-0 flex items-center gap-2">
           <span className="font-heading text-2xl font-bold text-[#073B4C] tracking-[-0.025em]">SLATE UP</span>

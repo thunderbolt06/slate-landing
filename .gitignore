@@ -57,6 +57,7 @@ chainlit.md
 .chainlit
 .ipynb_checkpoints/
 .ac
+.claude/
 
 # Deployment
 .vercel
@@ -79,23 +80,8 @@ agenthub/agents/youtube/db
 memory/test_credentials.md
 
 # Mobile development
-android-sdk/-e 
-# Environment files
-*.env
-*.env.*
--e 
-# Environment files
-*.env
-*.env.*
--e 
-# Environment files
-*.env
-*.env.*
--e 
-# Environment files
-*.env
-*.env.*
--e 
+android-sdk/
+
 # Environment files
 *.env
 *.env.*
