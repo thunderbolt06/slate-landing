@@ -18,7 +18,7 @@ const OUT_ROBOTS = path.join(ROOT, "public", "robots.txt");
 const SITE_URL = (
   process.env.SITEMAP_SITE_URL ||
   process.env.REACT_APP_SITE_URL ||
-  "https://slateup.ai"
+  "https://www.slateup.ai"
 ).replace(/\/$/, "");
 
 const STATIC_PATHS = [
@@ -29,11 +29,12 @@ const STATIC_PATHS = [
   { path: "/waitlist", changefreq: "monthly", priority: "0.9" },
   { path: "/thank-you", changefreq: "yearly", priority: "0.3" },
   { path: "/blogs", changefreq: "weekly", priority: "0.9" },
-  {
-    path: "/learn/ncert-class-10-mathematics",
-    changefreq: "monthly",
-    priority: "0.85",
-  },
+  { path: "/learn/ncert-class-10-mathematics", changefreq: "monthly", priority: "0.85" },
+  { path: "/learn/ncert-class-10-science", changefreq: "monthly", priority: "0.85" },
+  { path: "/pricing", changefreq: "monthly", priority: "0.8" },
+  { path: "/contact", changefreq: "yearly", priority: "0.5" },
+  { path: "/terms", changefreq: "yearly", priority: "0.3" },
+  { path: "/privacy", changefreq: "yearly", priority: "0.3" },
 ];
 
 function extractBlogSlugs(registrySource) {
