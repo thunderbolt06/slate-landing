@@ -101,11 +101,24 @@ function FAQItem({ q, a }) {
   );
 }
 
+const FAQ_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": FAQS.map(({ q, a }) => ({
+    "@type": "Question",
+    "name": q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": a,
+    },
+  })),
+};
+
 export default function PricingPage() {
   useSeoMeta({
     title: "Pricing — Start Free, Upgrade Anytime | Slate",
     description: "Slate is free to start — 2 classrooms forever. Upgrade to Pro for 30 credits/month. Transparent, no hidden fees.",
-    canonical: "https://slateup.ai/pricing",
+    canonical: "https://www.slateup.ai/pricing",
   });
 
   const [billing, setBilling] = useState("monthly");
@@ -116,7 +129,11 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen bg-[#FDFDFD]">
-      {/* Navbar */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }}
+      />
+      {/* Navbar — NEW-009: was missing nav links; now matches the landing page header */}
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-sm border-b-2 border-[#073B4C]/10">
         <div className="max-w-6xl mx-auto px-6 py-3.5 flex items-center justify-between">
           <Link
@@ -125,6 +142,32 @@ export default function PricingPage() {
           >
             <span className="font-heading text-2xl font-bold text-[#073B4C] tracking-[-0.025em]">SLATE UP</span>
           </Link>
+          <nav className="hidden md:flex items-center gap-8">
+            <Link
+              to="/learn/ncert-class-10-science"
+              className="font-body font-semibold text-[#073B4C] hover:text-[#118AB2] transition-colors no-underline"
+            >
+              CBSE / NCERT
+            </Link>
+            <Link
+              to="/demo"
+              className="font-body font-semibold text-[#073B4C] hover:text-[#118AB2] transition-colors no-underline"
+            >
+              Demo
+            </Link>
+            <Link
+              to="/blogs"
+              className="font-body font-semibold text-[#073B4C] hover:text-[#118AB2] transition-colors no-underline"
+            >
+              Blogs
+            </Link>
+            <Link
+              to="/contact"
+              className="font-body font-semibold text-[#073B4C] hover:text-[#118AB2] transition-colors no-underline"
+            >
+              Contact
+            </Link>
+          </nav>
           <a
             href="https://app.slateup.ai/auth/login"
             target="_blank"
@@ -168,6 +211,10 @@ export default function PricingPage() {
           </motion.h1>
           <p className="font-body text-[#495057] max-w-lg mx-auto text-lg leading-relaxed mt-4">
             Start free, no card required. Upgrade any time to unlock Instant Classroom and 30 courses a month.
+          </p>
+          {/* NEW-004: Clarify that displayed prices are USD; Indian users see INR at checkout */}
+          <p className="font-body text-[#6B7B85] text-sm mt-3">
+            Prices shown in USD. Indian users will see equivalent INR pricing via Razorpay at checkout.
           </p>
         </div>
 

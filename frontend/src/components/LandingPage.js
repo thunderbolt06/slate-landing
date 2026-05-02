@@ -416,7 +416,7 @@ export default function LandingPage() {
   useSeoMeta({
     title: "Slate — AI-powered Interactive Classroom",
     description: "Slate is an AI-powered interactive classroom where you learn with AI classmates — not just a chatbot. Personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond.",
-    canonical: "https://slateup.ai/",
+    canonical: "https://www.slateup.ai/",
   });
 
   const [scrolled, setScrolled] = useState(false);
@@ -457,8 +457,42 @@ export default function LandingPage() {
     window.open("https://calendly.com/hello-slateup/30min", "_blank", "noopener,noreferrer");
   };
 
+  const appSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Slate",
+    "url": "https://slateup.ai",
+    "applicationCategory": "EducationApplication",
+    "operatingSystem": "Web",
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free starter plan — 2 classrooms forever",
+      },
+      {
+        "@type": "Offer",
+        "price": "19",
+        "priceCurrency": "USD",
+        "description": "Pro plan — 30 classrooms per month",
+      },
+    ],
+    "description": "AI-powered interactive classroom where you learn with AI classmates. Personalised courses, instant doubt resolution, and adaptive lessons for NCERT, JEE, NEET and beyond.",
+    "screenshot": "https://www.slateup.ai/og-image.png",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Slate",
+      "url": "https://slateup.ai",
+    },
+  };
+
   return (
     <div className="h-screen flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
+      />
       {/* ── Navbar ── */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass-nav shadow-sm" : "bg-transparent"}`}

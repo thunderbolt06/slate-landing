@@ -34,7 +34,7 @@ export default function NcertClass10SciencePage() {
   useSeoMeta({
     title: "NCERT Class 10 Science — AI-powered Lessons | Slate",
     description: "Study NCERT Class 10 Science with Slate's AI classroom. Interactive lessons covering Chemistry, Biology and Physics — Chemical Reactions, Life Processes, Electricity and more.",
-    canonical: "https://slateup.ai/learn/ncert-class-10-science",
+    canonical: "https://www.slateup.ai/learn/ncert-class-10-science",
   });
 
   const [activeChapter, setActiveChapter] = useState(null);
@@ -44,7 +44,7 @@ export default function NcertClass10SciencePage() {
     "@type": "ItemList",
     "name": "NCERT Class 10 Science — All Chapters",
     "description": "Interactive AI-powered lessons for all 13 chapters of the NCERT Class 10 Science syllabus.",
-    "url": "https://slateup.ai/learn/ncert-class-10-science",
+    "url": "https://www.slateup.ai/learn/ncert-class-10-science",
     "numberOfItems": CHAPTERS.length,
     "itemListElement": CHAPTERS.map((ch) => ({
       "@type": "ListItem",

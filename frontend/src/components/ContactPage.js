@@ -11,7 +11,7 @@ export default function ContactPage() {
   useSeoMeta({
     title: "Contact Us | Slate",
     description: "Get in touch with the Slate team — questions about the product, partnerships, schools or press.",
-    canonical: "https://slateup.ai/contact",
+    canonical: "https://www.slateup.ai/contact",
   });
 
   const [form, setForm] = useState({

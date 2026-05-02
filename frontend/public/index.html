@@ -8,16 +8,15 @@
     <meta name="description" content="Slate is an AI-powered interactive classroom where you learn with AI classmates — not just a chatbot. Get personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond." />
     <meta name="keywords" content="AI classroom, AI tutor, NCERT, JEE preparation, NEET preparation, adaptive learning, AI education India, interactive learning, AI study tool" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://slateup.ai/" />
     <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
 
-    <!-- Open Graph -->
+    <!-- Open Graph — NEW-010: use www.slateup.ai to match the served canonical -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Slate" />
-    <meta property="og:url" content="https://slateup.ai/" />
+    <meta property="og:url" content="https://www.slateup.ai/" />
     <meta property="og:title" content="Slate — AI-powered Interactive Classroom" />
     <meta property="og:description" content="Learn with AI classmates, not just a chatbot. Slate gives you personalised explanations, adaptive courses and instant doubt resolution — built for students in India and beyond." />
-    <meta property="og:image" content="https://slateup.ai/og-image.png" />
+    <meta property="og:image" content="https://www.slateup.ai/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="en_IN" />
@@ -27,24 +26,27 @@
     <meta name="twitter:site" content="@slateupai" />
     <meta name="twitter:title" content="Slate — AI-powered Interactive Classroom" />
     <meta name="twitter:description" content="Learn with AI classmates, not just a chatbot. Personalised courses, instant doubt resolution — NCERT, JEE, NEET and more." />
-    <meta name="twitter:image" content="https://slateup.ai/og-image.png" />
+    <meta name="twitter:image" content="https://www.slateup.ai/og-image.png" />
 
-    <!-- JSON-LD: Organisation + Website -->
+    <!-- JSON-LD: Organisation + Website — NEW-010: www URLs to match canonical -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "Organization",
-          "@id": "https://slateup.ai/#organization",
+          "@id": "https://www.slateup.ai/#organization",
           "name": "Slate",
           "alternateName": "Slate Up",
-          "url": "https://slateup.ai",
+          "url": "https://www.slateup.ai",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://slateup.ai/favicon.svg"
+            "url": "https://www.slateup.ai/favicon.svg"
           },
-          "sameAs": [],
+          "sameAs": [
+            "https://x.com/slateupai",
+            "https://twitter.com/slateupai"
+          ],
           "contactPoint": {
             "@type": "ContactPoint",
             "email": "hello@slateup.ai",
@@ -53,16 +55,16 @@
         },
         {
           "@type": "WebSite",
-          "@id": "https://slateup.ai/#website",
-          "url": "https://slateup.ai",
+          "@id": "https://www.slateup.ai/#website",
+          "url": "https://www.slateup.ai",
           "name": "Slate",
           "description": "AI-powered interactive classroom with AI classmates for personalised learning",
-          "publisher": { "@id": "https://slateup.ai/#organization" },
+          "publisher": { "@id": "https://www.slateup.ai/#organization" },
           "potentialAction": {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://slateup.ai/blogs?q={search_term_string}"
+              "urlTemplate": "https://www.slateup.ai/blogs?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }
@@ -86,8 +88,19 @@
         gtag('config', 'G-CRW9PH2K0R');
     </script>
     <title>Slate — AI-powered Interactive Classroom</title>
+    <!-- Inline canonical: sets per-page canonical immediately before React loads so crawlers see correct URL -->
+    <!-- NEW-010: server redirects non-www → www (307), so canonical must use www too -->
+    <script>
+      (function() {
+        var canon = document.createElement('link');
+        canon.rel = 'canonical';
+        var path = window.location.pathname.replace(/\/$/, '') || '/';
+        canon.href = 'https://www.slateup.ai' + (path === '/' ? '/' : path);
+        document.head.appendChild(canon);
+      })();
+    </script>
     <script>window.addEventListener("error", function (e) { if (e.error instanceof DOMException && e.error.name === "DataCloneError" && e.message && e.message.includes("PerformanceServerTiming")) { e.stopImmediatePropagation(); e.preventDefault() } }, true);</script>
-    <script defer src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
+    <!-- NEW-011: emergent.sh script removed — purpose undocumented, performance/privacy impact unclear -->
 </head>
 
 <body>
