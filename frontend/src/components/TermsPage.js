@@ -6,7 +6,7 @@ export default function TermsPage() {
   useSeoMeta({
     title: "Terms of Service | Slate",
     description: "Slate's terms of service — your rights, our responsibilities, and the rules of the platform.",
-    canonical: "https://slateup.ai/terms",
+    canonical: "https://www.slateup.ai/terms",
   });
 
   return (

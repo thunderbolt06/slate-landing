@@ -43,7 +43,7 @@ Students who feel embarrassed to admit confusion to a human tutor often don't ge
 
 ### 3. Cost and Scale
 
-A qualified human tutor costs anywhere from Rs 500 to Rs 3,000 per hour in India, and considerably more in Western markets. AI tutoring platforms charge a fraction of this — or nothing at all — while providing unlimited sessions.
+A qualified human tutor costs anywhere from ₹500 to ₹3,000 per hour in India, and considerably more in Western markets. AI tutoring platforms charge a fraction of this — or nothing at all — while providing unlimited sessions.
 
 For students who need consistent practice over months, the economics are not comparable.
 

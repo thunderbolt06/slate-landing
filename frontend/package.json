@@ -64,6 +64,7 @@
     "prebuild": "yarn blog:build && yarn sitemap:build",
     "start": "craco start",
     "build": "craco build",
+    "postbuild": "node scripts/inject-page-meta.mjs",
     "test": "craco test"
   },
   "browserslist": {

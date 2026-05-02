@@ -1,476 +1,854 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://slateup.ai/</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/characters</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/characters</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/how-it-works</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/how-it-works</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/features</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/features</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/waitlist</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/waitlist</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/thank-you</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/thank-you</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/learn/ncert-class-10-mathematics</loc>
-    <lastmod>2026-04-25</lastmod>
+    <loc>https://www.slateup.ai/learn/ncert-class-10-mathematics</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/learn/ncert-class-10-science</loc>
-    <lastmod>2026-04-25</lastmod>
+    <loc>https://www.slateup.ai/learn/ncert-class-10-science</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/pricing</loc>
-    <lastmod>2026-04-25</lastmod>
+    <loc>https://www.slateup.ai/pricing</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/contact</loc>
-    <lastmod>2026-04-25</lastmod>
+    <loc>https://www.slateup.ai/contact</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/adaptive-learning-science-how-ai-tutoring-actually-works</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/terms</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/privacy</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/best-ai-learning-apps-cbse-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/how-to-learn-anything-fast-with-ai-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-clat-law-entrance-india-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-psychology-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-special-education-learning-disabilities-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-writing-tools-for-students-essays-research-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/best-ai-tools-self-paced-learning-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/how-to-study-effectively-ai-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-ielts-toefl-preparation-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-ssc-banking-exam-prep-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/learn-programming-with-ai-from-scratch-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/upsc-cat-ai-exam-prep-guide-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-for-competitive-programming-coding-contests-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-for-remote-online-learning-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-homework-help-tools-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-personalized-learning-future-of-education-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-study-habits-science-backed-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-adult-learners-lifelong-learning-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-college-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-corporate-training-employee-learning-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-finance-students-cfa-cpa-ca-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-for-teachers-educators-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-high-school-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-mba-students-business-school-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-middle-school-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-phd-research-academic-writing-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tutor-vs-human-tutor-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/best-ai-flashcard-apps-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/best-ai-tools-engineering-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/how-to-study-smarter-not-harder-ai-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-language-learning-tools-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-study-tools-nursing-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-law-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-upsc-preparation-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/best-ai-tools-homeschooling-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-certification-exam-prep-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-classmates-active-learning-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-for-gate-exam-preparation-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-for-language-learning-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-for-upsc-preparation-complete-guide-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-gmat-gre-mba-prep-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-interactive-learning-vs-passive-video-study-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-learning-apps-for-college-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-note-taking-apps-for-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-study-planner-personalized-schedule-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-study-tools-adhd-students-focus-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-study-tools-for-working-professionals-upskilling-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-study-tools-sat-prep-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-engineering-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-for-upskilling-professionals-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tools-medical-students-mbbs-neet-pg-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-tutors-vs-human-tutors-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/ai-vs-online-courses-coursera-udemy-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/anki-quizlet-vs-ai-tutors-for-studying-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/best-ai-course-creator-tools-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/best-ai-learning-platforms-working-professionals-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/best-ai-study-apps-high-school-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/best-ai-tools-cbse-students-board-exams-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/best-free-ai-study-tools-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/bloom-taxonomy-active-learning-ai-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/chatgpt-for-studying-how-to-use-ai-to-actually-learn-2026</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.slateup.ai/blogs/chatgpt-vs-gemini-vs-slate-for-learning-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/ai-classroom-what-it-means-for-students-2026</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/feynman-technique-ai-learning-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/ai-education-india-parent-guide-2026</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/free-ai-education-tools-for-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/best-ai-study-tools-jee-neet-2026</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/how-to-create-online-course-with-ai-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/how-ai-is-changing-student-learning-2026</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/generate-course-from-notes-ai-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/jee-neet-ai-study-tools-complete-guide-2026</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/how-to-prepare-for-job-interview-with-ai-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/learn-any-skill-fast-with-ai-2026</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/how-to-study-effectively-with-ai-science-backed-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/why-ai-homework-helpers-are-doing-it-wrong</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/how-to-study-faster-ai-techniques-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/meet-your-ai-classmates-slate-interactive-classroom</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/learn-to-code-with-ai-self-taught-developer-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/beyond-google-translate-best-ai-interpreters</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/slate-vs-khan-academy-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/brain-training-elevate-lumosity-peak</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/active-recall-spaced-repetition-science-study-guide</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/coding-for-kids-scratch-lego-robotics</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/ai-course-creator-tools-for-educators-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/collaborative-study-weverse-discord-pronto</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/ai-personalized-learning-path-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/college-admissions-common-app-college-board</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/ai-study-buddy-apps-for-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/creative-learning-garageband-artworkout-lego</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/ai-tutor-vs-human-tutor-2026-research</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/digital-privacy-respondus-lockdown-browser</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/best-ai-tools-self-directed-learners-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/early-reading-hooked-on-phonics-reading-com</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/how-to-learn-any-subject-fast-with-ai-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/english-speaking-india-elsa-speak-hello-english</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/online-learning-platforms-comparison-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/india-gov-exam-prep-testbook-rwa-careerwill</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/adaptive-learning-science-how-ai-tutoring-actually-works</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/medical-exam-prep-marrow-prepladder-dams</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/ai-classroom-what-it-means-for-students-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/micro-learning-headway-deepstash-nibble</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/ai-education-india-parent-guide-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/music-learning-piano-guitar-apps-2026</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/best-ai-study-tools-jee-neet-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/professional-skills-upgrad-simplilearn-skill-india</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/how-ai-is-changing-student-learning-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/religious-learning-apps-nitnem-chalisa-quran</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/jee-neet-ai-study-tools-complete-guide-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/school-health-nutrition-wic-solid-starts</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/learn-any-skill-fast-with-ai-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/science-exploration-inaturalist-anatomy-3d</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/why-ai-homework-helpers-are-doing-it-wrong</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/slate-ncert-guide-indian-board-exams</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/meet-your-ai-classmates-slate-interactive-classroom</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/slate-up-vs-notebooklm-which-learning-app-fits-you</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/beyond-google-translate-best-ai-interpreters</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/student-life-management-infinite-campus-powerschool</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/brain-training-elevate-lumosity-peak</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/top-10-ai-tools-for-2026</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/coding-for-kids-scratch-lego-robotics</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/vocational-exam-prep-cdl-dmv-asvab</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/collaborative-study-weverse-discord-pronto</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/best-ai-homework-helper-apps-compared-2026</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/college-admissions-common-app-college-board</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/lms-comparison-google-classroom-canvas-schoology-blackboard</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/creative-learning-garageband-artworkout-lego</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/language-learning-apps-duolingo-babbel-hellotalk-ranked</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/digital-privacy-respondus-lockdown-browser</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/ai-math-tools-ixl-khan-photomath-study-stack</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/early-reading-hooked-on-phonics-reading-com</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/flashcards-and-spaced-repetition-anki-quizlet-knowt</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/english-speaking-india-elsa-speak-hello-english</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/kids-learning-apps-educational-games-safe-screen-time</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/india-gov-exam-prep-testbook-rwa-careerwill</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/parent-apps-powerschool-infinite-campus-classdojo</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/medical-exam-prep-marrow-prepladder-dams</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/online-courses-udemy-coursera-linkedin-learning-masterclass</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/micro-learning-headway-deepstash-nibble</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/india-ed-tech-landscape-ncert-unacademy-testbook-byjus</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/music-learning-piano-guitar-apps-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/english-speaking-apps-ielts-toeic-vocabulary-builders</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/professional-skills-upgrad-simplilearn-skill-india</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/dictionary-translator-apps-for-students-google-translate-deepl</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/religious-learning-apps-nitnem-chalisa-quran</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/ai-in-education-news-agents-classroom-policy-2026</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/school-health-nutrition-wic-solid-starts</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/microlearning-headway-deepstash-elevate-for-busy-students</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/science-exploration-inaturalist-anatomy-3d</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/music-learning-apps-simply-piano-yousician-guitar-tuna</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/slate-ncert-guide-indian-board-exams</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/build-a-personal-ai-study-stack-without-too-many-apps</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/slate-up-vs-notebooklm-which-learning-app-fits-you</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/accessibility-text-to-speech-study-tools-for-diverse-learners</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/student-life-management-infinite-campus-powerschool</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/test-prep-apps-pocket-prep-uworld-zutobi-dmv-asvab</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/top-10-ai-tools-for-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/academic-integrity-ai-detection-tools-for-students-and-teachers</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/vocational-exam-prep-cdl-dmv-asvab</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/slate-up-ai-classmates-vs-human-tutoring-cost-scale-and-fit</loc>
-    <lastmod>2026-04-24</lastmod>
+    <loc>https://www.slateup.ai/blogs/best-ai-homework-helper-apps-compared-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/active-recall-spaced-repetition-science-study-guide</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/lms-comparison-google-classroom-canvas-schoology-blackboard</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/ai-classmates-active-learning-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/language-learning-apps-duolingo-babbel-hellotalk-ranked</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/ai-course-creator-tools-for-educators-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/ai-math-tools-ixl-khan-photomath-study-stack</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/ai-interactive-learning-vs-passive-video-study-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/flashcards-and-spaced-repetition-anki-quizlet-knowt</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/ai-learning-apps-for-college-students-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/kids-learning-apps-educational-games-safe-screen-time</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/ai-personalized-learning-path-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/parent-apps-powerschool-infinite-campus-classdojo</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/ai-study-buddy-apps-for-students-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/online-courses-udemy-coursera-linkedin-learning-masterclass</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/ai-tools-for-upskilling-professionals-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/india-ed-tech-landscape-ncert-unacademy-testbook-byjus</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/ai-tutor-vs-human-tutor-2026-research</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/english-speaking-apps-ielts-toeic-vocabulary-builders</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/best-ai-course-creator-tools-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/dictionary-translator-apps-for-students-google-translate-deepl</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/best-ai-tools-cbse-students-board-exams-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/ai-in-education-news-agents-classroom-policy-2026</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/best-ai-tools-self-directed-learners-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/microlearning-headway-deepstash-elevate-for-busy-students</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/generate-course-from-notes-ai-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/music-learning-apps-simply-piano-yousician-guitar-tuna</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/how-to-create-online-course-with-ai-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/build-a-personal-ai-study-stack-without-too-many-apps</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/how-to-learn-any-subject-fast-with-ai-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/accessibility-text-to-speech-study-tools-for-diverse-learners</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/how-to-study-effectively-with-ai-science-backed-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/test-prep-apps-pocket-prep-uworld-zutobi-dmv-asvab</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/how-to-study-faster-ai-techniques-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/academic-integrity-ai-detection-tools-for-students-and-teachers</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://slateup.ai/blogs/online-learning-platforms-comparison-2026</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://www.slateup.ai/blogs/slate-up-ai-classmates-vs-human-tutoring-cost-scale-and-fit</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

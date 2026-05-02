@@ -6,7 +6,7 @@ export default function PrivacyPage() {
   useSeoMeta({
     title: "Privacy Policy | Slate",
     description: "Read how Slate collects, stores and protects your personal data.",
-    canonical: "https://slateup.ai/privacy",
+    canonical: "https://www.slateup.ai/privacy",
   });
 
   return (

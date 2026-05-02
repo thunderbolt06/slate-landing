@@ -35,7 +35,7 @@ export default function NcertClass10MathPage() {
   useSeoMeta({
     title: "NCERT Class 10 Maths — AI-powered Lessons | Slate",
     description: "Study NCERT Class 10 Mathematics with Slate's AI classroom. Interactive lessons for all 14 chapters — Real Numbers, Polynomials, Trigonometry, Statistics and more.",
-    canonical: "https://slateup.ai/learn/ncert-class-10-mathematics",
+    canonical: "https://www.slateup.ai/learn/ncert-class-10-mathematics",
   });
 
   const [activeChapter, setActiveChapter] = useState(null);
@@ -45,7 +45,7 @@ export default function NcertClass10MathPage() {
     "@type": "ItemList",
     "name": "NCERT Class 10 Mathematics — All Chapters",
     "description": "Interactive AI-powered lessons for all 14 chapters of the NCERT Class 10 Mathematics syllabus.",
-    "url": "https://slateup.ai/learn/ncert-class-10-mathematics",
+    "url": "https://www.slateup.ai/learn/ncert-class-10-mathematics",
     "numberOfItems": CHAPTERS.length,
     "itemListElement": CHAPTERS.map((ch) => ({
       "@type": "ListItem",

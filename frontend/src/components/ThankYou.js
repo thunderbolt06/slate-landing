@@ -19,7 +19,7 @@ export default function ThankYou() {
     title: "You're on the list! | Slate",
     description: "You've joined the Slate waitlist. Get ready to learn with AI classmates.",
     noindex: true,
-    canonical: "https://slateup.ai/thank-you",
+    canonical: "https://www.slateup.ai/thank-you",
   });
 
   const [count, setCount] = useState(0);

@@ -128,7 +128,7 @@ export default function BlogPostPage() {
     "datePublished": meta.date,
     "dateModified": meta.date,
     "url": `https://slateup.ai/blogs/${meta.slug}`,
-    "image": "https://slateup.ai/og-image.png",
+    "image": "https://www.slateup.ai/og-image.png",
     "author": {
       "@type": "Organization",
       "name": "Slate",
@@ -140,7 +140,7 @@ export default function BlogPostPage() {
       "url": "https://slateup.ai",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://slateup.ai/favicon.svg",
+        "url": "https://www.slateup.ai/favicon.svg",
       },
     },
     "mainEntityOfPage": {
