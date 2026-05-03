@@ -11,7 +11,7 @@ AI is not solving every part of this problem, but it is making several of the ha
 
 ## Onboarding: Compressing the Learning Curve
 
-The first 90 days of a new hire's tenure are where most onboarding investment happens and where most of it is wasted. The problem is not usually the content — it is that new hires get information dumps they cannot contextualize yet.
+The first 90 days of a new hire's tenure are where most onboarding investment happens and where most of it is wasted. The problem is not usually the content - it is that new hires get information dumps they cannot contextualize yet.
 
 **Slate (slateup.ai)** addresses this by generating structured, interactive learning paths from existing documentation. Upload your product specs, internal wikis, and process guides, and Slate turns them into a structured course with AI-generated quizzes and review sessions. New hires learn in context, not from a PDF pile.
 
@@ -25,7 +25,7 @@ The classic L&D challenge: different roles need different skills, skills change 
 
 **Coursera for Business** and **Udemy for Business** have both added AI curation layers that do something similar. The catalog depth is strong; the personalization is still relatively shallow compared to a good human L&D partner, but it works at scale.
 
-For technical upskilling specifically, **GitHub Copilot** and coding AI tools deserve recognition here — engineers learn by doing, and AI pair programming accelerates skill development more than courses do for many people.
+For technical upskilling specifically, **GitHub Copilot** and coding AI tools deserve recognition here - engineers learn by doing, and AI pair programming accelerates skill development more than courses do for many people.
 
 ## AI-Generated Course Creation
 
@@ -35,7 +35,7 @@ Building courses internally used to require an instructional designer, a subject
 
 **Synthesia** lets you create video-based training content with AI avatars instead of recording studio time. For procedural content that needs to be updated frequently, this is far more practical than re-recording video every quarter.
 
-**Slate** sits at a different point in this stack — it is better for courses where learner interaction and active recall matter, not just passive video consumption.
+**Slate** sits at a different point in this stack - it is better for courses where learner interaction and active recall matter, not just passive video consumption.
 
 ## Measuring What Actually Gets Learned
 
@@ -43,7 +43,7 @@ This has historically been L&D's weakest point. Completion rates are not learnin
 
 **Axonify** uses spaced repetition and microlearning to measure and reinforce knowledge over time. Employees get 3-minute daily knowledge checks that the system adapts based on what they are forgetting. This is closer to actual learning measurement than most LMS platforms.
 
-**Degreed** tracks learning signals from multiple sources — courses, articles, videos, project work — and builds a more complete picture of employee skill development. For large organizations that care about skills-based talent planning, this is worth the investment.
+**Degreed** tracks learning signals from multiple sources - courses, articles, videos, project work - and builds a more complete picture of employee skill development. For large organizations that care about skills-based talent planning, this is worth the investment.
 
 ## What to Avoid
 
@@ -51,7 +51,7 @@ The worst corporate AI training implementations share common mistakes:
 
 **AI-generated content without human review.** AI course generators produce plausible-sounding content that can be subtly wrong. Subject matter experts still need to validate output before it goes live.
 
-**Replacing human connection with automation.** The parts of onboarding that work — mentorship, peer relationships, cultural assimilation — are not automatable. AI should free up time for more human interaction, not replace it.
+**Replacing human connection with automation.** The parts of onboarding that work - mentorship, peer relationships, cultural assimilation - are not automatable. AI should free up time for more human interaction, not replace it.
 
 **Over-indexing on completion metrics.** AI makes it easy to track who finished what. Finishing is not the goal. Use spaced repetition tools and on-the-job assessment to measure actual retention.
 
@@ -63,4 +63,4 @@ The worst corporate AI training implementations share common mistakes:
 - Knowledge retention: Axonify for spaced repetition
 - Skills tracking: Degreed for enterprise skill visibility
 
-The core shift is this: AI does not replace L&D — it replaces the most time-consuming mechanical parts of L&D so your team can focus on what drives actual behavior change at work.
+The core shift is this: AI does not replace L&D - it replaces the most time-consuming mechanical parts of L&D so your team can focus on what drives actual behavior change at work.

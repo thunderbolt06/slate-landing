@@ -1,5 +1,5 @@
 #!/bin/bash
-# Push script for Run 11 — Apr 28, 2026
+# Push script for Run 11 - Apr 28, 2026
 # Run this from the slate-landing/ directory
 
 set -e

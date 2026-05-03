@@ -23,6 +23,6 @@ For older kids, platforms like **Udemy** and **Coursera** offer beginner courses
 
 ## The Parent's Role
 
-Using a **parent app** like **ClassDojo** or **Remind**, parents can stay updated on their child's coding projects. Encouraging **free games for kids** that have a logic-building component—like those found in **Toca Boca World** or **Epic**—can set the stage for a lifelong interest in STEM.
+Using a **parent app** like **ClassDojo** or **Remind**, parents can stay updated on their child's coding projects. Encouraging **free games for kids** that have a logic-building component-like those found in **Toca Boca World** or **Epic**-can set the stage for a lifelong interest in STEM.
 
 **Keywords**: scratch, scratch jr, lego builder, coding for kids, stem.

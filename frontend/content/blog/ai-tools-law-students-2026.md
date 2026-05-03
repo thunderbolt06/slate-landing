@@ -5,7 +5,7 @@ date: "2026-04-27"
 slug: ai-tools-law-students-2026
 ---
 
-Law school is one of the most demanding academic environments in the world. You are expected to read hundreds of pages of case law weekly, synthesize competing legal theories, and apply abstract doctrine to concrete fact patterns — all while preparing for one of the hardest professional exams that exists. AI tools have changed what is possible for law students who know how to use them. This guide covers the best options in 2026 and how to integrate them into your study workflow.
+Law school is one of the most demanding academic environments in the world. You are expected to read hundreds of pages of case law weekly, synthesize competing legal theories, and apply abstract doctrine to concrete fact patterns - all while preparing for one of the hardest professional exams that exists. AI tools have changed what is possible for law students who know how to use them. This guide covers the best options in 2026 and how to integrate them into your study workflow.
 
 ## Why Law Students Need Different AI Tools
 
@@ -15,7 +15,7 @@ The best AI tools for law students are ones that can engage with nuanced, argume
 
 ## Top AI Tools for Law Students in 2026
 
-### 1. Slate — Active Learning Through Discussion
+### 1. Slate - Active Learning Through Discussion
 
 [Slate](https://slateup.ai) is designed for learning through discussion rather than passive reading, which makes it exceptionally well-suited for law students.
 
@@ -34,7 +34,7 @@ Thomson Reuters has integrated AI deeply into Westlaw. The AI-assisted research 
 
 ### 3. Lexis+ AI
 
-LexisNexis's AI assistant can summarize cases, pull out key holdings, and help you build out a research memo quickly. Strong for research workflows. As a study companion, it is less effective than conversational tools — it tells you *what*, but does not help you understand *why*.
+LexisNexis's AI assistant can summarize cases, pull out key holdings, and help you build out a research memo quickly. Strong for research workflows. As a study companion, it is less effective than conversational tools - it tells you *what*, but does not help you understand *why*.
 
 ### 4. Perplexity
 
@@ -42,7 +42,7 @@ For quick legal research outside of paid databases, Perplexity does a reasonable
 
 ### 5. Anki with AI-Generated Decks
 
-For black-letter law memorization — elements of crimes, rules of evidence, UCC provisions — Anki with spaced repetition is still the gold standard. You can now use AI tools to generate Anki decks from your outlines, saving the time-consuming card creation step.
+For black-letter law memorization - elements of crimes, rules of evidence, UCC provisions - Anki with spaced repetition is still the gold standard. You can now use AI tools to generate Anki decks from your outlines, saving the time-consuming card creation step.
 
 ## How to Use AI to Prep for the Bar Exam
 
@@ -54,7 +54,7 @@ The bar exam tests your ability to apply law quickly and accurately across multi
 
 **Subject-by-subject conversation.** Before taking a full practice exam in a subject like Evidence or Contracts, have a 15-minute conversation with an AI tutor walking through major rules and exceptions. This activates your knowledge before you test it, which cognitive science shows leads to better retention.
 
-**Jurisdiction-specific issues.** The bar exam includes Multistate Essay Exam (MEE) subjects plus state-specific questions. AI can help you identify where your state deviates from majority rules — a common source of errors.
+**Jurisdiction-specific issues.** The bar exam includes Multistate Essay Exam (MEE) subjects plus state-specific questions. AI can help you identify where your state deviates from majority rules - a common source of errors.
 
 ## How to Use AI to Study for 1L Finals
 
@@ -62,7 +62,7 @@ First year of law school is where most students feel most lost. Here is a workfl
 
 **Step 1: Create your own case brief for each assigned case.** Do not use commercial briefs. Writing your own forces engagement with the text.
 
-**Step 2: Upload your briefs and the professor's outline to Slate.** Use the AI to synthesize across cases — ask it what principle *Hadley v. Baxendale* and *Hawkins v. McGee* share, or how the *Palsgraf* majority defines duty compared to the dissent.
+**Step 2: Upload your briefs and the professor's outline to Slate.** Use the AI to synthesize across cases - ask it what principle *Hadley v. Baxendale* and *Hawkins v. McGee* share, or how the *Palsgraf* majority defines duty compared to the dissent.
 
 **Step 3: Work through hypotheticals.** Ask the AI to give you a fact pattern and test your ability to identify the issue and apply the rule. Push back on its analysis.
 

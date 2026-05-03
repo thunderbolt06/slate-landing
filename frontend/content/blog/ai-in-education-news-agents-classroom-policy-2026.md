@@ -1,19 +1,19 @@
 ---
 title: "AI in Education News You Can Use: Agents, Classroom Policy & Safety (2026 Snapshot)"
-blurb: "Cut through hype—what changed this year for schools, LMS vendors, and student-facing AI assistants."
+blurb: "Cut through hype-what changed this year for schools, LMS vendors, and student-facing AI assistants."
 date: "2026-04-07"
 slug: ai-in-education-news-agents-classroom-policy-2026
 ---
 
-This **2026** snapshot focuses on durable trends—not vaporware demos.
+This **2026** snapshot focuses on durable trends-not vaporware demos.
 
 ## What actually landed in classrooms
 
-**LMS integrations** — **Canvas**, **Google Classroom**, **Schoology**, and **Moodle** ecosystems shipped tighter AI plug-ins; districts still route procurement through **Clever** / **ClassLink**.
+**LMS integrations** - **Canvas**, **Google Classroom**, **Schoology**, and **Moodle** ecosystems shipped tighter AI plug-ins; districts still route procurement through **Clever** / **ClassLink**.
 
-**Math & science copilots** — Photo-based solvers (**Photomath**, **Gauth**, **Question AI**) now compete on showing reasoning traces.
+**Math & science copilots** - Photo-based solvers (**Photomath**, **Gauth**, **Question AI**) now compete on showing reasoning traces.
 
-**Study companions** — **NotebookLM**-style grounding and **Slate Up**-style interactive classrooms represent two poles: fidelity to uploads vs fidelity to structured teaching.
+**Study companions** - **NotebookLM**-style grounding and **Slate Up**-style interactive classrooms represent two poles: fidelity to uploads vs fidelity to structured teaching.
 
 ## Policy pattern
 

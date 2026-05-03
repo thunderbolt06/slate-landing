@@ -1,5 +1,5 @@
 #!/bin/bash
-# Push Apr 30 (run 2) — 38 accumulated blog posts + 2 new ones
+# Push Apr 30 (run 2) - 38 accumulated blog posts + 2 new ones
 # Run this from the slate-landing directory: bash push-apr30-run2-blogs.sh
 
 cd "$(dirname "$0")"
@@ -57,6 +57,6 @@ git add \
   frontend/content/blog/upsc-cat-ai-exam-prep-guide-2026.md \
   frontend/src/generated/blogRegistry.js
 
-git commit -m "blog: add 38 SEO posts batch (Apr 30 run 2) — 125 total posts"
+git commit -m "blog: add 38 SEO posts batch (Apr 30 run 2) - 125 total posts"
 git push origin main
 echo "Done! All posts live on main."

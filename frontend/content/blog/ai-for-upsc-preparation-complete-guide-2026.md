@@ -7,7 +7,7 @@ slug: ai-for-upsc-preparation-complete-guide-2026
 
 The UPSC Civil Services Examination is the longest, broadest, and probably the most competitive exam in India. The syllabus is enormous. The cycle is brutal. And until very recently, the only way to crack it was a coaching class in Old Rajinder Nagar or two years of solitary self-study.
 
-In 2026, AI has changed the game. Not by making it easier — UPSC is still hard — but by changing what a single aspirant with no coaching can do alone.
+In 2026, AI has changed the game. Not by making it easier - UPSC is still hard - but by changing what a single aspirant with no coaching can do alone.
 
 This is the honest guide to using AI for UPSC prep. What works, what doesn't, and where it absolutely cannot replace human effort.
 
@@ -78,13 +78,13 @@ What AI cannot do: simulate the unpredictable warmth or hostility of a real pane
 
 For a serious aspirant, 10 hours of focused study, AI integrated:
 
-- **6:30 to 8:30 AM** — One static topic (NCERT or Laxmikanth). 30-minute AI quiz at the end.
-- **9:00 to 11:00 AM** — Current affairs. The Hindu plus AI mapping to syllabus.
-- **11:30 to 1:00 PM** — One Mains answer written, AI critiqued, rewritten.
-- **2:00 to 4:00 PM** — Optional subject reading. AI for clarification only.
-- **4:30 to 6:00 PM** — Test series or PYQ practice. AI explanation for wrong answers.
-- **7:00 to 8:00 PM** — Revision. Anki cards from the day.
-- **8:30 to 9:30 PM** — Read a non-UPSC book. Politics, history, economics, anything that builds general perspective.
+- **6:30 to 8:30 AM** - One static topic (NCERT or Laxmikanth). 30-minute AI quiz at the end.
+- **9:00 to 11:00 AM** - Current affairs. The Hindu plus AI mapping to syllabus.
+- **11:30 to 1:00 PM** - One Mains answer written, AI critiqued, rewritten.
+- **2:00 to 4:00 PM** - Optional subject reading. AI for clarification only.
+- **4:30 to 6:00 PM** - Test series or PYQ practice. AI explanation for wrong answers.
+- **7:00 to 8:00 PM** - Revision. Anki cards from the day.
+- **8:30 to 9:30 PM** - Read a non-UPSC book. Politics, history, economics, anything that builds general perspective.
 
 The schedule is unforgiving. AI does not change that. It just makes each block more productive.
 
@@ -114,9 +114,9 @@ For Anki, build your own deck. Pre-made decks online are unreliable.
 
 For a focused first-time aspirant:
 
-- **First Prelims attempt** — 12 to 15 months from a serious start
-- **First full cycle including Mains** — 18 to 24 months
-- **Hitting interview stage** — Most successful candidates take 2 to 3 attempts
+- **First Prelims attempt** - 12 to 15 months from a serious start
+- **First full cycle including Mains** - 18 to 24 months
+- **Hitting interview stage** - Most successful candidates take 2 to 3 attempts
 
 AI compresses learning time, not the number of attempts. The exam is designed to filter for resilience as much as intelligence. Plan accordingly.
 

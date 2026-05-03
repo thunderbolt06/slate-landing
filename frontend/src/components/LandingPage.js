@@ -219,7 +219,7 @@ const NCERT_MENU = [
         label: "Class 10",
         subjects: [
           { label: "Mathematics", href: "/learn/ncert-class-10-mathematics", color: "#FFD166" },
-          { label: "Science",     href: "/learn/ncert-class-10-science",     color: "#06D6A0" },
+          { label: "Science", href: "/learn/ncert-class-10-science", color: "#06D6A0" },
         ],
       },
     ],
@@ -267,11 +267,10 @@ function NcertDropdown() {
                   key={cls.label}
                   onMouseEnter={() => setActiveClass(cls.label)}
                   onClick={() => setActiveClass(cls.label)}
-                  className={`flex-1 flex items-center justify-between px-3 py-1.5 rounded-xl text-sm font-bold border-2 transition-all ${
-                    activeClass === cls.label
+                  className={`flex-1 flex items-center justify-between px-3 py-1.5 rounded-xl text-sm font-bold border-2 transition-all ${activeClass === cls.label
                       ? "bg-[#FFD166] border-[#073B4C] text-[#073B4C] shadow-[2px_2px_0px_#073B4C]"
                       : "bg-white border-transparent text-[#073B4C]/60 hover:border-[#073B4C]/30"
-                  }`}
+                    }`}
                 >
                   {cls.label} <ChevronRight size={12} />
                 </button>
@@ -315,7 +314,7 @@ const SlateDemoVideo = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-            video.play().then(() => setIsPlaying(true)).catch(() => {});
+            video.play().then(() => setIsPlaying(true)).catch(() => { });
           } else {
             video.pause();
             setIsPlaying(false);
@@ -332,7 +331,7 @@ const SlateDemoVideo = () => {
     const v = videoRef.current;
     if (!v) return;
     if (v.paused) {
-      v.play().then(() => setIsPlaying(true)).catch(() => {});
+      v.play().then(() => setIsPlaying(true)).catch(() => { });
     } else {
       v.pause();
       setIsPlaying(false);
@@ -414,8 +413,8 @@ const SlateDemoVideo = () => {
    ═══════════════════════════════════════════════════ */
 export default function LandingPage() {
   useSeoMeta({
-    title: "Slate — AI-powered Interactive Classroom",
-    description: "Slate is an AI-powered interactive classroom where you learn with AI classmates — not just a chatbot. Personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond.",
+    title: "Slate - AI-powered Interactive Classroom",
+    description: "Slate is an AI-powered interactive classroom where you learn with AI classmates - not just a chatbot. Personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond.",
     canonical: "https://www.slateup.ai/",
   });
 
@@ -469,13 +468,13 @@ export default function LandingPage() {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD",
-        "description": "Free starter plan — 2 classrooms forever",
+        "description": "Free starter plan - 2 classrooms forever",
       },
       {
         "@type": "Offer",
         "price": "19",
         "priceCurrency": "USD",
-        "description": "Pro plan — 30 classrooms per month",
+        "description": "Pro plan - 30 classrooms per month",
       },
     ],
     "description": "AI-powered interactive classroom where you learn with AI classmates. Personalised courses, instant doubt resolution, and adaptive lessons for NCERT, JEE, NEET and beyond.",
@@ -681,7 +680,7 @@ export default function LandingPage() {
               Your classroom, <em className="not-italic text-[#EF476F]">on demand</em>.
             </motion.h2>
             <p className="font-body text-base md:text-lg text-[#495057] text-center max-w-xl mb-10 leading-relaxed">
-              Ask for any topic, and SLATE UP builds a live, interactive lesson — slides, narration and AI classmates included.
+              Ask for any topic, and SLATE UP builds a live, interactive lesson - slides, narration and AI classmates included.
             </p>
 
             <SlateDemoVideo />
@@ -766,7 +765,7 @@ export default function LandingPage() {
             What Makes SLATE UP Special
           </motion.h2>
           <p className="font-body text-base md:text-lg text-[#495057] text-center max-w-2xl mb-12">
-            A new way to learn — powered by AI, designed for you.
+            A new way to learn - powered by AI, designed for you.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl w-full">
             {FEATURES.map((feat, i) => (
@@ -873,7 +872,7 @@ export default function LandingPage() {
               <div className="border-t border-white/10 mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <p className="font-body text-white/40 text-sm">&copy; {new Date().getFullYear()} Slate Up. All rights reserved.</p>
                 <a href="https://www.toolpilot.ai" target="_blank" rel="noopener noreferrer">
-                  <img src="https://www.toolpilot.ai/cdn/shop/files/f-w_300x66_crop_center.png?v=1695883028" alt="Featured on ToolPilot" width="150" height="33" style={{opacity: 0.7}} />
+                  <img src="https://www.toolpilot.ai/cdn/shop/files/f-w_300x66_crop_center.png?v=1695883028" alt="Featured on ToolPilot" width="150" height="33" style={{ opacity: 0.7 }} />
                 </a>
               </div>
             </div>

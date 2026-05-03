@@ -1,6 +1,6 @@
 ---
 title: "AI Classmates: The New Way to Learn Without Feeling Alone"
-blurb: "Studying alone is hard. AI classmates give you someone to think alongside — not just answer questions, but actually discuss, debate, and help ideas stick."
+blurb: "Studying alone is hard. AI classmates give you someone to think alongside - not just answer questions, but actually discuss, debate, and help ideas stick."
 date: "2026-04-26"
 slug: ai-classmates-active-learning-2026
 ---
@@ -9,7 +9,7 @@ Most students don't fail because they're lazy. They fail because studying alone 
 
 Flashcards don't tell you when your understanding is shallow. Videos don't notice when you've zoned out. And human tutors cost $50–$100 an hour, which simply isn't realistic for most learners.
 
-**AI classmates are a different idea entirely.** Instead of a tool that delivers content at you, they sit alongside you in the learning process — asking questions, challenging your explanations, and making sure you actually understand the material before you move on.
+**AI classmates are a different idea entirely.** Instead of a tool that delivers content at you, they sit alongside you in the learning process - asking questions, challenging your explanations, and making sure you actually understand the material before you move on.
 
 ## What Makes a Classmate Different From a Tutor?
 
@@ -39,7 +39,7 @@ AI classmates solve this by making active recall feel like a conversation instea
 
 You might argue a concept with one AI classmate, get a different angle from another, and realize through the back-and-forth that you'd been thinking about something the wrong way.
 
-It's the closest thing to a late-night study group — without the scheduling or the social anxiety.
+It's the closest thing to a late-night study group - without the scheduling or the social anxiety.
 
 ## Who Benefits Most?
 

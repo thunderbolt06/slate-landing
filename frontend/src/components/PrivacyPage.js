@@ -50,7 +50,7 @@ export default function PrivacyPage() {
             <h4 className="font-bold text-[#073B4C] mt-3 mb-1">Information You Provide</h4>
             <ul>
               <li>Account information (name, email address, password)</li>
-              <li>Payment information (processed securely by Stripe or Razorpay — we do not store card details)</li>
+              <li>Payment information (processed securely by Stripe or Razorpay - we do not store card details)</li>
               <li>Content you create or upload on the platform (topics, course inputs, PDFs, URLs)</li>
               <li>Communications with our support team</li>
             </ul>
@@ -132,7 +132,7 @@ export default function PrivacyPage() {
               <li>Correct inaccurate or incomplete information</li>
               <li>Request deletion of your personal information</li>
               <li>Object to or restrict processing of your information</li>
-              <li>Data portability — receive your data in a machine-readable format</li>
+              <li>Data portability - receive your data in a machine-readable format</li>
               <li>Withdraw consent at any time</li>
             </ul>
             <p>

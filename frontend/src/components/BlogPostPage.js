@@ -32,9 +32,8 @@ function createMarkdownComponents({ inToolCard = false } = {}) {
   return {
     h3: ({ children }) => (
       <h3
-        className={`font-heading text-xl font-bold text-[#073B4C] ${
-          inToolCard ? "mt-0 mb-2" : "mt-10 mb-3 first:mt-0"
-        }`}
+        className={`font-heading text-xl font-bold text-[#073B4C] ${inToolCard ? "mt-0 mb-2" : "mt-10 mb-3 first:mt-0"
+          }`}
       >
         {children}
       </h3>
@@ -44,11 +43,10 @@ function createMarkdownComponents({ inToolCard = false } = {}) {
     ),
     p: ({ children }) => (
       <p
-        className={`font-body text-[#495057] leading-relaxed ${
-          inToolCard
+        className={`font-body text-[#495057] leading-relaxed ${inToolCard
             ? "mb-0 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between sm:gap-4"
             : "mb-4 last:mb-0"
-        }`}
+          }`}
       >
         {children}
       </p>
@@ -112,7 +110,7 @@ export default function BlogPostPage() {
 
   useSeoMeta({
     title: meta ? `${meta.title} | Slate Blog` : "Blog | Slate",
-    description: meta?.blurb ?? "Read the latest from the Slate blog — AI learning, NCERT guides and EdTech insights.",
+    description: meta?.blurb ?? "Read the latest from the Slate blog - AI learning, NCERT guides and EdTech insights.",
     canonical: meta ? `https://slateup.ai/blogs/${meta.slug}` : undefined,
   });
 

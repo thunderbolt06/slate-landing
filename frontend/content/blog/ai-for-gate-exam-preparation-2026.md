@@ -21,9 +21,9 @@ The three biggest challenges GATE aspirants face:
 
 ### 1. Personalized Weak-Area Detection
 
-Modern AI study platforms analyze your performance across practice sets and identify exactly which sub-topics are dragging your score. Instead of re-reading an entire chapter on Operating Systems, you get targeted drills on the specific concepts you're weak on — scheduling algorithms, say, or memory management.
+Modern AI study platforms analyze your performance across practice sets and identify exactly which sub-topics are dragging your score. Instead of re-reading an entire chapter on Operating Systems, you get targeted drills on the specific concepts you're weak on - scheduling algorithms, say, or memory management.
 
-[Slate](https://slateup.ai) goes further by generating AI classmates — study partners that quiz you, debate concepts with you, and explain topics from different angles until they click.
+[Slate](https://slateup.ai) goes further by generating AI classmates - study partners that quiz you, debate concepts with you, and explain topics from different angles until they click.
 
 ### 2. On-Demand Concept Explanations
 
@@ -51,7 +51,7 @@ AI can simulate network topology problems and explain protocol layers interactiv
 Deadlock, scheduling, and memory management concepts are highly conceptual. AI tutors excel at Socratic-style questioning here: "Why does the Banker's Algorithm avoid deadlock? Walk me through it."
 
 **Engineering Mathematics (15% weightage)**
-Linear algebra, calculus, probability — AI platforms with math rendering can solve and explain step by step, making this traditionally difficult section approachable.
+Linear algebra, calculus, probability - AI platforms with math rendering can solve and explain step by step, making this traditionally difficult section approachable.
 
 **General Aptitude (15% weightage)**
 Verbal and numerical reasoning. AI tools with adaptive difficulty are perfect for drilling quantitative aptitude at the exact level you need.
@@ -66,21 +66,21 @@ Verbal and numerical reasoning. AI tools with adaptive difficulty are perfect fo
 | Unacademy | Live classes | Fixed schedule |
 | Made Easy | Printed material | Zero AI integration |
 
-Slate's AI classmate approach is particularly valuable for GATE because it forces active recall — you explain concepts back to the AI, which surfaces gaps in your understanding before the exam does.
+Slate's AI classmate approach is particularly valuable for GATE because it forces active recall - you explain concepts back to the AI, which surfaces gaps in your understanding before the exam does.
 
 ## 90-Day AI-Powered GATE Study Plan
 
-**Month 1 — Foundation**
+**Month 1 - Foundation**
 - Use AI to assess baseline across all subjects
 - Focus on highest-weightage subjects: Math, Algorithms, OS, Networks
 - Daily: 30-minute AI tutoring session + 20 practice problems
 
-**Month 2 — Deep Dive**
+**Month 2 - Deep Dive**
 - Tackle weak areas identified by AI diagnostic
 - Solve GATE 2020–2024 papers with AI-assisted explanations for wrong answers
 - Start timed practice sets (simulate exam conditions)
 
-**Month 3 — Revision + Mock Tests**
+**Month 3 - Revision + Mock Tests**
 - Full-length mock tests, 3 per week
 - AI analysis of each mock: topic-wise breakdown, time distribution, error patterns
 - Targeted 15-minute daily sessions on persistent weak spots

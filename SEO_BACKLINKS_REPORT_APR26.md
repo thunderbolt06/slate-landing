@@ -1,4 +1,4 @@
-# Slate SEO Backlinks Report — April 26, 2026
+# Slate SEO Backlinks Report - April 26, 2026
 
 ## Blog Posts Added Today (3 new posts)
 
@@ -15,11 +15,11 @@ git push origin main
 ```
 
 ### Posts written:
-1. **Best AI Learning Apps for College Students in 2026** (`/blogs/ai-learning-apps-for-college-students-2026`) — Targets high-volume queries around college + AI study tools. Positions Slate alongside Notion AI, Anki, Perplexity, and Otter.ai.
+1. **Best AI Learning Apps for College Students in 2026** (`/blogs/ai-learning-apps-for-college-students-2026`) - Targets high-volume queries around college + AI study tools. Positions Slate alongside Notion AI, Anki, Perplexity, and Otter.ai.
 
-2. **How to Study Effectively With AI: What the Science Actually Says** (`/blogs/how-to-study-effectively-with-ai-science-backed-2026`) — Targets "cognitive science + studying" queries. Explains retrieval practice, elaboration, spaced repetition, and how Slate is built around these. High potential for .edu backlinks.
+2. **How to Study Effectively With AI: What the Science Actually Says** (`/blogs/how-to-study-effectively-with-ai-science-backed-2026`) - Targets "cognitive science + studying" queries. Explains retrieval practice, elaboration, spaced repetition, and how Slate is built around these. High potential for .edu backlinks.
 
-3. **AI Tools for Upskilling: How Professionals Are Learning Faster in 2026** (`/blogs/ai-tools-for-upskilling-professionals-2026`) — Targets professional development + upskilling queries. Positions Slate for adult learners and career switchers.
+3. **AI Tools for Upskilling: How Professionals Are Learning Faster in 2026** (`/blogs/ai-tools-for-upskilling-professionals-2026`) - Targets professional development + upskilling queries. Positions Slate for adult learners and career switchers.
 
 ---
 
@@ -27,7 +27,7 @@ git push origin main
 
 Submit Slate at https://slateup.ai with description: *"Slate is an AI-powered interactive classroom where you learn by discussing your course material with AI classmates. Upload notes, textbooks, or syllabi and engage in active conversations that drive real understanding. Built for students and self-learners."*
 
-### Tier 1 — AI Tool Directories (High DA, Free, Do-Follow)
+### Tier 1 - AI Tool Directories (High DA, Free, Do-Follow)
 
 | # | Directory | Submit URL | Notes |
 |---|-----------|------------|-------|
@@ -42,16 +42,16 @@ Submit Slate at https://slateup.ai with description: *"Slate is an AI-powered in
 | 9 | **AI Top Tools** | https://aitoptools.com/submit | "Best AI Tools" niche positioning |
 | 10 | **OpenTools** | https://opentools.ai/submit | GPT-powered matching, good for discoverability |
 
-### Tier 2 — EdTech-Specific Directories (High Relevance)
+### Tier 2 - EdTech-Specific Directories (High Relevance)
 
 | # | Directory | Submit URL | Notes |
 |---|-----------|------------|-------|
 | 11 | **EdTech Insiders AI Directory** | https://www.edtechinsiders.ai/ai-tool-directory | K-12 and EdTech focused, 300+ tools listed |
-| 12 | **EduAI Atlas** | https://eduaiatlas.com/submit | "AI Resources for Education" — very targeted |
+| 12 | **EduAI Atlas** | https://eduaiatlas.com/submit | "AI Resources for Education" - very targeted |
 | 13 | **Desifounder** | https://desifounder.com/spotlight | India-focused founders/startups, great for Slate's India market |
 | 14 | **Startuplist.in** | https://startuplist.in | India startup directory, free backlinks |
 
-### Tier 3 — Startup & SaaS Directories (Authority Backlinks)
+### Tier 3 - Startup & SaaS Directories (Authority Backlinks)
 
 | # | Directory | Submit URL | Notes |
 |---|-----------|------------|-------|
@@ -62,7 +62,7 @@ Submit Slate at https://slateup.ai with description: *"Slate is an AI-powered in
 | 19 | **Aura++** | https://auraplusplus.com | Featured launch post + social media + dofollow backlink |
 | 20 | **OpenFuture AI** | https://openfuture.ai | "Largest Tools Directory, Fastest Update" |
 
-### Bonus — GitHub "Awesome" Lists (Developer + SEO Authority)
+### Bonus - GitHub "Awesome" Lists (Developer + SEO Authority)
 
 | # | Resource | URL | Action |
 |---|----------|-----|--------|
@@ -76,11 +76,11 @@ Submit Slate at https://slateup.ai with description: *"Slate is an AI-powered in
 
 These sites accept guest posts from EdTech founders and are likely to link back:
 
-1. **EdSurge** (edsurge.com) — Industry-leading EdTech publication. Pitch a founder perspective piece on AI and active learning.
-2. **Ditch That Textbook** (ditchthattextbook.com) — Widely read by teachers. Pitch a practical "how to use Slate in your classroom" post.
-3. **The 74 Million** (the74million.org) — Education news/opinion. Pitch on AI classmates as a democratization story.
-4. **E-Student.org** — Study skills blog. Pitch a science-backed post on retrieval practice + AI tools.
-5. **Eklavvya Blog** (eklavvya.com/blog) — EdTech-adjacent, lists AI tools. Pitch a roundup contribution or tool review.
+1. **EdSurge** (edsurge.com) - Industry-leading EdTech publication. Pitch a founder perspective piece on AI and active learning.
+2. **Ditch That Textbook** (ditchthattextbook.com) - Widely read by teachers. Pitch a practical "how to use Slate in your classroom" post.
+3. **The 74 Million** (the74million.org) - Education news/opinion. Pitch on AI classmates as a democratization story.
+4. **E-Student.org** - Study skills blog. Pitch a science-backed post on retrieval practice + AI tools.
+5. **Eklavvya Blog** (eklavvya.com/blog) - EdTech-adjacent, lists AI tools. Pitch a roundup contribution or tool review.
 
 ---
 
@@ -90,7 +90,7 @@ To track which directories have been submitted, maintain this log:
 
 | Date | Directory | Status | Link Obtained |
 |------|-----------|--------|---------------|
-| Apr 26 | (start submissions above) | pending | — |
+| Apr 26 | (start submissions above) | pending | - |
 
 ---
 
@@ -98,5 +98,5 @@ To track which directories have been submitted, maintain this log:
 
 - All three new blog posts include 4–6 internal links to slateup.ai and app.slateup.ai.
 - High-intent keywords targeted today: "AI learning apps college students", "how to study with AI", "AI upskilling professionals", "cognitive science study techniques".
-- The science-backed study post is the strongest candidate for .edu inbound links — consider outreaching to university library resource pages once it's indexed.
+- The science-backed study post is the strongest candidate for .edu inbound links - consider outreaching to university library resource pages once it's indexed.
 

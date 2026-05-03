@@ -8,33 +8,33 @@ import {
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const CHAPTERS = [
-  { num: 1,  name: "Real Numbers",                              url: "https://app.slateup.ai/classroom/D2HsNZ0lMN", color: "#D4F0FF", accent: "#118AB2" },
-  { num: 2,  name: "Polynomials",                               url: "https://app.slateup.ai/classroom/wvoeW2ht26", color: "#FFF8E1", accent: "#FFD166" },
-  { num: 3,  name: "Pair of Linear Equations in Two Variables", url: "https://app.slateup.ai/classroom/-FQ-QFoZlY", color: "#E0FFF4", accent: "#06D6A0" },
-  { num: 4,  name: "Quadratic Equations",                       url: "https://app.slateup.ai/classroom/OG1dOHon3k", color: "#F0E6FF", accent: "#8338EC" },
-  { num: 5,  name: "Arithmetic Progressions",                   url: "https://app.slateup.ai/classroom/Ad0H0nC8Ec", color: "#FFE4EC", accent: "#EF476F" },
-  { num: 6,  name: "Triangles",                                 url: "https://app.slateup.ai/classroom/mnjYquccEr", color: "#FFF0E0", accent: "#FF6B35" },
-  { num: 7,  name: "Coordinate Geometry",                       url: "https://app.slateup.ai/classroom/UU_8cZF496", color: "#D4F0FF", accent: "#118AB2" },
-  { num: 8,  name: "Introduction to Trigonometry",              url: "https://app.slateup.ai/classroom/ff78WM5s5h", color: "#FFF8E1", accent: "#FFD166" },
-  { num: 9,  name: "Some Applications of Trigonometry",         url: "https://app.slateup.ai/classroom/sXSw6IQybk", color: "#E0FFF4", accent: "#06D6A0" },
-  { num: 10, name: "Circles",                                   url: "https://app.slateup.ai/classroom/iq9u1Vs-70", color: "#F0E6FF", accent: "#8338EC" },
-  { num: 11, name: "Areas Related to Circles",                  url: "https://app.slateup.ai/classroom/Nz26bV3gqa", color: "#FFE4EC", accent: "#EF476F" },
-  { num: 12, name: "Surface Areas and Volumes",                 url: "https://app.slateup.ai/classroom/nTmHnqc0Q7", color: "#FFF0E0", accent: "#FF6B35" },
-  { num: 13, name: "Statistics",                                url: "https://app.slateup.ai/classroom/XhdLnwyL90", color: "#D4F0FF", accent: "#118AB2" },
-  { num: 14, name: "Probability",                               url: "https://app.slateup.ai/classroom/EoPSVpGN6J", color: "#FFF8E1", accent: "#FFD166" },
+  { num: 1, name: "Real Numbers", url: "https://app.slateup.ai/classroom/D2HsNZ0lMN", color: "#D4F0FF", accent: "#118AB2" },
+  { num: 2, name: "Polynomials", url: "https://app.slateup.ai/classroom/wvoeW2ht26", color: "#FFF8E1", accent: "#FFD166" },
+  { num: 3, name: "Pair of Linear Equations in Two Variables", url: "https://app.slateup.ai/classroom/-FQ-QFoZlY", color: "#E0FFF4", accent: "#06D6A0" },
+  { num: 4, name: "Quadratic Equations", url: "https://app.slateup.ai/classroom/OG1dOHon3k", color: "#F0E6FF", accent: "#8338EC" },
+  { num: 5, name: "Arithmetic Progressions", url: "https://app.slateup.ai/classroom/Ad0H0nC8Ec", color: "#FFE4EC", accent: "#EF476F" },
+  { num: 6, name: "Triangles", url: "https://app.slateup.ai/classroom/mnjYquccEr", color: "#FFF0E0", accent: "#FF6B35" },
+  { num: 7, name: "Coordinate Geometry", url: "https://app.slateup.ai/classroom/UU_8cZF496", color: "#D4F0FF", accent: "#118AB2" },
+  { num: 8, name: "Introduction to Trigonometry", url: "https://app.slateup.ai/classroom/ff78WM5s5h", color: "#FFF8E1", accent: "#FFD166" },
+  { num: 9, name: "Some Applications of Trigonometry", url: "https://app.slateup.ai/classroom/sXSw6IQybk", color: "#E0FFF4", accent: "#06D6A0" },
+  { num: 10, name: "Circles", url: "https://app.slateup.ai/classroom/iq9u1Vs-70", color: "#F0E6FF", accent: "#8338EC" },
+  { num: 11, name: "Areas Related to Circles", url: "https://app.slateup.ai/classroom/Nz26bV3gqa", color: "#FFE4EC", accent: "#EF476F" },
+  { num: 12, name: "Surface Areas and Volumes", url: "https://app.slateup.ai/classroom/nTmHnqc0Q7", color: "#FFF0E0", accent: "#FF6B35" },
+  { num: 13, name: "Statistics", url: "https://app.slateup.ai/classroom/XhdLnwyL90", color: "#D4F0FF", accent: "#118AB2" },
+  { num: 14, name: "Probability", url: "https://app.slateup.ai/classroom/EoPSVpGN6J", color: "#FFF8E1", accent: "#FFD166" },
 ];
 
 const FEATURES = [
   { icon: Sparkles, text: "AI-powered explanations", color: "#FFD166" },
-  { icon: BookOpen,  text: "Step-by-step solutions",  color: "#06D6A0" },
-  { icon: Zap,       text: "Practice with instant feedback", color: "#EF476F" },
-  { icon: Star,      text: "Learn at your own pace",  color: "#8338EC" },
+  { icon: BookOpen, text: "Step-by-step solutions", color: "#06D6A0" },
+  { icon: Zap, text: "Practice with instant feedback", color: "#EF476F" },
+  { icon: Star, text: "Learn at your own pace", color: "#8338EC" },
 ];
 
 export default function NcertClass10MathPage() {
   useSeoMeta({
-    title: "NCERT Class 10 Maths — AI-powered Lessons | Slate",
-    description: "Study NCERT Class 10 Mathematics with Slate's AI classroom. Interactive lessons for all 14 chapters — Real Numbers, Polynomials, Trigonometry, Statistics and more.",
+    title: "NCERT Class 10 Maths - AI-powered Lessons | Slate",
+    description: "Study NCERT Class 10 Mathematics with Slate's AI classroom. Interactive lessons for all 14 chapters - Real Numbers, Polynomials, Trigonometry, Statistics and more.",
     canonical: "https://www.slateup.ai/learn/ncert-class-10-mathematics",
   });
 
@@ -43,7 +43,7 @@ export default function NcertClass10MathPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "NCERT Class 10 Mathematics — All Chapters",
+    "name": "NCERT Class 10 Mathematics - All Chapters",
     "description": "Interactive AI-powered lessons for all 14 chapters of the NCERT Class 10 Mathematics syllabus.",
     "url": "https://www.slateup.ai/learn/ncert-class-10-mathematics",
     "numberOfItems": CHAPTERS.length,
@@ -112,7 +112,7 @@ export default function NcertClass10MathPage() {
               </h1>
               <p className="font-body text-lg md:text-xl text-[#073B4C]/75 max-w-2xl mb-8 leading-relaxed">
                 Master all 14 chapters of the NCERT Class 10 Maths syllabus with AI-powered interactive classrooms.
-                Get step-by-step explanations, ask questions, and practise problems — exactly the way you learn best.
+                Get step-by-step explanations, ask questions, and practise problems - exactly the way you learn best.
               </p>
               <div className="flex flex-wrap gap-3 mb-2">
                 <a
@@ -257,7 +257,7 @@ export default function NcertClass10MathPage() {
         {/* ── Chapter Index for SEO ── */}
         <section className="px-6 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl font-bold text-[#073B4C] mb-5">NCERT Class 10 Maths — Chapter List</h2>
+            <h2 className="font-heading text-2xl font-bold text-[#073B4C] mb-5">NCERT Class 10 Maths - Chapter List</h2>
             <ol className="grid sm:grid-cols-2 gap-2 font-body text-sm text-[#073B4C]">
               {CHAPTERS.map(ch => (
                 <li key={ch.num} className="flex items-center gap-2">
@@ -300,7 +300,7 @@ export default function NcertClass10MathPage() {
                 rel="noopener noreferrer"
                 className="btn-press inline-flex items-center gap-2 bg-white text-[#073B4C] rounded-full px-8 py-4 font-bold text-lg border-2 border-[#073B4C] shadow-[4px_4px_0px_#073B4C] hover:scale-105 transition-transform"
               >
-                Join SlateUp — It's Free <ArrowRight size={20} />
+                Join SlateUp - It's Free <ArrowRight size={20} />
               </a>
               <a
                 href="#chapters"

@@ -11,11 +11,11 @@ Here's a clear-eyed comparison of the three most popular AI options for students
 
 ## What Each Tool Is Actually Designed For
 
-**ChatGPT** (OpenAI) is a general-purpose conversational AI. It can write code, summarize papers, draft essays, explain concepts, and answer almost any question. It is enormously capable and extremely flexible. It was not specifically designed for learning — it was designed for chat.
+**ChatGPT** (OpenAI) is a general-purpose conversational AI. It can write code, summarize papers, draft essays, explain concepts, and answer almost any question. It is enormously capable and extremely flexible. It was not specifically designed for learning - it was designed for chat.
 
 **Gemini** (Google) is Google's answer to ChatGPT: a general-purpose AI with deep integration into Google Workspace (Docs, Drive, Gmail). It has strong reasoning capabilities and benefits from Google's search infrastructure. Like ChatGPT, it's a general tool, not a learning tool.
 
-**Slate** is built specifically for learning. You type any topic, and Slate generates a structured course with slides, narration, and a cast of AI classmates — Professor Sage, Deep Thinker, Notes Taker, and Funny Mate — who discuss the material with you, ask questions, and help you think rather than just telling you answers.
+**Slate** is built specifically for learning. You type any topic, and Slate generates a structured course with slides, narration, and a cast of AI classmates - Professor Sage, Deep Thinker, Notes Taker, and Funny Mate - who discuss the material with you, ask questions, and help you think rather than just telling you answers.
 
 The difference matters more than it sounds.
 
@@ -25,9 +25,9 @@ All three tools can explain a concept. Type "explain compound interest" and you'
 
 But watch what happens next.
 
-**ChatGPT and Gemini** give you an explanation. Then they wait. If you want to go deeper, you have to ask. The burden is on you to keep the conversation alive and productive. Most students type the question, read the answer, and close the tab — without actually learning.
+**ChatGPT and Gemini** give you an explanation. Then they wait. If you want to go deeper, you have to ask. The burden is on you to keep the conversation alive and productive. Most students type the question, read the answer, and close the tab - without actually learning.
 
-**Slate** doesn't just explain — it creates a course and then has AI classmates discuss it with you. Deep Thinker might ask "But what happens when inflation is higher than your interest rate?" Notes Taker might summarize what you've covered. Professor Sage might quiz you on the formula. The conversation is structured around understanding, not just information transfer.
+**Slate** doesn't just explain - it creates a course and then has AI classmates discuss it with you. Deep Thinker might ask "But what happens when inflation is higher than your interest rate?" Notes Taker might summarize what you've covered. Professor Sage might quiz you on the formula. The conversation is structured around understanding, not just information transfer.
 
 This is why learning scientists distinguish between *information* and *knowledge*. ChatGPT and Gemini are excellent at delivering information. Slate is built to help you build knowledge.
 
@@ -35,7 +35,7 @@ This is why learning scientists distinguish between *information* and *knowledge
 
 Here's the uncomfortable truth about using ChatGPT or Gemini for studying: it's very easy to use them to complete work rather than understand it.
 
-Ask ChatGPT to explain photosynthesis, copy the answer into your notes, and move on — but you haven't learned photosynthesis. You've outsourced the cognitive effort that would have produced learning.
+Ask ChatGPT to explain photosynthesis, copy the answer into your notes, and move on - but you haven't learned photosynthesis. You've outsourced the cognitive effort that would have produced learning.
 
 Slate's design makes this harder to shortcut. The AI classmates ask *you* questions. They push back. Funny Mate might say something wrong on purpose to see if you catch it. The format encourages you to actually engage with the material, which is what creates durable understanding.
 
@@ -47,7 +47,7 @@ If you want to do your homework faster, use ChatGPT. If you want to actually und
 
 **Slate**: Generates a full course structure automatically when you enter a topic. Each course has an outline, slides, narrated explanations, and discussion. You move through it like a guided experience rather than an open-ended Q&A session.
 
-For self-directed learners, this structure is a significant advantage. Blank-slate flexibility is often the enemy of learning — the paradox of choice leads to shallow exploration instead of deep understanding.
+For self-directed learners, this structure is a significant advantage. Blank-slate flexibility is often the enemy of learning - the paradox of choice leads to shallow exploration instead of deep understanding.
 
 ## Cost
 
@@ -75,7 +75,7 @@ For self-directed learners, this structure is a significant advantage. Blank-sla
 
 ## The Bottom Line
 
-ChatGPT and Gemini are powerful tools, but they're hammers — excellent at what they do, but not designed specifically for learning. Using a general-purpose AI for studying is like using a calculator when you need a whiteboard. It can help, but it's the wrong tool for the job.
+ChatGPT and Gemini are powerful tools, but they're hammers - excellent at what they do, but not designed specifically for learning. Using a general-purpose AI for studying is like using a calculator when you need a whiteboard. It can help, but it's the wrong tool for the job.
 
 Slate is purpose-built for the specific cognitive work of learning: engagement, discussion, questioning, and understanding.
 

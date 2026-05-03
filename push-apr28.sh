@@ -1,5 +1,5 @@
 #!/bin/bash
-# Push Apr 28 blog posts — run from slate-landing directory
+# Push Apr 28 blog posts - run from slate-landing directory
 cd "$(dirname "$0")"
 
 # Remove stale locks if present

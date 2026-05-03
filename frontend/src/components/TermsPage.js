@@ -5,7 +5,7 @@ import { useSeoMeta } from "@/hooks/useSeoMeta";
 export default function TermsPage() {
   useSeoMeta({
     title: "Terms of Service | Slate",
-    description: "Slate's terms of service — your rights, our responsibilities, and the rules of the platform.",
+    description: "Slate's terms of service - your rights, our responsibilities, and the rules of the platform.",
     canonical: "https://www.slateup.ai/terms",
   });
 

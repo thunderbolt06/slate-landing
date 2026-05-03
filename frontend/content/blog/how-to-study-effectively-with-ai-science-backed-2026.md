@@ -5,7 +5,7 @@ date: "2026-04-26"
 slug: how-to-study-effectively-with-ai-science-backed-2026
 ---
 
-Everyone has an AI study app now. Most people are using them to do the thing that feels like studying — re-reading notes, generating summaries, highlighting key points — while missing the thing that actually causes learning.
+Everyone has an AI study app now. Most people are using them to do the thing that feels like studying - re-reading notes, generating summaries, highlighting key points - while missing the thing that actually causes learning.
 
 This is a guide for doing it right.
 
@@ -15,11 +15,11 @@ This is a guide for doing it right.
 
 Before covering tools, it helps to understand three principles from cognitive science that have survived decades of research:
 
-**Retrieval practice beats re-reading.** Every time you recall information from memory, you strengthen the neural pathway that stores it. Passively re-reading does almost nothing. Actively trying to remember — with some difficulty — is what sticks.
+**Retrieval practice beats re-reading.** Every time you recall information from memory, you strengthen the neural pathway that stores it. Passively re-reading does almost nothing. Actively trying to remember - with some difficulty - is what sticks.
 
 **Elaboration deepens understanding.** Explaining why something is true, how it connects to other things, or what would change if a condition were different forces your brain to integrate new information with existing knowledge. This is why teaching something to someone else is one of the best ways to learn it.
 
-**Spaced repetition is more efficient than massed practice.** Studying something five times across five days beats studying it five times in one sitting. The forgetting that happens between sessions is not wasted time — it's what makes the memory stronger when you retrieve it again.
+**Spaced repetition is more efficient than massed practice.** Studying something five times across five days beats studying it five times in one sitting. The forgetting that happens between sessions is not wasted time - it's what makes the memory stronger when you retrieve it again.
 
 Most students, and most AI study apps, ignore all three of these.
 
@@ -31,7 +31,7 @@ The most popular uses of AI for studying are summarization and generation: "Summ
 
 The output is clean, readable, and creates a feeling of having engaged with the material. But you're not retrieving anything. You're not elaborating. You're reading a document that AI wrote.
 
-This is cognitive offloading — letting AI do the thinking, which is the opposite of what causes learning.
+This is cognitive offloading - letting AI do the thinking, which is the opposite of what causes learning.
 
 ---
 
@@ -41,9 +41,9 @@ This is cognitive offloading — letting AI do the thinking, which is the opposi
 
 Instead of asking AI to summarize a chapter, ask it to quiz you on that chapter. Better: ask it to pose a conceptual question, then push back on your answer.
 
-This is retrieval practice. The friction you feel when you can't immediately answer is not a sign you're failing — it's the feeling of your memory being strengthened.
+This is retrieval practice. The friction you feel when you can't immediately answer is not a sign you're failing - it's the feeling of your memory being strengthened.
 
-[Slate](https://slateup.ai) is designed specifically for this. You upload your course material and engage in discussion with AI classmates who ask questions, challenge your reasoning, and explain things in multiple ways. The AI won't just tell you the answer — it'll help you find it.
+[Slate](https://slateup.ai) is designed specifically for this. You upload your course material and engage in discussion with AI classmates who ask questions, challenge your reasoning, and explain things in multiple ways. The AI won't just tell you the answer - it'll help you find it.
 
 ### Use AI for elaboration
 
@@ -55,13 +55,13 @@ This forces elaborative encoding, which is measurably better for long-term reten
 
 "How does this concept relate to week 3? What would a skeptic say about this argument? Where does this approach work and where does it fail?"
 
-These questions are not about getting answers — they're about forcing your brain to integrate new knowledge with existing knowledge. AI is good at generating connections and counterarguments, which turns a solo study session into something that resembles a seminar discussion.
+These questions are not about getting answers - they're about forcing your brain to integrate new knowledge with existing knowledge. AI is good at generating connections and counterarguments, which turns a solo study session into something that resembles a seminar discussion.
 
 ---
 
 ## A Concrete 45-Minute Study Session
 
-**Minutes 0-10: Free recall first.** Before looking at any material, write down everything you can remember from the last class or reading. Don't look at your notes. This is retrieval practice — the struggle is the point.
+**Minutes 0-10: Free recall first.** Before looking at any material, write down everything you can remember from the last class or reading. Don't look at your notes. This is retrieval practice - the struggle is the point.
 
 **Minutes 10-20: Review gaps.** Now check your notes. Find what you forgot or got wrong. Read those sections, but with a specific question in mind, not passively.
 
@@ -73,16 +73,16 @@ These questions are not about getting answers — they're about forcing your bra
 
 ## The Apps That Support This System
 
-- **[Slate](https://slateup.ai)** — Active discussion, elaboration, AI-driven questioning.
-- **Anki** — Spaced repetition for anything requiring memorization.
-- **Perplexity** — Source-cited answers for research and context-building.
-- **Otter.ai** — Lecture transcription as raw material for Slate sessions.
+- **[Slate](https://slateup.ai)** - Active discussion, elaboration, AI-driven questioning.
+- **Anki** - Spaced repetition for anything requiring memorization.
+- **Perplexity** - Source-cited answers for research and context-building.
+- **Otter.ai** - Lecture transcription as raw material for Slate sessions.
 
 ---
 
 ## One More Thing
 
-The reason passive studying feels comfortable is that it's familiar and low-effort. Learning that sticks feels harder, because it is — you're doing the cognitive work that builds memory.
+The reason passive studying feels comfortable is that it's familiar and low-effort. Learning that sticks feels harder, because it is - you're doing the cognitive work that builds memory.
 
 AI tools like Slate are designed to make the hard thing easier, not to replace it. If your study session feels like reading, you're probably not learning as effectively as you could be. If it feels like a conversation where you're being challenged, you probably are.
 

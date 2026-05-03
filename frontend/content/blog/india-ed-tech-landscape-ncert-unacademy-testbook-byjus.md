@@ -1,6 +1,6 @@
 ---
 title: "India Ed-Tech Landscape: NCERT Apps, Unacademy, Testbook, PW & AI Study Tools"
-blurb: "How test-prep giants, Diksha, and English-speaking apps overlap—and what to add for 2026."
+blurb: "How test-prep giants, Diksha, and English-speaking apps overlap-and what to add for 2026."
 date: "2026-04-10"
 slug: india-ed-tech-landscape-ncert-unacademy-testbook-byjus
 ---

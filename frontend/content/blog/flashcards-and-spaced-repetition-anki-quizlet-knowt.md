@@ -9,13 +9,13 @@ slug: flashcards-and-spaced-repetition-anki-quizlet-knowt
 
 ## Decision matrix
 
-**Anki** — Maximum control; best for medical boards, languages, law lists; steeper setup.  
-**Quizlet** — Fast deck sharing; strong “study night before” velocity.  
-**Knowt** — Notes-to-cards workflows popular with creators on STEM TikTok.
+**Anki** - Maximum control; best for medical boards, languages, law lists; steeper setup.  
+**Quizlet** - Fast deck sharing; strong “study night before” velocity.  
+**Knowt** - Notes-to-cards workflows popular with creators on STEM TikTok.
 
 ## Integration tips
 
-Export terms from **Google Classroom** / **Canvas** readings into your own deck—never rely on anonymous decks for graded vocabulary. Pair cards with short **Slate Up** recap sessions so isolated facts attach to a story arc.
+Export terms from **Google Classroom** / **Canvas** readings into your own deck-never rely on anonymous decks for graded vocabulary. Pair cards with short **Slate Up** recap sessions so isolated facts attach to a story arc.
 
 ## Keyword bundle (SEO coverage)
 

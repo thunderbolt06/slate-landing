@@ -1,6 +1,6 @@
 ---
 title: "Microlearning for Busy Students: Headway, Deepstash, Elevate & How to Pair With Real Courses"
-blurb: "Bite-sized apps are great for momentum—here is how they connect to Udemy, Coursera, and classroom LMS work."
+blurb: "Bite-sized apps are great for momentum-here is how they connect to Udemy, Coursera, and classroom LMS work."
 date: "2026-04-06"
 slug: microlearning-headway-deepstash-elevate-for-busy-students
 ---

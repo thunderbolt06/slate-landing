@@ -1,6 +1,6 @@
 ---
 title: "Best Dictionary & Translator Apps for Students: Google Translate, DeepL, Papago & More"
-blurb: "Use bilingual tools for comprehension—not as a shortcut that tanks writing skills."
+blurb: "Use bilingual tools for comprehension-not as a shortcut that tanks writing skills."
 date: "2026-04-08"
 slug: dictionary-translator-apps-for-students-google-translate-deepl
 ---
@@ -9,9 +9,9 @@ Learners constantly search **Google Translate**, **translator**, **Google Transl
 
 ## Responsible workflow
 
-**Step 1** — Guess meaning from context first.  
-**Step 2** — Confirm with **dictionary** sense, not only machine **translation**.  
-**Step 3** — Rewrite in your own English (or target language) to prove ownership.
+**Step 1** - Guess meaning from context first.  
+**Step 2** - Confirm with **dictionary** sense, not only machine **translation**.  
+**Step 3** - Rewrite in your own English (or target language) to prove ownership.
 
 ## Works with LMS materials
 

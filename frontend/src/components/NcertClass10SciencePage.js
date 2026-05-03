@@ -32,8 +32,8 @@ const FEATURES = [
 
 export default function NcertClass10SciencePage() {
   useSeoMeta({
-    title: "NCERT Class 10 Science — AI-powered Lessons | Slate",
-    description: "Study NCERT Class 10 Science with Slate's AI classroom. Interactive lessons covering Chemistry, Biology and Physics — Chemical Reactions, Life Processes, Electricity and more.",
+    title: "NCERT Class 10 Science - AI-powered Lessons | Slate",
+    description: "Study NCERT Class 10 Science with Slate's AI classroom. Interactive lessons covering Chemistry, Biology and Physics - Chemical Reactions, Life Processes, Electricity and more.",
     canonical: "https://www.slateup.ai/learn/ncert-class-10-science",
   });
 
@@ -42,7 +42,7 @@ export default function NcertClass10SciencePage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "NCERT Class 10 Science — All Chapters",
+    "name": "NCERT Class 10 Science - All Chapters",
     "description": "Interactive AI-powered lessons for all 13 chapters of the NCERT Class 10 Science syllabus.",
     "url": "https://www.slateup.ai/learn/ncert-class-10-science",
     "numberOfItems": CHAPTERS.length,
@@ -111,7 +111,7 @@ export default function NcertClass10SciencePage() {
               </h1>
               <p className="font-body text-lg md:text-xl text-[#073B4C]/75 max-w-2xl mb-8 leading-relaxed">
                 Master all 13 chapters of the NCERT Class 10 Science syllabus with AI-powered interactive classrooms.
-                Get step-by-step explanations, ask questions, and practise problems — exactly the way you learn best.
+                Get step-by-step explanations, ask questions, and practise problems - exactly the way you learn best.
               </p>
               <div className="flex flex-wrap gap-3 mb-2">
                 <a
@@ -225,7 +225,7 @@ export default function NcertClass10SciencePage() {
               <div className="grid md:grid-cols-2 gap-8 font-body text-[#495057] leading-relaxed">
                 <div>
                   <p className="mb-4">
-                    The <strong className="text-[#073B4C]">NCERT Class 10 Science</strong> syllabus is essential for board exams and the foundation for streams like PCB and PCM. Covering Chemistry, Biology, and Physics — from <em>Chemical Reactions</em> to <em>Electricity and Our Environment</em> — it demands both conceptual clarity and rigorous practice.
+                    The <strong className="text-[#073B4C]">NCERT Class 10 Science</strong> syllabus is essential for board exams and the foundation for streams like PCB and PCM. Covering Chemistry, Biology, and Physics - from <em>Chemical Reactions</em> to <em>Electricity and Our Environment</em> - it demands both conceptual clarity and rigorous practice.
                   </p>
                   <p>
                     SlateUp's AI classrooms break each chapter into interactive lessons you can follow at your own pace, ask questions mid-lesson, and revisit any concept instantly.
@@ -256,7 +256,7 @@ export default function NcertClass10SciencePage() {
         {/* ── Chapter Index for SEO ── */}
         <section className="px-6 py-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl font-bold text-[#073B4C] mb-5">NCERT Class 10 Science — Chapter List</h2>
+            <h2 className="font-heading text-2xl font-bold text-[#073B4C] mb-5">NCERT Class 10 Science - Chapter List</h2>
             <ol className="grid sm:grid-cols-2 gap-2 font-body text-sm text-[#073B4C]">
               {CHAPTERS.map(ch => (
                 <li key={ch.num} className="flex items-center gap-2">
@@ -299,7 +299,7 @@ export default function NcertClass10SciencePage() {
                 rel="noopener noreferrer"
                 className="btn-press inline-flex items-center gap-2 bg-white text-[#073B4C] rounded-full px-8 py-4 font-bold text-lg border-2 border-[#073B4C] shadow-[4px_4px_0px_#073B4C] hover:scale-105 transition-transform"
               >
-                Join SlateUp — It's Free <ArrowRight size={20} />
+                Join SlateUp - It's Free <ArrowRight size={20} />
               </a>
               <a
                 href="#chapters"

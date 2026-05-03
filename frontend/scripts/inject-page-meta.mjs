@@ -32,37 +32,37 @@ const BLOG_POSTS = match ? JSON.parse(match[1]) : [];
 const STATIC_ROUTES = [
   {
     path: "/",
-    title: "Slate — AI-powered Interactive Classroom",
+    title: "Slate -AI-powered Interactive Classroom",
     description:
-      "Slate is an AI-powered interactive classroom where you learn with AI classmates — not just a chatbot. Personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond.",
+      "Slate is an AI-powered interactive classroom where you learn with AI classmates - not just a chatbot. Personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond.",
   },
   {
     path: "/blogs",
-    title: "Blog — AI Learning, NCERT Guides & EdTech Insights | Slate",
+    title: "Blog - AI Learning, NCERT Guides & EdTech Insights | Slate",
     description:
       "Tips, guides and deep dives on AI-powered learning, NCERT preparation, JEE, NEET and how to study smarter with Slate.",
   },
   {
     path: "/learn/ncert-class-10-mathematics",
-    title: "NCERT Class 10 Maths — AI-powered Lessons | Slate",
+    title: "NCERT Class 10 Maths - AI-powered Lessons | Slate",
     description:
-      "Study NCERT Class 10 Mathematics with Slate's AI classroom. Interactive lessons for all 14 chapters — Real Numbers, Polynomials, Trigonometry, Statistics and more.",
+      "Study NCERT Class 10 Mathematics with Slate's AI classroom. Interactive lessons for all 14 chapters - Real Numbers, Polynomials, Trigonometry, Statistics and more.",
   },
   {
     path: "/learn/ncert-class-10-science",
-    title: "NCERT Class 10 Science — AI-powered Lessons | Slate",
+    title: "NCERT Class 10 Science - AI-powered Lessons | Slate",
     description:
       "Study NCERT Class 10 Science with Slate's AI classroom. Interactive lessons covering Physics, Chemistry and Biology chapters.",
   },
   {
     path: "/features",
-    title: "Features — AI Classroom, Adaptive Courses & Doubt Resolution | Slate",
+    title: "Features - AI Classroom, Adaptive Courses & Doubt Resolution | Slate",
     description:
       "Explore Slate's features: AI classmates, personalised adaptive courses, instant doubt resolution and NCERT-aligned content for Indian students.",
   },
   {
     path: "/how-it-works",
-    title: "How Slate Works — AI-powered Interactive Learning | Slate",
+    title: "How Slate Works - AI-powered Interactive Learning | Slate",
     description:
       "Learn how Slate's AI classroom works. Upload notes, get a personalised course, and learn with AI classmates who explain, quiz and challenge you.",
   },
@@ -70,17 +70,17 @@ const STATIC_ROUTES = [
     path: "/characters",
     title: "Meet Your AI Classmates | Slate",
     description:
-      "Meet Slate's AI classmates — each with a unique personality and teaching style. Learn with friends, not just a chatbot.",
+      "Meet Slate's AI classmates - each with a unique personality and teaching style. Learn with friends, not just a chatbot.",
   },
   {
     path: "/waitlist",
-    title: "Join the Waitlist — Slate AI Classroom",
+    title: "Join the Waitlist - Slate AI Classroom",
     description:
       "Join the Slate waitlist and be among the first to experience AI-powered interactive learning. Built for students in India.",
   },
   {
     path: "/pricing",
-    title: "Pricing — Slate AI Classroom",
+    title: "Pricing - Slate AI Classroom",
     description:
       "See Slate's pricing plans. Start free and upgrade as you grow with AI-powered interactive courses and personalised learning.",
   },

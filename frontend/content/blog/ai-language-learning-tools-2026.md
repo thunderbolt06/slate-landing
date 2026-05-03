@@ -1,6 +1,6 @@
 ---
 title: "Best AI Tools for Language Learning in 2026: Learn Faster with AI"
-blurb: "A practical, honest guide to the best AI language learning tools in 2026 — what actually works, what to avoid, and how to reach fluency faster using AI conversation and immersion."
+blurb: "A practical, honest guide to the best AI language learning tools in 2026 - what actually works, what to avoid, and how to reach fluency faster using AI conversation and immersion."
 date: "2026-04-27"
 slug: ai-language-learning-tools-2026
 ---
@@ -25,7 +25,7 @@ Any major AI assistant (ChatGPT, Claude, Gemini) can serve as a conversation par
 
 This is where the real gains happen. Twenty minutes of uncomfortable AI conversation beats two hours of passive app exercises for building the ability to actually speak.
 
-### 2. Slate — Discussion-Based Learning from Real Content
+### 2. Slate - Discussion-Based Learning from Real Content
 
 [Slate](https://slateup.ai) lets you upload your own material and learn through active discussion with AI classmates. For language learners, this opens up a powerful approach: content-based language acquisition.
 
@@ -35,7 +35,7 @@ This works especially well for intermediate learners who have hit the Duolingo c
 
 ### 3. Anki for Vocabulary
 
-Vocabulary acquisition still benefits from spaced repetition. Anki remains the gold standard. In 2026, you can use AI to generate personalized Anki decks from whatever content you are studying — extracting the 50 most important words from an article, creating example sentences, and adding context. This saves the friction of manual card creation and means your vocabulary deck grows from real content rather than frequency lists.
+Vocabulary acquisition still benefits from spaced repetition. Anki remains the gold standard. In 2026, you can use AI to generate personalized Anki decks from whatever content you are studying - extracting the 50 most important words from an article, creating example sentences, and adding context. This saves the friction of manual card creation and means your vocabulary deck grows from real content rather than frequency lists.
 
 ### 4. Language Reactor (for Netflix and YouTube)
 
@@ -51,7 +51,7 @@ Based on how adults actually reach fluency, here is a 30-minute daily routine:
 
 - **5 minutes:** Anki review of existing vocabulary
 - **10 minutes:** AI conversation in your target language, out loud, with corrections
-- **10 minutes:** Read something real — a news article, a short story, a Reddit post in your target language
+- **10 minutes:** Read something real - a news article, a short story, a Reddit post in your target language
 - **5 minutes:** Write three to five sentences using vocabulary from today's session
 
 The conversation block is where acquisition happens. Everything else supports it.
@@ -60,7 +60,7 @@ The conversation block is where acquisition happens. Everything else supports it
 
 **Spanish:** The most accessible major language for English speakers. Lean heavily into input. Netflix has more Spanish content than any other non-English language. Aim for conversational fluency in 12-18 months with consistent daily practice.
 
-**French:** High-quality input content is abundant. The gap between written and spoken French is large — start listening practice from week one or the spoken language will feel like a different language entirely.
+**French:** High-quality input content is abundant. The gap between written and spoken French is large - start listening practice from week one or the spoken language will feel like a different language entirely.
 
 **Japanese/Mandarin/Korean:** Character-based languages need a structured introduction to the writing system before input-heavy immersion. Spend the first 2-3 months on a structured course (Pimsleur, Japanese From Zero, HSK prep), then shift to content immersion.
 

@@ -47,7 +47,7 @@ const FAQS = [
   },
   {
     q: "What counts as a 'course credit'?",
-    a: "One fully-generated course with slides, narration, chat, and quizzes. You can replay courses as many times as you want — replays don't cost credits.",
+    a: "One fully-generated course with slides, narration, chat, and quizzes. You can replay courses as many times as you want - replays don't cost credits.",
   },
   {
     q: "What happens when I run out of credits?",
@@ -116,8 +116,8 @@ const FAQ_SCHEMA = {
 
 export default function PricingPage() {
   useSeoMeta({
-    title: "Pricing — Start Free, Upgrade Anytime | Slate",
-    description: "Slate is free to start — 2 classrooms forever. Upgrade to Pro for 30 credits/month. Transparent, no hidden fees.",
+    title: "Pricing - Start Free, Upgrade Anytime | Slate",
+    description: "Slate is free to start - 2 classrooms forever. Upgrade to Pro for 30 credits/month. Transparent, no hidden fees.",
     canonical: "https://www.slateup.ai/pricing",
   });
 
@@ -133,7 +133,7 @@ export default function PricingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }}
       />
-      {/* Navbar — NEW-009: was missing nav links; now matches the landing page header */}
+      {/* Navbar - NEW-009: was missing nav links; now matches the landing page header */}
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-sm border-b-2 border-[#073B4C]/10">
         <div className="max-w-6xl mx-auto px-6 py-3.5 flex items-center justify-between">
           <Link

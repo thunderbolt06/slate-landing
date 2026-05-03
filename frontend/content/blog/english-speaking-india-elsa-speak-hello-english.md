@@ -19,7 +19,7 @@ Language is meant to be spoken. Apps like **HelloTalk** and **Tandem** are incre
 
 ## Why Spoken English Matters
 
-Whether you are preparing for a job at a global firm or looking to study abroad, fluency is about more than just **vocabulary**—it's about confidence. Using **Superkalam** or **SpeakX** to practice daily can make the difference in high-stakes environments like **UPSC** interviews or **SSC** exams.
+Whether you are preparing for a job at a global firm or looking to study abroad, fluency is about more than just **vocabulary**-it's about confidence. Using **Superkalam** or **SpeakX** to practice daily can make the difference in high-stakes environments like **UPSC** interviews or **SSC** exams.
 
 ## Recommended Daily Routine:
 1. 10 minutes of **Hello English** for grammar.

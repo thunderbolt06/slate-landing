@@ -1,5 +1,5 @@
 #!/bin/bash
-# Push Apr 28 Run 2 blog posts — run from slate-landing directory
+# Push Apr 28 Run 2 blog posts - run from slate-landing directory
 cd "$(dirname "$0")"
 
 rm -f .git/index.lock .git/HEAD.lock

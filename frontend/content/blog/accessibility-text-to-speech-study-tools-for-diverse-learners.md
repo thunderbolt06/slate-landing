@@ -1,6 +1,6 @@
 ---
 title: "Accessibility & Text-to-Speech: Study Tools That Work With IEPs and Busy Schedules"
-blurb: "How TTS, captions, and scaffolded AI explanations overlap—and how to pick inclusive workflows."
+blurb: "How TTS, captions, and scaffolded AI explanations overlap-and how to pick inclusive workflows."
 date: "2026-04-03"
 slug: accessibility-text-to-speech-study-tools-for-diverse-learners
 ---
@@ -9,7 +9,7 @@ Education keyword data repeatedly surfaces **text to speech**, **Speech Blubs**,
 
 ## Inclusive stack ideas
 
-Pair platform accessibility settings (iOS/Android + **Chrome** screen reader) with ethical AI summarization—never upload confidential IEP docs to unknown tools.
+Pair platform accessibility settings (iOS/Android + **Chrome** screen reader) with ethical AI summarization-never upload confidential IEP docs to unknown tools.
 
 **Slate Up** can restate dense readings as spoken-friendly slide arcs when the topic is yours to share; **NotebookLM** can anchor to legally shareable text extracts.
 

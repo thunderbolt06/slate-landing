@@ -1,9 +1,9 @@
-# Slate SEO & Backlinks Report — April 26, 2026 (Automated Run)
+# Slate SEO & Backlinks Report - April 26, 2026 (Automated Run)
 
 ## Blogs Pushed Today
 
 12 blog posts synced from local working tree + 2 new posts written.
-**`yarn blog:build` run — 68 total posts in registry.**
+**`yarn blog:build` run - 68 total posts in registry.**
 
 > **Action needed:** Run the following from the `slate-landing` directory to push to GitHub:
 > ```bash
@@ -13,8 +13,8 @@
 > ```
 
 ### New posts written today:
-1. **AI Classmates: The New Way to Learn Without Feeling Alone** (`/blogs/ai-classmates-active-learning-2026`) — Targets "study group", "learning alone", "active recall", "AI study partner" queries. Strong protege effect angle for .edu link bait.
-2. **How to Turn Your Notes Into a Full Course Using AI** (`/blogs/generate-course-from-notes-ai-2026`) — Targets "AI course generator", "notes to course", "AI study tool" queries. Compares Slate vs NotebookLM.
+1. **AI Classmates: The New Way to Learn Without Feeling Alone** (`/blogs/ai-classmates-active-learning-2026`) - Targets "study group", "learning alone", "active recall", "AI study partner" queries. Strong protege effect angle for .edu link bait.
+2. **How to Turn Your Notes Into a Full Course Using AI** (`/blogs/generate-course-from-notes-ai-2026`) - Targets "AI course generator", "notes to course", "AI study tool" queries. Compares Slate vs NotebookLM.
 
 ---
 
@@ -25,7 +25,7 @@
 
 **URL:** https://slateup.ai | **Category:** Education / AI Learning Tools
 
-### Tier 1 — High DA AI Directories (Free, Dofollow)
+### Tier 1 - High DA AI Directories (Free, Dofollow)
 
 | # | Directory | Submit URL | DA/DR | Monthly Visits |
 |---|-----------|------------|-------|----------------|
@@ -40,29 +40,29 @@
 | 9 | **Toolify.ai** | https://www.toolify.ai/submit | DR 40+ | 200k+ |
 | 10 | **TopAI.tools** | https://topai.tools/submit | DR 30+ | 100k+ |
 
-### Tier 2 — Startup & SaaS Directories (High Authority)
+### Tier 2 - Startup & SaaS Directories (High Authority)
 
 | # | Directory | Submit URL | Notes |
 |---|-----------|------------|-------|
-| 11 | **Product Hunt** | https://producthunt.com | Schedule a launch — massive SEO & traffic |
+| 11 | **Product Hunt** | https://producthunt.com | Schedule a launch - massive SEO & traffic |
 | 12 | **BetaList** | https://betalist.com | Startup-focused, free, dofollow |
 | 13 | **SaaSHub** | https://saashub.com | High DA, free listing |
 | 14 | **AlternativeTo** | https://alternativeto.net | High DA, list as alternative to Coursera/Khan Academy |
 | 15 | **Uneed.best** | https://uneed.best | Free launch listing |
 | 16 | **Launched.io** | https://launched.io | Free startup launch platform |
 | 17 | **MicroLaunch** | https://microlaunch.net | Indie maker audience |
-| 18 | **Crunchbase** | https://crunchbase.com | High DA, company profile — essential for credibility |
+| 18 | **Crunchbase** | https://crunchbase.com | High DA, company profile - essential for credibility |
 | 19 | **StackShare** | https://stackshare.io | Developer community, list Slate's tech stack |
 | 20 | **SaaSWorthy** | https://saasworthy.com | Enterprise-friendly directory |
 
-### Bonus — Dofollow-Explicit Sites
+### Bonus - Dofollow-Explicit Sites
 
 | # | Site | URL | Notes |
 |---|------|-----|-------|
 | B1 | **Dofollow.Tools** | https://dofollow.tools | Explicit dofollow backlink |
 | B2 | **Best of Web** | https://www.bestofweb.site | Free dofollow, fast approval |
 | B3 | **AI Toolz Dir** | https://www.aitoolzdir.com | DR 27 dofollow backlink, free |
-| B4 | **Aura++** | https://auraplusplus.com | DR 62 — featured post + social + dofollow |
+| B4 | **Aura++** | https://auraplusplus.com | DR 62 - featured post + social + dofollow |
 | B5 | **The Next AI** | https://www.thenextai.com/submit-ai-tool/ | Free, dofollow, 120k+ visitors |
 
 ---
@@ -77,12 +77,12 @@ These GitHub repos contain 150+ directories not yet in our list:
 | submitaitools/Free-AI-Directories | https://github.com/submitaitools/Free-AI-Directories | 100+ dirs with DA scores |
 | tomrzv/AI-Directories | https://github.com/tomrzv/AI-Directories | Alphabetical, updated |
 | refined-so/awesome-backlinks | https://github.com/refined-so/awesome-backlinks | 60+ startup dirs |
-| eudk/awesome-ai-tools | https://github.com/eudk/awesome-ai-tools | Curated tools list — submit PR |
+| eudk/awesome-ai-tools | https://github.com/eudk/awesome-ai-tools | Curated tools list - submit PR |
 
 **GitHub PR submissions (authority backlinks):**
-- https://github.com/mahseema/awesome-ai-tools — Open PR adding Slate under "Education"
-- https://github.com/best-of-ai/ai-directories — Open PR to add slateup.ai as EdTech tool
-- https://github.com/eudk/awesome-ai-tools — Open PR to list Slate
+- https://github.com/mahseema/awesome-ai-tools - Open PR adding Slate under "Education"
+- https://github.com/best-of-ai/ai-directories - Open PR to add slateup.ai as EdTech tool
+- https://github.com/eudk/awesome-ai-tools - Open PR to list Slate
 
 ---
 

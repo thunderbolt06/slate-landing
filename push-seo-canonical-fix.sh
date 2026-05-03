@@ -18,7 +18,7 @@ git add \
 
 git commit -m "seo: remove hardcoded canonical + add per-page meta injection postbuild
 
-- Remove <link rel=\"canonical\"> from index.html — was telling Google
+- Remove <link rel=\"canonical\"> from index.html - was telling Google
   every page (all 70+ blog posts, features, etc.) was a duplicate of
   the homepage. This is the root cause of zero pages indexed.
 - Add scripts/inject-page-meta.mjs: post-build script that writes a

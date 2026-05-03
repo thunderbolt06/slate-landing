@@ -1,6 +1,6 @@
 ---
 title: "Best AI Homework Helper Apps Compared (2026): Photomath, Gauth, Brainly & More"
-blurb: "How top math and Q&A assistants differ—and how to combine them with classroom tools without wrecking understanding."
+blurb: "How top math and Q&A assistants differ-and how to combine them with classroom tools without wrecking understanding."
 date: "2026-04-18"
 slug: best-ai-homework-helper-apps-compared-2026
 ---
@@ -9,9 +9,9 @@ The **homework helper** category exploded because **math**, **science**, and cra
 
 ## How to evaluate an AI homework tool
 
-**Step quality** — Does it show reasoning (not just the answer)?  
-**Grounding** — Does it hallucinate less on textbook-style problems?  
-**Integrity** — Does your school allow it for assessments?  
+**Step quality** - Does it show reasoning (not just the answer)?  
+**Grounding** - Does it hallucinate less on textbook-style problems?  
+**Integrity** - Does your school allow it for assessments?  
 
 ## Shortlist by use case
 
@@ -21,7 +21,7 @@ The **homework helper** category exploded because **math**, **science**, and cra
 
 ## Fit with LMS and parent workflows
 
-Families often discover **homework helper** apps the same way they discover **PowerSchool**, **Infinite Campus**, **StudentVUE**, **ParentVUE**, **Parent Square**, and **Clever**—through school distribution. Teachers see the same traffic to **Google Classroom**, **Canvas Student**, **Schoology**, and **Blackboard**. The winning habit is to treat AI as a **tutor layer** on top of assignments, not a substitute for reading the prompt your **LMS** shipped.
+Families often discover **homework helper** apps the same way they discover **PowerSchool**, **Infinite Campus**, **StudentVUE**, **ParentVUE**, **Parent Square**, and **Clever**-through school distribution. Teachers see the same traffic to **Google Classroom**, **Canvas Student**, **Schoology**, and **Blackboard**. The winning habit is to treat AI as a **tutor layer** on top of assignments, not a substitute for reading the prompt your **LMS** shipped.
 
 ## SEO & app-store keywords (from education search data)
 

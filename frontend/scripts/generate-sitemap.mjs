@@ -42,7 +42,7 @@ function extractBlogSlugs(registrySource) {
   const end = registrySource.indexOf("export const BLOG_MARKDOWN_BY_SLUG");
   if (start === -1 || end === -1 || end <= start) {
     console.error(
-      "[sitemap] blogRegistry.js missing BLOG_POSTS or BLOG_MARKDOWN_BY_SLUG — run yarn blog:build first.",
+      "[sitemap] blogRegistry.js missing BLOG_POSTS or BLOG_MARKDOWN_BY_SLUG - run yarn blog:build first.",
     );
     process.exit(1);
   }

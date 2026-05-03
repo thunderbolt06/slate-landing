@@ -36,7 +36,7 @@ Your brain shouldn't be the place you store half-finished thoughts. Use AI tools
 A workflow that works for a lot of ADHD students:
 
 1. **Voice dump everything you know about a topic.** Use voice mode in any AI tool and just talk for two minutes. Don't organize it.
-2. **Ask the AI to summarize what you said and find the gaps.** This is the part your brain struggles with — the AI does it instantly.
+2. **Ask the AI to summarize what you said and find the gaps.** This is the part your brain struggles with - the AI does it instantly.
 3. **Pick one gap and study just that.** A focused 15 minute session on one gap beats an hour of unfocused re-reading.
 
 This loop avoids the worst part of ADHD studying: the planning paralysis of figuring out *what* to study.
@@ -45,13 +45,13 @@ This loop avoids the worst part of ADHD studying: the planning paralysis of figu
 
 For most ADHD brains, **discussion is far easier than passive reading.**
 
-This is one reason video tutorials feel productive but often aren't — you're consuming, not engaging. A real conversation, even with an AI, forces you to surface ideas, react, and respond. That's active learning, and it's much harder for your attention to drift.
+This is one reason video tutorials feel productive but often aren't - you're consuming, not engaging. A real conversation, even with an AI, forces you to surface ideas, react, and respond. That's active learning, and it's much harder for your attention to drift.
 
-Tools built around discussion — like [Slate's AI classmates](https://slateup.ai) — turn a textbook chapter into a back-and-forth where you're constantly being asked to explain, defend, or question what you just read. For ADHD learners that's not a nice-to-have. It's often the difference between learning and not.
+Tools built around discussion - like [Slate's AI classmates](https://slateup.ai) - turn a textbook chapter into a back-and-forth where you're constantly being asked to explain, defend, or question what you just read. For ADHD learners that's not a nice-to-have. It's often the difference between learning and not.
 
 ## Body Doubling, AI Edition
 
-Body doubling — having someone else in the room while you work — is one of the most reliable ADHD productivity hacks. There's now research showing it genuinely helps with task initiation and follow-through.
+Body doubling - having someone else in the room while you work - is one of the most reliable ADHD productivity hacks. There's now research showing it genuinely helps with task initiation and follow-through.
 
 AI study sessions function as a low-friction body double. You're not alone with the material. Something is responding, asking questions, holding you accountable. It's not the same as a friend across the table, but for late nights and weird hours, it's close enough to keep you in the chair.
 
@@ -68,11 +68,11 @@ Even with AI tools, certain patterns sabotage ADHD learners:
 
 Here's what an ADHD-friendly 50 minute study session can look like with AI:
 
-**0:00 to 0:05** — Open Slate, tell your AI classmates what you want to cover today. They restate it, you confirm.
-**0:05 to 0:25** — Discussion-based study on the topic. Voice or text, your call.
-**0:25 to 0:30** — Break. Walk around. No screens.
-**0:30 to 0:45** — Drill the one weak spot the AI flagged in the first session.
-**0:45 to 0:50** — Quick recap. Tell the AI what you learned today in plain language.
+**0:00 to 0:05** - Open Slate, tell your AI classmates what you want to cover today. They restate it, you confirm.
+**0:05 to 0:25** - Discussion-based study on the topic. Voice or text, your call.
+**0:25 to 0:30** - Break. Walk around. No screens.
+**0:30 to 0:45** - Drill the one weak spot the AI flagged in the first session.
+**0:45 to 0:50** - Quick recap. Tell the AI what you learned today in plain language.
 
 Total: one 5-minute break, one focused topic, one explicit recap. That structure works far better than "study chapter four for an hour."
 

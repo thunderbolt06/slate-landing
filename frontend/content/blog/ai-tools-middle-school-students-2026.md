@@ -1,10 +1,10 @@
 ---
 title: "Best AI Tools for Middle School Students in 2026"
-blurb: "Middle school is where study habits form. Here are the AI tools that help 6th–8th graders learn better — and which ones to avoid."
+blurb: "Middle school is where study habits form. Here are the AI tools that help 6th–8th graders learn better - and which ones to avoid."
 date: "2026-04-28"
 ---
 
-Middle school is a critical window. It's when students move from being told how to study to needing to figure it out themselves — and when habits form that often stick through high school and college.
+Middle school is a critical window. It's when students move from being told how to study to needing to figure it out themselves - and when habits form that often stick through high school and college.
 
 AI tools can genuinely help middle schoolers build better learning habits, understand difficult concepts, and enjoy learning more. But the wrong approach can shortcut thinking instead of building it.
 
@@ -16,15 +16,15 @@ Here's what's worth using in 2026.
 
 The AI classmates feature is especially valuable at this age: middle schoolers learn better through discussion than passive reading, and AI classmates create a low-pressure environment to think out loud, make mistakes, and get explanations without embarrassment. Unlike asking a teacher in front of the class, AI doesn't judge.
 
-Try it free at [slateup.ai](https://slateup.ai) — no credit card needed, works on any device.
+Try it free at [slateup.ai](https://slateup.ai) - no credit card needed, works on any device.
 
 **Khan Academy** remains excellent for math from 6th grade through algebra, geometry, and pre-calc. The Khanmigo AI tutor uses guided questioning that helps students think through problems rather than just copying answers.
 
 ## For Math and Science
 
-**Wolfram Alpha** handles computation-heavy problems with step-by-step explanations. For middle school math (fractions, algebra, ratios, statistics), it's genuinely educational when used to check work and understand steps — not as a calculator.
+**Wolfram Alpha** handles computation-heavy problems with step-by-step explanations. For middle school math (fractions, algebra, ratios, statistics), it's genuinely educational when used to check work and understand steps - not as a calculator.
 
-**Photomath** is popular for scanning handwritten math problems. Good for identifying where a mistake was made. The risk is using it to skip working through the problem — if you go straight to the scan, you learn nothing.
+**Photomath** is popular for scanning handwritten math problems. Good for identifying where a mistake was made. The risk is using it to skip working through the problem - if you go straight to the scan, you learn nothing.
 
 **NASA's AI education resources** and **National Geographic's interactive tools** are genuinely good for science, geography, and earth science at this level.
 
@@ -39,7 +39,7 @@ Try it free at [slateup.ai](https://slateup.ai) — no credit card needed, works
 
 The rule: write first, then use AI for feedback. Not the other way around.
 
-**CommonLit** and **Newsela** have AI-powered reading level adjustments that let students read the same content at appropriate complexity — good for differentiated reading assignments.
+**CommonLit** and **Newsela** have AI-powered reading level adjustments that let students read the same content at appropriate complexity - good for differentiated reading assignments.
 
 ## For Studying and Test Prep
 
@@ -55,7 +55,7 @@ The single best habit at this age: retrieval practice. That means testing yourse
 
 **Google Calendar** for homework deadlines and project milestones. Even middle schoolers benefit from learning to manage a calendar.
 
-**Todoist** for simple task management — the free version is enough.
+**Todoist** for simple task management - the free version is enough.
 
 ## How to Use AI Without Hurting Your Learning
 
@@ -76,4 +76,4 @@ Rules that work:
 
 ---
 
-The best AI tool for a middle schooler is whichever one encourages them to think, not the one that thinks for them. [Slate](https://slateup.ai) is built around that principle — interactive, social, and designed to make understanding feel rewarding. Worth trying free.
+The best AI tool for a middle schooler is whichever one encourages them to think, not the one that thinks for them. [Slate](https://slateup.ai) is built around that principle - interactive, social, and designed to make understanding feel rewarding. Worth trying free.

@@ -4,7 +4,7 @@ blurb: "A practical guide to the AI tools that actually help college students st
 date: "2026-04-28"
 ---
 
-College in 2026 looks different from five years ago. Professors know about AI. Most courses have adapted their expectations. And the students who are doing best aren't the ones ignoring AI tools — they're the ones who've figured out how to use them to learn more deeply, not less.
+College in 2026 looks different from five years ago. Professors know about AI. Most courses have adapted their expectations. And the students who are doing best aren't the ones ignoring AI tools - they're the ones who've figured out how to use them to learn more deeply, not less.
 
 Here's a practical breakdown of the best AI tools for college students, organized by what you actually need them for.
 
@@ -12,7 +12,7 @@ Here's a practical breakdown of the best AI tools for college students, organize
 
 **Slate** ([slateup.ai](https://slateup.ai)) is one of the most useful tools for college students who want to go beyond surface-level studying. You upload your lecture notes, readings, or syllabus, and Slate generates practice questions, quizzes, and explanations tailored to that exact material.
 
-The differentiating feature is AI classmates: instead of studying alone, you get AI peers who engage with the material alongside you — asking follow-up questions, pushing back when you're partially right, and explaining concepts from multiple angles. This kind of active engagement is backed by the science of learning (retrieval practice and elaborative interrogation both dramatically outperform passive review).
+The differentiating feature is AI classmates: instead of studying alone, you get AI peers who engage with the material alongside you - asking follow-up questions, pushing back when you're partially right, and explaining concepts from multiple angles. This kind of active engagement is backed by the science of learning (retrieval practice and elaborative interrogation both dramatically outperform passive review).
 
 It's free to start and works across virtually any subject.
 
@@ -22,7 +22,7 @@ It's free to start and works across virtually any subject.
 
 **Claude** (Anthropic) is the best AI model for nuanced writing feedback. It can review your thesis, suggest structural improvements, identify logical gaps in your argument, and help you write more clearly. The key is using it as a thinking partner, not a ghostwriter.
 
-**Perplexity AI** is the most useful AI for academic research because it cites its sources inline. Use it to get oriented in a new topic, find relevant papers, and understand how concepts relate — then verify the citations yourself (AI still hallucinates occasionally).
+**Perplexity AI** is the most useful AI for academic research because it cites its sources inline. Use it to get oriented in a new topic, find relevant papers, and understand how concepts relate - then verify the citations yourself (AI still hallucinates occasionally).
 
 **Zotero** with its AI plugins has become the standard for managing academic references. It automatically pulls citation metadata from PDFs and can now generate summaries of papers in your library.
 
@@ -36,7 +36,7 @@ It's free to start and works across virtually any subject.
 
 **GitHub Copilot** (free for students with a GitHub Education account) is the standard for AI-assisted coding. It autocompletes code, suggests implementations, and explains what existing code does.
 
-**Wolfram Alpha** remains essential for math and physics. It's not just a calculator — it shows steps, plots graphs, and explains methods in a way that helps you understand the underlying concepts.
+**Wolfram Alpha** remains essential for math and physics. It's not just a calculator - it shows steps, plots graphs, and explains methods in a way that helps you understand the underlying concepts.
 
 **ChatGPT with code interpreter** is useful for data analysis in courses that use Python or R. You can describe what analysis you want and get working code to start from.
 
@@ -50,7 +50,7 @@ It's free to start and works across virtually any subject.
 
 Most college professors have updated their policies. The current landscape roughly breaks down as:
 
-- **AI-assisted but human-authored**: You can use AI for brainstorming, feedback, and research — but what you submit must reflect your own thinking and writing.
+- **AI-assisted but human-authored**: You can use AI for brainstorming, feedback, and research - but what you submit must reflect your own thinking and writing.
 - **AI-transparent**: You can use AI tools but must disclose how and where.
 - **AI-prohibited**: Some courses (typically exams, certain writing-intensive courses) still prohibit AI assistance entirely.
 
@@ -60,7 +60,7 @@ Always check your syllabus and ask if it's unclear. The rules genuinely vary by 
 
 There's a version of using AI tools in college that makes you worse at thinking: outsourcing reasoning to a chatbot and submitting the output. Students doing this are building a dependency that will hurt them in jobs and graduate school.
 
-The smarter approach is using AI to demand more of yourself — to go deeper, understand connections, and test your knowledge more rigorously than old-school flashcards and textbook reading allowed. Slate is designed around this philosophy: AI doesn't hand you answers, it challenges you to produce them.
+The smarter approach is using AI to demand more of yourself - to go deeper, understand connections, and test your knowledge more rigorously than old-school flashcards and textbook reading allowed. Slate is designed around this philosophy: AI doesn't hand you answers, it challenges you to produce them.
 
 ---
 

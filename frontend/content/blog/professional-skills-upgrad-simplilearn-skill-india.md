@@ -22,6 +22,6 @@ For those looking for a global perspective, **Udacity** (known for its Nanodegre
 
 ## Why Upskill Now?
 
-In 2026, many tasks are being automated. Professionals who can manage AI tools—like coding with **Antigravity** or research with **Exa**—are in high demand. Platforms like **LinkedIn Learning** and **Masterclass** provide the soft skills and industry insights needed to lead in an AI-first world.
+In 2026, many tasks are being automated. Professionals who can manage AI tools-like coding with **Antigravity** or research with **Exa**-are in high demand. Platforms like **LinkedIn Learning** and **Masterclass** provide the soft skills and industry insights needed to lead in an AI-first world.
 
 **Keywords**: upgrad, simplilearn, skill india digital, coursera, online courses.

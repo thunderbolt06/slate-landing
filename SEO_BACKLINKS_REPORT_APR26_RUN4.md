@@ -1,12 +1,12 @@
-# Slate SEO & Backlinks Report — April 26, 2026 (Run 4, Scheduled Task)
+# Slate SEO & Backlinks Report - April 26, 2026 (Run 4, Scheduled Task)
 
 ## TL;DR
 
-- 2 new SEO blog posts written and built locally — **needs manual git push** (commands below).
+- 2 new SEO blog posts written and built locally - **needs manual git push** (commands below).
 - Blog registry: **81 posts** (was 79).
 - 14 directory submission attempts. **0 fully completed** through automation; **1 form fully prepared** (AI Toolz Dir).
 - 30+ fresh directories curated with submission URLs and per-site blockers.
-- Notion sub-page logged: "Run 4 — Apr 26, 2026 (Backlinks + Blog)" under SEO doc.
+- Notion sub-page logged: "Run 4 - Apr 26, 2026 (Backlinks + Blog)" under SEO doc.
 
 ---
 
@@ -68,14 +68,14 @@ Every directory falls into one of:
 
 ## Recommended Workflow Change
 
-1. **Add a `/partners` or footer mutual-backlink section to slateup.ai** — unlocks ~10 free tier-1 dirs.
+1. **Add a `/partners` or footer mutual-backlink section to slateup.ai** - unlocks ~10 free tier-1 dirs.
 2. **Budget $25–$50/month** for paid dofollow listings (AI Toolz Dir, Aura++, Tap4).
-3. **Authorize Cowork to use your Google account for OAuth** — unlocks 50+ Tier B dirs.
+3. **Authorize Cowork to use your Google account for OAuth** - unlocks 50+ Tier B dirs.
 4. **Run a 30-min weekly batch session** where Cowork drives the browser and you click "verify" buttons. Realistic 20+/week.
 
 ## Highest-Leverage Backlinks for Next Manual Session
 
-### Tier A — Open form, no auth
+### Tier A - Open form, no auth
 
 - AI Toolz Dir: https://www.aitoolzdir.com/submit
 - Dofollow.Tools: https://dofollow.tools/submit
@@ -83,7 +83,7 @@ Every directory falls into one of:
 - The Next AI: https://www.thenextai.com/submit-ai-tool/
 - AI Valley: https://aivalley.ai/submit-tool
 
-### Tier B — One-click OAuth signup
+### Tier B - One-click OAuth signup
 
 - Uneed.best (DR 74)
 - Thank John
@@ -110,7 +110,7 @@ Suggested PR text for each:
 
 ---
 
-## Tier C — Bulk targets for future runs
+## Tier C - Bulk targets for future runs
 
 AIToolsHunt, AI Pulse, AI Pedia Hub, NavTools AI, Tool Pilot, NeonRev, Stackviv, AI Library, AI Hubs, AI Hunt List, Insidr AI Directory, ChooseTheAI, AI Resource Pro, AI Respo, God of Prompt, BuildVoyage, Aixyz, AskAIForIt, NavFolders, Tools.so
 

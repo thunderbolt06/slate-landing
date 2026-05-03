@@ -6,7 +6,7 @@ import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 export default function BlogsPage() {
   useSeoMeta({
-    title: "Blog — AI Learning, NCERT Guides & EdTech Insights | Slate",
+    title: "Blog - AI Learning, NCERT Guides & EdTech Insights | Slate",
     description: "Tips, guides and deep dives on AI-powered learning, NCERT preparation, JEE, NEET and how to study smarter with Slate.",
     canonical: "https://www.slateup.ai/blogs",
   });

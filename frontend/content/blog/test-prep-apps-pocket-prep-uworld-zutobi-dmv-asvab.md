@@ -9,7 +9,7 @@ US education search lists are rich with gatekeeper intents: **Pocket Prep**, **U
 
 ## Strategy
 
-Match app to item bank quality and explanation depth—then add **Anki** for volatile facts (signs, formulas) and **Slate Up** for conceptual chapters (science reasoning, policy literacy).
+Match app to item bank quality and explanation depth-then add **Anki** for volatile facts (signs, formulas) and **Slate Up** for conceptual chapters (science reasoning, policy literacy).
 
 ## Keyword blending for SEO
 

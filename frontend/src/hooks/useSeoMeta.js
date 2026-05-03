@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 
-const DEFAULT_TITLE = "Slate — AI-powered Interactive Classroom";
+const DEFAULT_TITLE = "Slate - AI-powered Interactive Classroom";
 const DEFAULT_DESCRIPTION =
-  "Slate is an AI-powered interactive classroom where you learn with AI classmates — not just a chatbot. Personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond.";
+  "Slate is an AI-powered interactive classroom where you learn with AI classmates - not just a chatbot. Personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond.";
 
 /**
  * Sets per-page <title>, <meta name="description">, <link rel="canonical">,
@@ -106,6 +106,6 @@ export function useSeoMeta({ title, description, noindex = false, canonical, ogI
       if (twDescEl && prevTwDesc) twDescEl.setAttribute("content", prevTwDesc);
       if (twImageEl && prevTwImage) twImageEl.setAttribute("content", prevTwImage);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [title, description, noindex, canonical, ogImage]);
 }

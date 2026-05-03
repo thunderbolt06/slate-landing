@@ -1,11 +1,11 @@
 ---
 title: "AI Study Tools for the SAT: How to Prep Smarter in 2026"
-blurb: "A practical guide to using AI for SAT prep — from drilling weak topics to simulating real test sections — without falling for tools that just give you the answer."
+blurb: "A practical guide to using AI for SAT prep - from drilling weak topics to simulating real test sections - without falling for tools that just give you the answer."
 date: "2026-04-26"
 slug: ai-study-tools-sat-prep-2026
 ---
 
-The SAT in 2026 looks nothing like the test your older sibling took. It's fully digital, adaptive, and shorter — but the scoring curve is unforgiving, and a single missed module can shift your composite by 80 points.
+The SAT in 2026 looks nothing like the test your older sibling took. It's fully digital, adaptive, and shorter - but the scoring curve is unforgiving, and a single missed module can shift your composite by 80 points.
 
 Most students still prep the way people did a decade ago: a giant prep book, a few timed sections, and Khan Academy on the side. That works, but it's slow, and it doesn't tell you *why* you keep missing the same kind of question.
 
@@ -31,19 +31,19 @@ And the biggest failure mode: students use AI to *get the answer* instead of *un
 
 Try this structure for a six week prep block:
 
-**Mondays — Diagnostic.** Take a single timed module (32 minutes Reading and Writing, or 35 minutes Math). Don't review until Wednesday.
+**Mondays - Diagnostic.** Take a single timed module (32 minutes Reading and Writing, or 35 minutes Math). Don't review until Wednesday.
 
-**Tuesdays — Foundation drilling.** Pick one weak topic from last week. Use AI to generate 15 to 20 questions of escalating difficulty and *explain your reasoning out loud* before checking the answer.
+**Tuesdays - Foundation drilling.** Pick one weak topic from last week. Use AI to generate 15 to 20 questions of escalating difficulty and *explain your reasoning out loud* before checking the answer.
 
-**Wednesdays — Review your Monday module.** Walk through every miss. For each one, ask: was this a content gap, a careless mistake, or a misread? Track the count.
+**Wednesdays - Review your Monday module.** Walk through every miss. For each one, ask: was this a content gap, a careless mistake, or a misread? Track the count.
 
-**Thursdays — Active recall.** Open a discussion-style AI tool like [Slate](https://slateup.ai) and explain your three weakest concepts to your AI classmates. The act of teaching is the strongest predictor of retention.
+**Thursdays - Active recall.** Open a discussion-style AI tool like [Slate](https://slateup.ai) and explain your three weakest concepts to your AI classmates. The act of teaching is the strongest predictor of retention.
 
-**Fridays — Mixed drilling.** 25 mixed questions across all topics. No looking things up.
+**Fridays - Mixed drilling.** 25 mixed questions across all topics. No looking things up.
 
-**Saturdays — Full timed test, every other week.** Use the official Bluebook practice tests, not AI-generated ones.
+**Saturdays - Full timed test, every other week.** Use the official Bluebook practice tests, not AI-generated ones.
 
-**Sundays — Off.** Recovery matters more than people admit.
+**Sundays - Off.** Recovery matters more than people admit.
 
 ## How to Use AI Without Outsourcing Your Brain
 
@@ -55,10 +55,10 @@ This forces real engagement and keeps the AI in tutor mode instead of answer-key
 
 ## AI Tools Specifically Worth Trying
 
-- **Khan Academy + Bluebook** — official, free, College Board-approved diagnostics.
-- **[Slate](https://slateup.ai)** — for discussion-based review of your wrong answers and active recall on tested concepts. Upload your prep notes and let your AI classmates quiz you.
-- **Magoosh** — long-running prep platform with adaptive AI question selection.
-- **R.test** — adaptive AI diagnostics that surface the *type* of mistake you make.
+- **Khan Academy + Bluebook** - official, free, College Board-approved diagnostics.
+- **[Slate](https://slateup.ai)** - for discussion-based review of your wrong answers and active recall on tested concepts. Upload your prep notes and let your AI classmates quiz you.
+- **Magoosh** - long-running prep platform with adaptive AI question selection.
+- **R.test** - adaptive AI diagnostics that surface the *type* of mistake you make.
 
 The point isn't to use all of them. Pick one diagnostic tool, one drilling tool, and one discussion tool, and stick with the combination.
 

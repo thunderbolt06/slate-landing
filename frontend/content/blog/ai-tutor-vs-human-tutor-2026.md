@@ -1,6 +1,6 @@
 ---
 title: "AI Tutor vs Human Tutor: Which Is Better for Learning in 2026?"
-blurb: "AI tutors are faster and cheaper. Human tutors are warmer and more adaptive. Here's an honest comparison of what each does well — and when to use which."
+blurb: "AI tutors are faster and cheaper. Human tutors are warmer and more adaptive. Here's an honest comparison of what each does well - and when to use which."
 date: "2026-04-28"
 ---
 
@@ -14,7 +14,7 @@ So which is better? The honest answer: it depends on what you're trying to learn
 
 **Patience.** AI never gets frustrated when you ask the same question six times. It never signals (consciously or not) that you should already know this. For learners who feel embarrassed asking "basic" questions, this matters a lot.
 
-**Consistency.** A human tutor has bad days, personal biases, and varying levels of explanation quality. AI provides consistent, structured explanations. For clearly defined subject matter — math, grammar, vocabulary, coding — this is a genuine advantage.
+**Consistency.** A human tutor has bad days, personal biases, and varying levels of explanation quality. AI provides consistent, structured explanations. For clearly defined subject matter - math, grammar, vocabulary, coding - this is a genuine advantage.
 
 **Cost.** Quality human tutoring runs $50-$200/hour. AI tools like [Slate](https://slateup.ai) are free or very low cost for comparable one-on-one engagement.
 
@@ -24,11 +24,11 @@ So which is better? The honest answer: it depends on what you're trying to learn
 
 **Emotional support.** Learning is emotional. Human tutors can detect when you're demoralized, adjust their approach, provide encouragement that feels genuine, and create real accountability. "I'm going to disappoint my tutor if I don't do this work" is a powerful motivator that doesn't yet exist with AI.
 
-**Complex skill assessment.** For skills that are hard to evaluate objectively — writing at an advanced level, critical thinking about ambiguous problems, nuanced debate preparation — a skilled human tutor can identify subtle weaknesses that AI might miss.
+**Complex skill assessment.** For skills that are hard to evaluate objectively - writing at an advanced level, critical thinking about ambiguous problems, nuanced debate preparation - a skilled human tutor can identify subtle weaknesses that AI might miss.
 
 **Domain expertise at the frontier.** If you're working on PhD-level research, preparing for a highly specialized professional exam, or exploring genuinely new intellectual territory, a human expert brings judgment and pattern-recognition that AI doesn't yet match.
 
-**Relationship and mentorship.** The best tutors aren't just teachers — they're mentors who shape how you think about a subject, connect you with resources, and invest in your long-term development. That relational dimension is entirely absent from AI.
+**Relationship and mentorship.** The best tutors aren't just teachers - they're mentors who shape how you think about a subject, connect you with resources, and invest in your long-term development. That relational dimension is entirely absent from AI.
 
 **Adaptability in complex conversations.** When a student says "I understand the concept but something still feels off," a great human tutor can probe intuitively, make unexpected connections, and identify the real confusion. AI is improving here but still trails experienced teachers.
 
@@ -46,7 +46,7 @@ So which is better? The honest answer: it depends on what you're trying to learn
 
 ## What the Research Shows
 
-Studies consistently show that one-on-one instruction dramatically outperforms classroom learning — what researchers call the "2 Sigma effect." Students working with a skilled human tutor perform two standard deviations better than average classroom students.
+Studies consistently show that one-on-one instruction dramatically outperforms classroom learning - what researchers call the "2 Sigma effect." Students working with a skilled human tutor perform two standard deviations better than average classroom students.
 
 AI tutors are narrowing that gap. Systems using deliberate practice, feedback loops, and spaced repetition now show learning gains comparable to average human tutoring for well-defined subjects like math and language learning.
 
@@ -54,7 +54,7 @@ For subjects requiring judgment, creativity, or deep personal engagement, human 
 
 ## The Emerging Best Practice: Combine Both
 
-The most effective approach in 2026 isn't choosing one — it's using each for what they're good at.
+The most effective approach in 2026 isn't choosing one - it's using each for what they're good at.
 
 **Use AI for:**
 - Daily practice and retrieval (quizzes, flashcard review, problem sets)
@@ -69,7 +69,7 @@ The most effective approach in 2026 isn't choosing one — it's using each for w
 - Learning a complex skill that requires judgment to assess
 - When motivation and emotional support are the real bottleneck
 
-[Slate](https://slateup.ai) is designed for the AI side of this combination — interactive, patient, available, and built around the learning science of retrieval and explanation. It doesn't replace the accountability or emotional depth of a great teacher. But it makes the hours between those sessions dramatically more productive.
+[Slate](https://slateup.ai) is designed for the AI side of this combination - interactive, patient, available, and built around the learning science of retrieval and explanation. It doesn't replace the accountability or emotional depth of a great teacher. But it makes the hours between those sessions dramatically more productive.
 
 ---
 

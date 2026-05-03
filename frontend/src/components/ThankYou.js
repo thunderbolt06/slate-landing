@@ -11,7 +11,7 @@ const HIGHLIGHTS = [
   { icon: Sparkles, title: "AI Course Generation", desc: "Full courses created instantly from any topic", color: "#FFD166" },
   { icon: Users, title: "AI Classmates", desc: "Notes Taker, Deep Thinker, Funny Mate & Curious Mind", color: "#8338EC" },
   { icon: Presentation, title: "Interactive Slides", desc: "Beautiful slides with narration and visuals", color: "#118AB2" },
-  { icon: BookOpen, title: "Learn Anything", desc: "From Python to Philosophy — at your own pace", color: "#06D6A0" },
+  { icon: BookOpen, title: "Learn Anything", desc: "From Python to Philosophy - at your own pace", color: "#06D6A0" },
 ];
 
 export default function ThankYou() {
@@ -25,7 +25,7 @@ export default function ThankYou() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    axios.get(`${API}/waitlist/count`).then(r => setCount(r.data.count)).catch(() => {});
+    axios.get(`${API}/waitlist/count`).then(r => setCount(r.data.count)).catch(() => { });
   }, []);
 
   return (

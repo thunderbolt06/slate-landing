@@ -10,7 +10,7 @@ const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 export default function ContactPage() {
   useSeoMeta({
     title: "Contact Us | Slate",
-    description: "Get in touch with the Slate team — questions about the product, partnerships, schools or press.",
+    description: "Get in touch with the Slate team - questions about the product, partnerships, schools or press.",
     canonical: "https://www.slateup.ai/contact",
   });
 
@@ -77,7 +77,7 @@ export default function ContactPage() {
                 Let's talk about your needs.
               </h1>
               <p className="font-body text-[#495057] text-lg leading-relaxed mb-8">
-                Whether you're interested in a demo, exploring our enterprise plan, or just have a question —
+                Whether you're interested in a demo, exploring our enterprise plan, or just have a question -
                 we'd love to hear from you. Fill in the form and we'll get back to you within 24 hours.
               </p>
 

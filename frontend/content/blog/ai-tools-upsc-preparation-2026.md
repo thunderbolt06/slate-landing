@@ -1,6 +1,6 @@
 ---
 title: "Best AI Tools for UPSC Preparation in 2026: Study Smarter for IAS, IPS, IFS"
-blurb: "A complete guide to using AI tools for UPSC Civil Services preparation in 2026 — from Prelims to Mains essay writing, with honest advice on what works and what does not."
+blurb: "A complete guide to using AI tools for UPSC Civil Services preparation in 2026 - from Prelims to Mains essay writing, with honest advice on what works and what does not."
 date: "2026-04-27"
 slug: ai-tools-upsc-preparation-2026
 ---
@@ -31,7 +31,7 @@ Three things. Be clear about these because everything else is noise.
 
 ## Best AI Tools for UPSC Aspirants in 2026
 
-### 1. Slate — Active Learning Through Discussion
+### 1. Slate - Active Learning Through Discussion
 
 [Slate](https://slateup.ai) is built for learning through conversation rather than passive reading. For UPSC, this maps directly onto how serious preparation should work.
 

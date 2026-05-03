@@ -1,6 +1,6 @@
 ---
 title: "Kids Learning Apps & Educational Games: Balancing Toca, Lingokids, Khan Kids & Screen Time"
-blurb: "How families pick playful learning apps—and how AI tutors fit without replacing developmental play."
+blurb: "How families pick playful learning apps-and how AI tutors fit without replacing developmental play."
 date: "2026-04-13"
 slug: kids-learning-apps-educational-games-safe-screen-time
 ---
@@ -9,11 +9,11 @@ slug: kids-learning-apps-educational-games-safe-screen-time
 
 ## What parents are really optimizing for
 
-Skill growth, yes—but also **parent app** visibility (see **PowerSchool**, **Infinite Campus**, **Parent Square**, **Talking Points**), and safer loops than random mobile games.
+Skill growth, yes-but also **parent app** visibility (see **PowerSchool**, **Infinite Campus**, **Parent Square**, **Talking Points**), and safer loops than random mobile games.
 
 ## Pair play apps with structure
 
-After exploratory play, a short structured teach-back helps learning stick—**Slate Up**-style narration can give kids a “classroom voice” explaining what they discovered, without turning preschoolers into homework machines.
+After exploratory play, a short structured teach-back helps learning stick-**Slate Up**-style narration can give kids a “classroom voice” explaining what they discovered, without turning preschoolers into homework machines.
 
 ## India + US keyword crossover
 

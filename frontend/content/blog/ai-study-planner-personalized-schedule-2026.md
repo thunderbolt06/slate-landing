@@ -16,7 +16,7 @@ Generic schedules fail for predictable reasons:
 - They don't adapt when you fall behind (which everyone does)
 - They assume your energy levels and availability are constant
 
-AI study planners solve all of these problems — if you use them correctly.
+AI study planners solve all of these problems - if you use them correctly.
 
 ## What a Good AI Study Planner Actually Does
 
@@ -28,7 +28,7 @@ A well-used AI planning tool should do four things:
 
 **3. Adapt in real time.** When you miss a session or a topic takes longer than expected, the plan adjusts rather than becoming instantly obsolete.
 
-**4. Schedule for retention.** A good AI planner incorporates spaced repetition — scheduling review sessions at the intervals that maximize long-term retention, not just pre-exam cramming.
+**4. Schedule for retention.** A good AI planner incorporates spaced repetition - scheduling review sessions at the intervals that maximize long-term retention, not just pre-exam cramming.
 
 ## Step-by-Step: Building Your AI Study Plan
 
@@ -50,7 +50,7 @@ A prompt that works:
 
 > "I have a chemistry exam in 4 weeks covering the following topics: [list]. I have about 90 minutes per day on weekdays and 3 hours on weekends. I'm strong on organic reactions but weak on electrochemistry and thermodynamics. Create a 4-week study plan that prioritizes my weak areas, includes spaced review sessions for topics covered in week 1 and 2, and uses Pomodoro-style blocks. Leave buffer days before the exam."
 
-The AI will generate a structured plan. Don't treat this as final — it's a starting point.
+The AI will generate a structured plan. Don't treat this as final - it's a starting point.
 
 ### Step 3: Pressure-test the plan
 
@@ -66,13 +66,13 @@ Iterate until the plan actually reflects your situation.
 
 At the end of each week, tell the AI what you completed and what you didn't. Ask it to rebalance the remaining weeks based on actual progress, not planned progress.
 
-This is the step most students skip — and it's why plans fall apart. A 10-minute weekly recalibration keeps your plan realistic throughout your prep.
+This is the step most students skip - and it's why plans fall apart. A 10-minute weekly recalibration keeps your plan realistic throughout your prep.
 
 ## AI Study Planner Tools to Know
 
 ### Slate
 
-[Slate](https://slateup.ai) is built around your course material. You upload your notes, textbook chapters, or syllabus, and your AI classmates help you understand the content as you work through it. This makes it particularly useful for combining study planning with the actual learning — you don't just schedule time, you use it more effectively because you're engaging with material through active discussion rather than passive review.
+[Slate](https://slateup.ai) is built around your course material. You upload your notes, textbook chapters, or syllabus, and your AI classmates help you understand the content as you work through it. This makes it particularly useful for combining study planning with the actual learning - you don't just schedule time, you use it more effectively because you're engaging with material through active discussion rather than passive review.
 
 **Best for:** Students with complex syllabi who need both a plan and a learning partner
 
@@ -113,7 +113,7 @@ This spacing pattern encodes information more durably than any amount of massed 
 
 **Overloading early weeks.** Students often put too much in week 1 because it feels far from the exam. Ask your AI to flag if any week is more than 20% over your daily time budget.
 
-**Not scheduling active practice.** Passive review (re-reading, watching videos) feels productive but produces weak retention. Your plan should specify active practice — problems, flashcard review, teaching concepts to your AI classmate — not just "study chapter 3."
+**Not scheduling active practice.** Passive review (re-reading, watching videos) feels productive but produces weak retention. Your plan should specify active practice - problems, flashcard review, teaching concepts to your AI classmate - not just "study chapter 3."
 
 **No buffer days.** Life happens. Build at least one buffer day per week with no scheduled content, available for overflow or unexpected demands.
 
@@ -125,7 +125,7 @@ This spacing pattern encodes information more durably than any amount of massed 
 
 **Context:** Final exam in 6 weeks, covering 8 units of microeconomics. Student has 2 hours/day on weekdays, 4 hours each weekend day. Strong on supply/demand and market structures; weak on game theory and externalities.
 
-**Week 1:** Game theory (weak) — 5 sessions, 2h each. Weekend: externalities introduction.
+**Week 1:** Game theory (weak) - 5 sessions, 2h each. Weekend: externalities introduction.
 
 **Week 2:** Externalities in depth. Midweek review of game theory (retrieval practice). Weekend: labor markets.
 
@@ -137,7 +137,7 @@ This spacing pattern encodes information more durably than any amount of massed 
 
 **Week 6:** Final review and weak-spot targeting only. Buffer days Tuesday and Thursday. Full rest Friday before Saturday exam.
 
-This plan covers all content, builds in spaced review, front-loads the hard material, and includes buffer. Build something like this with your AI planner — and actually update it weekly.
+This plan covers all content, builds in spaced review, front-loads the hard material, and includes buffer. Build something like this with your AI planner - and actually update it weekly.
 
 ---
 
@@ -145,7 +145,7 @@ This plan covers all content, builds in spaced review, front-loads the hard mate
 
 **Can AI planners sync with Google Calendar?**
 
-Tools like Motion and some Notion integrations can sync directly. For ChatGPT or Slate-generated plans, you'd export manually — but the friction is low since you're typically doing this weekly, not daily.
+Tools like Motion and some Notion integrations can sync directly. For ChatGPT or Slate-generated plans, you'd export manually - but the friction is low since you're typically doing this weekly, not daily.
 
 **How do I handle it when I fall significantly behind my plan?**
 

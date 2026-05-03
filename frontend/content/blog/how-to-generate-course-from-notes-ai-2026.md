@@ -13,7 +13,7 @@ AI course generation is changing that. In 2026, you can take a pile of unstructu
 
 The way most people take notes is fundamentally broken for learning.
 
-You sit in a lecture, transcribe frantically, and end up with a document that captures *what was said* rather than *what you need to understand*. When it comes time to study, you re-read those notes passively — which research consistently shows is one of the least effective study methods.
+You sit in a lecture, transcribe frantically, and end up with a document that captures *what was said* rather than *what you need to understand*. When it comes time to study, you re-read those notes passively - which research consistently shows is one of the least effective study methods.
 
 The gap is structure. Raw notes lack a clear hierarchy of concepts, connections between ideas, and any mechanism for testing your understanding.
 
@@ -41,15 +41,15 @@ Best for: Research, quickly finding information across a large document set.
 
 ## Step-by-Step: Turning Notes Into a Course on Slate
 
-1. **Gather your material** — lecture slides, PDFs, typed notes, even a syllabus. It doesn't need to be clean or organized.
+1. **Gather your material** - lecture slides, PDFs, typed notes, even a syllabus. It doesn't need to be clean or organized.
 
-2. **Upload to Slate** — drag and drop your files. Slate accepts PDFs, text, and common document formats.
+2. **Upload to Slate** - drag and drop your files. Slate accepts PDFs, text, and common document formats.
 
-3. **Let it generate** — Slate extracts key concepts, organizes them into a learning flow, and creates AI classmates aligned to the topic.
+3. **Let it generate** - Slate extracts key concepts, organizes them into a learning flow, and creates AI classmates aligned to the topic.
 
-4. **Start a discussion** — instead of reading through a summary, talk through the material. Ask a classmate to explain a concept, argue with you about a claim, or quiz you on what you've covered.
+4. **Start a discussion** - instead of reading through a summary, talk through the material. Ask a classmate to explain a concept, argue with you about a claim, or quiz you on what you've covered.
 
-5. **Identify your gaps** — the conversation will naturally surface what you thought you understood but didn't. That's the whole point.
+5. **Identify your gaps** - the conversation will naturally surface what you thought you understood but didn't. That's the whole point.
 
 ## What to Look For in an AI Course Tool
 
@@ -61,7 +61,7 @@ Also check whether it can handle your source format, and whether the output is s
 
 The bottleneck in learning has never been access to information. It's always been turning information into understanding.
 
-AI course generation is, at its best, a way to close that gap — taking the raw material you already have and structuring it so actual learning can happen.
+AI course generation is, at its best, a way to close that gap - taking the raw material you already have and structuring it so actual learning can happen.
 
 Your notes are already there. The course is just waiting to be built.
 

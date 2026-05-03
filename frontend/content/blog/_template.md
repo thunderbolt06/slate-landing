@@ -2,7 +2,7 @@
 title: "Post title"
 blurb: "One-line summary for the blog index."
 date: "2026-04-19"
-# slug is optional — defaults to the filename (without .md)
+# slug is optional - defaults to the filename (without .md)
 slug: my-post-slug
 ---
 
