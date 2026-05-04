@@ -163,6 +163,52 @@ function injectMeta(html, { title, description, canonical, ogImage = DEFAULT_OG_
   return html;
 }
 
+function buildArticleSchema({ title, description, canonical, datePublished, image }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "image": image,
+    "url": canonical,
+    "datePublished": datePublished,
+    "dateModified": datePublished,
+    "author": { "@type": "Organization", "name": "Slate", "url": SITE_URL },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Slate",
+      "logo": { "@type": "ImageObject", "url": `${SITE_URL}/favicon.svg` }
+    },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }
+  };
+}
+
+function buildBreadcrumbSchema(routePath, title) {
+  const parts = routePath.split("/").filter(Boolean);
+  const items = [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${SITE_URL}/` }
+  ];
+  let acc = "";
+  parts.forEach((seg, idx) => {
+    acc += `/${seg}`;
+    const isLast = idx === parts.length - 1;
+    items.push({
+      "@type": "ListItem",
+      "position": idx + 2,
+      "name": isLast ? title : seg.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+      "item": `${SITE_URL}${acc}`
+    });
+  });
+  return { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items };
+}
+
+function injectJsonLd(html, schemas) {
+  const blocks = schemas
+    .map((s) => `<script type="application/ld+json">${JSON.stringify(s)}</script>`)
+    .join("\n    ");
+  return html.replace(/<\/head>/, `    ${blocks}\n  </head>`);
+}
+
 function writeRouteHtml(routePath, meta) {
   const canonical = `${SITE_URL}${routePath}`;
   const destDir = path.join(BUILD_DIR, routePath === "/" ? "" : routePath);
@@ -172,7 +218,25 @@ function writeRouteHtml(routePath, meta) {
   }
 
   const srcHtml = fs.readFileSync(path.join(BUILD_DIR, "index.html"), "utf-8");
-  const injected = injectMeta(srcHtml, { ...meta, canonical });
+  let injected = injectMeta(srcHtml, { ...meta, canonical });
+
+  const schemas = [];
+  if (meta.kind === "blog") {
+    schemas.push(
+      buildArticleSchema({
+        title: meta.title,
+        description: meta.description,
+        canonical,
+        datePublished: meta.datePublished,
+        image: DEFAULT_OG_IMAGE
+      })
+    );
+  }
+  if (routePath !== "/") {
+    schemas.push(buildBreadcrumbSchema(routePath, meta.title));
+  }
+  if (schemas.length) injected = injectJsonLd(injected, schemas);
+
   fs.writeFileSync(path.join(destDir, "index.html"), injected, "utf-8");
 }
 
@@ -201,6 +265,8 @@ for (const post of BLOG_POSTS) {
   writeRouteHtml(routePath, {
     title: `${post.title} | Slate Blog`,
     description: post.blurb,
+    datePublished: post.date,
+    kind: "blog",
   });
   console.log(`  [blog]   ${routePath}`);
   count++;
