@@ -32,9 +32,9 @@ const BLOG_POSTS = match ? JSON.parse(match[1]) : [];
 const STATIC_ROUTES = [
   {
     path: "/",
-    title: "Slate -AI-powered Interactive Classroom",
+    title: "Slate, AI-powered Interactive Classroom",
     description:
-      "Slate is an AI-powered interactive classroom where you learn with AI classmates - not just a chatbot. Personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond.",
+      "Slate is an AI-powered interactive classroom where you learn with AI classmates, not just a chatbot. Personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond.",
   },
   {
     path: "/blogs",
@@ -119,6 +119,21 @@ function injectMeta(html, { title, description, canonical, ogImage = DEFAULT_OG_
   } else {
     html = html.replace(
       /(<link\s+rel="canonical"\s+href=")[^"]*(")/,
+      `$1${safeCanon}$2`
+    );
+  }
+
+  // hreflang - point per-route alternates at this canonical so each page
+  // declares itself as the en + x-default version.
+  if (html.includes('hreflang="en"')) {
+    html = html.replace(
+      /(<link\s+rel="alternate"\s+hreflang="en"\s+href=")[^"]*(")/,
+      `$1${safeCanon}$2`
+    );
+  }
+  if (html.includes('hreflang="x-default"')) {
+    html = html.replace(
+      /(<link\s+rel="alternate"\s+hreflang="x-default"\s+href=")[^"]*(")/,
       `$1${safeCanon}$2`
     );
   }

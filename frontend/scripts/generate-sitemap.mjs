@@ -37,21 +37,23 @@ const STATIC_PATHS = [
   { path: "/privacy", changefreq: "yearly", priority: "0.3" },
 ];
 
-function extractBlogSlugs(registrySource) {
-  const start = registrySource.indexOf("export const BLOG_POSTS = [");
-  const end = registrySource.indexOf("export const BLOG_MARKDOWN_BY_SLUG");
-  if (start === -1 || end === -1 || end <= start) {
+function extractBlogPosts(registrySource) {
+  // Same approach inject-page-meta.mjs uses: BLOG_POSTS is valid JSON, so parse it.
+  const m = registrySource.match(/export const BLOG_POSTS\s*=\s*(\[[\s\S]*?\]);/);
+  if (!m) {
     console.error(
-      "[sitemap] blogRegistry.js missing BLOG_POSTS or BLOG_MARKDOWN_BY_SLUG - run yarn blog:build first.",
+      "[sitemap] blogRegistry.js missing BLOG_POSTS - run yarn blog:build first.",
     );
     process.exit(1);
   }
-  const slice = registrySource.slice(start, end);
-  const slugs = [];
-  const re = /"slug":\s*"([^"]+)"/g;
-  let m;
-  while ((m = re.exec(slice)) !== null) slugs.push(m[1]);
-  return slugs;
+  let parsed;
+  try {
+    parsed = JSON.parse(m[1]);
+  } catch (e) {
+    console.error("[sitemap] failed to JSON.parse BLOG_POSTS:", e.message);
+    process.exit(1);
+  }
+  return parsed.map((p) => ({ slug: p.slug, date: p.date || null }));
 }
 
 function escapeXml(s) {
@@ -63,9 +65,9 @@ function escapeXml(s) {
 }
 
 function main() {
-  const lastmod = new Date().toISOString().slice(0, 10);
+  const today = new Date().toISOString().slice(0, 10);
   const registrySource = fs.readFileSync(REGISTRY, "utf8");
-  const blogSlugs = extractBlogSlugs(registrySource);
+  const blogPosts = extractBlogPosts(registrySource);
 
   const urlEntries = [];
 
@@ -73,14 +75,17 @@ function main() {
     const loc = `${SITE_URL}${p === "/" ? "/" : p}`;
     urlEntries.push(`  <url>
     <loc>${escapeXml(loc)}</loc>
-    <lastmod>${lastmod}</lastmod>
+    <lastmod>${today}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`);
   }
 
-  for (const slug of blogSlugs) {
+  for (const { slug, date } of blogPosts) {
     const loc = `${SITE_URL}/blogs/${encodeURIComponent(slug)}`;
+    const lastmod = (date && /^\d{4}-\d{2}-\d{2}/.test(date))
+      ? date.slice(0, 10)
+      : today;
     urlEntries.push(`  <url>
     <loc>${escapeXml(loc)}</loc>
     <lastmod>${lastmod}</lastmod>
@@ -106,7 +111,7 @@ Sitemap: ${SITE_URL}/sitemap.xml
   fs.writeFileSync(OUT_ROBOTS, robots, "utf8");
 
   console.log(
-    `[sitemap] Wrote ${OUT_SITEMAP} and ${OUT_ROBOTS} (${STATIC_PATHS.length} static + ${blogSlugs.length} blog URLs, base ${SITE_URL})`,
+    `[sitemap] Wrote ${OUT_SITEMAP} and ${OUT_ROBOTS} (${STATIC_PATHS.length} static + ${blogPosts.length} blog URLs, base ${SITE_URL})`,
   );
 }
 
