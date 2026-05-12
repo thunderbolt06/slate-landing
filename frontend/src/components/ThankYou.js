@@ -26,6 +26,19 @@ export default function ThankYou() {
 
   useEffect(() => {
     axios.get(`${API}/waitlist/count`).then(r => setCount(r.data.count)).catch(() => { });
+
+    // Google Ads: Lead_Waitlist conversion. Fires once per thank-you mount.
+    // Label is supplied via REACT_APP_GADS_LEAD_WAITLIST_LABEL (e.g. "AbCdEf-1234").
+    const gadsId = process.env.REACT_APP_GADS_ID || "AW-18072518513";
+    const leadLabel = process.env.REACT_APP_GADS_LEAD_WAITLIST_LABEL;
+    if (window.gtag && leadLabel) {
+      window.gtag("event", "conversion", {
+        send_to: `${gadsId}/${leadLabel}`,
+        value: 2.0,
+        currency: "USD",
+      });
+      window.gtag("event", "generate_lead", { value: 2.0, currency: "USD" });
+    }
   }, []);
 
   return (

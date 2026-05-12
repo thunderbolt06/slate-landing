@@ -84,6 +84,32 @@ const STATIC_ROUTES = [
     description:
       "See Slate's pricing plans. Start free and upgrade as you grow with AI-powered interactive courses and personalised learning.",
   },
+  {
+    path: "/contact",
+    title: "Contact Slate - Get in Touch",
+    description:
+      "Reach out to the Slate team for support, partnerships or feedback. We're building the AI-powered classroom for India's students.",
+  },
+  {
+    path: "/terms",
+    title: "Terms of Service | Slate",
+    description:
+      "Read the Terms of Service for using Slate, the AI-powered interactive classroom by Chalk Labs.",
+  },
+  {
+    path: "/privacy",
+    title: "Privacy Policy | Slate",
+    description:
+      "Slate's privacy policy explains how we collect, use and protect your data while you learn with our AI-powered classroom.",
+  },
+  {
+    // Post-conversion confirmation page, kept out of sitemap and marked noindex.
+    path: "/thank-you",
+    title: "Thanks for joining Slate",
+    description:
+      "Thanks for joining the Slate waitlist. We'll be in touch soon with early access to the AI-powered interactive classroom.",
+    noindex: true,
+  },
 ];
 
 // --- Helpers ------------------------------------------------------------------
@@ -95,7 +121,7 @@ function escapeHtml(str) {
     .replace(/>/g, "&gt;");
 }
 
-function injectMeta(html, { title, description, canonical, ogImage = DEFAULT_OG_IMAGE }) {
+function injectMeta(html, { title, description, canonical, ogImage = DEFAULT_OG_IMAGE, noindex = false }) {
   const safeTitle = escapeHtml(title);
   const safeDesc = escapeHtml(description);
   const safeCanon = escapeHtml(canonical);
@@ -109,6 +135,22 @@ function injectMeta(html, { title, description, canonical, ogImage = DEFAULT_OG_
     /(<meta\s+name="description"\s+content=")[^"]*(")/,
     `$1${safeDesc}$2`
   );
+
+  // Robots: set to noindex,nofollow for post-conversion / utility pages.
+  if (noindex) {
+    html = html.replace(
+      /(<meta\s+name="robots"\s+content=")[^"]*(")/,
+      `$1noindex, nofollow$2`
+    );
+    html = html.replace(
+      /(<meta\s+name="googlebot"\s+content=")[^"]*(")/,
+      `$1noindex, nofollow$2`
+    );
+    html = html.replace(
+      /(<meta\s+name="bingbot"\s+content=")[^"]*(")/,
+      `$1noindex, nofollow$2`
+    );
+  }
 
   // Canonical - insert after <meta name="robots" ...> (or after charset if not found)
   if (!html.includes('rel="canonical"')) {
@@ -233,7 +275,7 @@ function writeRouteHtml(routePath, meta) {
   }
 
   const srcHtml = fs.readFileSync(path.join(BUILD_DIR, "index.html"), "utf-8");
-  let injected = injectMeta(srcHtml, { ...meta, canonical });
+  let injected = injectMeta(srcHtml, { ...meta, canonical, noindex: !!meta.noindex });
 
   const schemas = [];
   if (meta.kind === "blog") {

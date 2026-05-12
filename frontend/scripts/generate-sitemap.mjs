@@ -27,7 +27,7 @@ const STATIC_PATHS = [
   { path: "/how-it-works", changefreq: "monthly", priority: "0.8" },
   { path: "/features", changefreq: "monthly", priority: "0.8" },
   { path: "/waitlist", changefreq: "monthly", priority: "0.9" },
-  { path: "/thank-you", changefreq: "yearly", priority: "0.3" },
+  // /thank-you intentionally omitted from sitemap (noindex post-conversion page)
   { path: "/blogs", changefreq: "weekly", priority: "0.9" },
   { path: "/learn/ncert-class-10-mathematics", changefreq: "monthly", priority: "0.85" },
   { path: "/learn/ncert-class-10-science", changefreq: "monthly", priority: "0.85" },
