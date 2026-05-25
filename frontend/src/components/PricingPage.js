@@ -19,7 +19,7 @@ const FREE_FEATURES = [
 
 const PRO_FEATURES = [
   "30 classroom credits / month",
-  "All AI Mates",
+  "All 4 Mates",
   "Full-length lessons (up to 45 min)",
   "Instant Classroom, no wait",
   "Import from PDF, YouTube, URL",
@@ -308,16 +308,18 @@ export default function PricingPage() {
               )}
             </div>
             <p className="text-sm text-[#495057] font-semibold" style={{ fontFamily: "Nunito, sans-serif" }}>Everything to actually build momentum.</p>
-            <div
-              className="rounded-2xl p-3 flex items-center gap-2.5"
-              style={{ background: YELLOW, border: `2.5px solid ${INK}`, boxShadow: `3px 3px 0 ${INK}` }}
-            >
-              <span className="text-2xl">🎁</span>
-              <div>
-                <div className="font-bold text-sm text-[#073B4C]" style={{ fontFamily: "Fredoka, sans-serif" }}>50% off your first month</div>
-                <div className="font-bold text-xs text-[#073B4C]" style={{ fontFamily: "Nunito, sans-serif" }}>just $10 to start</div>
+            {billing === "monthly" && (
+              <div
+                className="rounded-2xl p-3 flex items-center gap-2.5"
+                style={{ background: YELLOW, border: `2.5px solid ${INK}`, boxShadow: `3px 3px 0 ${INK}` }}
+              >
+                <span className="text-2xl">🎁</span>
+                <div>
+                  <div className="font-bold text-sm text-[#073B4C]" style={{ fontFamily: "Fredoka, sans-serif" }}>50% off your first month</div>
+                  <div className="font-bold text-xs text-[#073B4C]" style={{ fontFamily: "Nunito, sans-serif" }}>just $10 to start</div>
+                </div>
               </div>
-            </div>
+            )}
             <ul className="flex flex-col gap-2.5 list-none p-0 m-0">
               {PRO_FEATURES.map(f => <FeatureItem key={f} text={f} tickColor={RED} />)}
             </ul>

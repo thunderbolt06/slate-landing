@@ -411,18 +411,34 @@ const SlateDemoVideo = () => {
 /* ═══════════════════════════════════════════════════
    MAIN LANDING PAGE
    ═══════════════════════════════════════════════════ */
-export default function LandingPage() {
-  useSeoMeta({
-    title: "Slate - AI-powered Interactive Classroom",
-    description: "Slate is an AI-powered interactive classroom where you learn with AI classmates - not just a chatbot. Personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond.",
-    canonical: "https://www.slateup.ai/",
-  });
+const PATH_META = {
+  "/demo": {
+    title: "Demo - See Slate AI Classroom in Action | Slate",
+    description: "Watch a live demo of Slate's AI-powered interactive classroom. See how AI generates personalized courses with slides, narration, and AI classmates.",
+    canonical: "https://www.slateup.ai/demo",
+  },
+  "/how-it-works": {
+    title: "How It Works - Slate AI Classroom | Slate",
+    description: "Learn how Slate's AI classroom works in 3 steps: type a topic, AI generates your course, then enter your interactive classroom with AI classmates.",
+    canonical: "https://www.slateup.ai/how-it-works",
+  },
+};
 
+const DEFAULT_META = {
+  title: "Slate - AI-powered Interactive Classroom",
+  description: "Slate is an AI-powered interactive classroom where you learn with AI classmates - not just a chatbot. Personalised explanations, instant doubt resolution, and adaptive courses for NCERT, JEE, NEET and beyond.",
+  canonical: "https://www.slateup.ai/",
+};
+
+export default function LandingPage() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const containerRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
+
+  const pageMeta = PATH_META[location.pathname] || DEFAULT_META;
+  useSeoMeta(pageMeta);
 
   useEffect(() => {
     const container = containerRef.current;
